@@ -15,19 +15,19 @@ class ConsumerProfile(AbstractUser):
     '''
     # blank Admin中是否允许用户输入为空
     name = models.CharField(max_length=30, null=True, blank=True, verbose_name="姓名")
-    mobile = models.CharField(max_length=11, verbose_name="手机号")
+    mobile = models.CharField(max_length=11, null=True, blank=True, verbose_name="手机号")
     email = models.CharField(max_length=100, null=True, blank=True, verbose_name="邮箱")
     # choice Admin中显示选择框的内容，用不变动的数据放在内存中从而避免跨表操作
     gender = models.CharField(max_length=6, choices=(("male", "男"), ("female", "女")), default="female",
                               verbose_name="性别")
-    birthday = models.DateField()
+    birthday = models.DateField(null=True, blank=True, verbose_name="出生年月")
 
     class Meta:
         verbose_name = "用户"  # admin中显示的表名称
         verbose_name_plural = verbose_name  # admin中显示的表的复数名称
 
     def __str__(self):  # 相当于java中的tostring
-        return self.name
+        return self.username
 
 
 class VerifyCode(models.Model):
@@ -42,7 +42,7 @@ class VerifyCode(models.Model):
     add_time = models.DateTimeField(default=datetime.now, verbose_name="添加时间")
 
     class Meta:
-        verbose_name = "用户"  # admin中显示的表名称
+        verbose_name = "验证码"  # admin中显示的表名称
         verbose_name_plural = verbose_name  # admin中显示的表的复数名称
 
     def __str__(self):  # 相当于java中的tostring

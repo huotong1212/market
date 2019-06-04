@@ -22,10 +22,10 @@ class GoodCategory(models.Model):
     category_type = models.IntegerField(choices=CATEGORY_TYPE, verbose_name="类目级别", help_text="类目级别")
     # related_name=None,   反向操作时，使用的字段名，用于代替 【表名_set】 如： obj.表名_set.all()
     parent_category = models.ForeignKey("self", related_name="sub_cat", null=True, blank=True,
-                                        help_text="父类级别", verbose_name="父类级别")  # 多级分类时自关联的外键
+                                        help_text="父类级别", verbose_name="父类级别", on_delete=models.CASCADE)  # 多级分类时自关联的外键
 
     is_tab = models.BooleanField(default=False, verbose_name="是否导航", help_text="是否导航")  # 用于tab上展示的类别
-    add_time = models.DateTimeField(datetime.now, verbose_name="添加时间")
+    add_time = models.DateTimeField(default=datetime.now, verbose_name="添加时间")
 
     class Meta:
         verbose_name = "商品类别"
@@ -42,11 +42,12 @@ class GoodsCategoryBrand(models.Model):
     name = models.CharField(default="", max_length=20, verbose_name="品牌名", help_text="品牌名")
     desc = models.CharField(default="", max_length=200, verbose_name="品牌描述", help_text="品牌描述")
     # upload_to 上传文件的保存路径在media下
-    image = models.ImageField(max_length=200, upload_to="brand/images/")
-    add_time = models.DateTimeField(datetime.now, verbose_name="添加时间")
+    image = models.ImageField(max_length=200, upload_to="brands/images/")
+    add_time = models.DateTimeField(default=datetime.now, verbose_name="添加时间")
     # relate_name 反向操作时，使用的字段名，用于代替 【表名_set】 如： obj.表名_set.all()
     # 这里是通过类别找品牌时，GoodCategory().brands.all()
-    category = models.ForeignKey(GoodCategory, related_name="brand", null=True, blank=True, verbose_name="商品类别")
+    category = models.ForeignKey(GoodCategory, related_name="brands", null=True, blank=True,
+                                 verbose_name="商品类别", on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = "品牌"
@@ -61,7 +62,7 @@ class Goods(models.Model):
     """
     商品
     """
-    category = models.ForeignKey(GoodCategory, verbose_name="商品类别")
+    category = models.ForeignKey(GoodCategory, verbose_name="商品类别", on_delete=models.CASCADE)
     good_sn = models.CharField(max_length=50, default="", verbose_name="商品唯一货号")
     name = models.CharField(max_length=100, verbose_name="商品名")
     click_num = models.IntegerField(default=0, verbose_name="点击数")
@@ -91,30 +92,56 @@ class GoodsImage(models.Model):
     """
     商品轮播图
     """
-    name = models.ForeignKey(Goods, verbose_name="商品", related_name="images")
+    goods = models.ForeignKey(Goods, verbose_name="商品", related_name="images", on_delete=models.CASCADE)
     image = models.ImageField(upload_to="", verbose_name="图片", null=True, blank=True)
-    add_time = models.DateTimeField(datetime.now, verbose_name="添加时间")
+    add_time = models.DateTimeField(default=datetime.now, verbose_name="添加时间")
 
     class Meta:
         verbose_name = "商品轮播图"
         verbose_name_plural = verbose_name
 
     def __str__(self):
-        return self.name
+        return self.goods.name
 
+
+class IndexAd(models.Model):
+    category = models.ForeignKey(GoodCategory, related_name='category',verbose_name="商品类目", on_delete=models.CASCADE)
+    goods = models.ForeignKey(Goods, related_name='goods', on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name = '首页商品类别广告'
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return self.goods.name
 
 class Banner(models.Model):
     """
     首页轮播的商品
     """
-    goods = models.ForeignKey(Goods, verbose_name="商品")
+    goods = models.ForeignKey(Goods, verbose_name="商品", on_delete=models.CASCADE)
     image = models.ImageField(upload_to="banner", verbose_name="首页轮播图")
     index = models.IntegerField(default=0, verbose_name="轮播顺序")
-    add_time = models.DateTimeField(datetime.now, verbose_name="添加时间")
+    add_time = models.DateTimeField(default=datetime.now, verbose_name="添加时间")
 
     class Meta:
         verbose_name = "首页轮播商品"
         verbose_name_plural = verbose_name
 
     def __str__(self):
-        return self.name
+        return self.goods.name
+
+class HotSearchWords(models.Model):
+    """
+    热搜词
+    """
+    keywords = models.CharField(default="", max_length=20, verbose_name="热搜词")
+    index = models.IntegerField(default=0, verbose_name="排序")
+    add_time = models.DateTimeField(default=datetime.now, verbose_name="添加时间")
+
+    class Meta:
+        verbose_name = '热搜词'
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return self.keywords

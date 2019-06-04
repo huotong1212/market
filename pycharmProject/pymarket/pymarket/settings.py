@@ -28,7 +28,7 @@ SECRET_KEY = '_j7res#y=&7(pde9*_wkd!x6yc#ki#u*ncf=nq*s3mp9ulk(k0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 AUTH_USER_MODEL = 'consumers.ConsumerProfile'
 
 
@@ -41,14 +41,23 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'DjangoUeditor'
-    'consumers'
-    'goods'
-    'trade'
-    'user_operation'
+    'DjangoUeditor',
+    'consumers.apps.ConsumersConfig',
+    'goods',
+    'trade',
+    'user_operation.apps.UserOperationConfig',
+    'xadmin',
+    'rest_framework',
+    'rest_framework.authtoken',
+    'guardian',
+    'corsheaders',
+    'crispy_forms',
+    'django_filters',
+    'social_django',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -59,6 +68,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'pymarket.urls'
+CORS_ORIGIN_ALLOW_ALL = True
 
 TEMPLATES = [
     {
@@ -72,6 +82,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',  # 将media_url上传文件路径注册到模板中
+                 # 第三方登录
+                 'social_django.context_processors.backends',
+                 'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -106,6 +120,7 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -133,8 +148,23 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False   #默认是Ture，时间是utc时间，由于我们要用本地时间，所用手动修改为false！！！！
 
+# AUTHENTICATION_BACKENDS = ('consumers.views.CustomBackend',)
+
+# 设置邮箱和用户名和手机号均可登录
+AUTHENTICATION_BACKENDS = (
+    'consumers.views.CustomBackend',
+    'social_core.backends.weibo.WeiboOAuth2',
+    'social_core.backends.qq.QQOAuth2',
+    'social_core.backends.weixin.WeixinOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+# AUTHENTICATION_BACKENDS = (
+#     'django.contrib.auth.backends.ModelBackend',
+#     'consumers.views.CustomBackend',
+# )
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
@@ -147,3 +177,72 @@ STATICFILES_DIRS = (
 )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+# REST_FRAMEWORK = {
+#     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+#     'PAGE_SIZE': 10,
+# }
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        # 'rest_framework.authentication.TokenAuthentication', 全局认证 drf自带的
+        # 全局认证，开源jwt,对用户POST的用户名密码进行验证，之后，解析拿到user
+        # 'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+    ),
+    # 限速设置
+    # 'DEFAULT_THROTTLE_CLASSES': (
+    #     'rest_framework.throttling.AnonRateThrottle',  # 未登陆用户
+    #     'rest_framework.throttling.UserRateThrottle'  # 登陆用户
+    # ),
+    # 'DEFAULT_THROTTLE_RATES': {
+    #     'anon': '3/minute',  # 每分钟可以请求两次
+    #     'user': '5/minute'  # 每分钟可以请求五次
+    # }
+}
+
+# redis缓存
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": "redis://127.0.0.1:6379/1",
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#         }
+#     }
+# }
+
+import datetime
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),
+    'JWT_AUTH_HEADER_PREFIX': 'JWT',
+}
+
+#手机号码正则表达式
+REGEX_MOBILE = "^1[3578]\d{9}$|^147\d{8}$|^176\d{8}$"
+
+# 云片APIKEY
+APIKEY = '56af256fd068bab643a1088e2a145d83'
+
+#缓存配置
+# REST_FRAMEWORK_EXTENSIONS = {
+#     'DEFAULT_CACHE_RESPONSE_TIMEOUT': 10   #5s过期，时间自己可以随便设定
+# }
+
+
+# 第三方登录，里面的值是你的开放平台对应的值
+SOCIAL_AUTH_WEIBO_KEY = '3638959338'
+SOCIAL_AUTH_WEIBO_SECRET = 'd713b7a012d92a43aced8013a4195611'
+
+SOCIAL_AUTH_QQ_KEY = 'xxxxxxx'
+SOCIAL_AUTH_QQ_SECRET = 'xxxxxxx'
+
+SOCIAL_AUTH_WEIXIN_KEY = 'xxxxxxx'
+SOCIAL_AUTH_WEIXIN_SECRET = 'xxxxxxx'
+
+#登录成功后跳转到首页
+# SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/index/'
+
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = 'http://127.0.0.1:8080/#/app/home/index'
+
