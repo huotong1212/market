@@ -33,7 +33,7 @@
                     <dl class="loaded">
                         <dt class="product_name">
                         <h1>{{proDetail.name}}</h1>
-                        <p class="desc"> <span class="gray">{{proDetail.goods_brief}}</span> </p>
+                        <p class="desc"> <span class="gray">{{proDetail.good_brief}}</span> </p>
                         </dt>
                         <dd class="property">
                             <ul>
@@ -101,7 +101,7 @@
                                         <p>&nbsp; </p>
                                     </div>
                                     <div class="spxq_dec">
-                                        <p v-html="proDetail.goods_desc">
+                                        <p v-html="proDetail.good_desc">
                                         </p>
                                     </div>
                                 </div>

@@ -12,7 +12,7 @@
         <ul>
           <li class="cle hover" style="border-bottom-style: none;" v-for="(item,index) in goods.goods_list">
             <div class="pic">
-              <a target="_blank"> <img :alt="item.goods.name" :src="item.goods.goods_front_image"></a>
+              <a target="_blank"> <img :alt="item.goods.name" :src="item.goods.goods_cover"></a>
             </div>
             <div class="name">
               <a target="_blank">{{item.goods.name}}</a>

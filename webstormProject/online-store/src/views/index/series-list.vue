@@ -25,7 +25,7 @@
             </div>
                 <div class="series_pic">
                     <router-link :to="'/app/home/productDetail/'+items.ad_goods.id" target = _blank>
-                       <img :src="items.ad_goods.goods_front_image" width="340" height="400">
+                       <img :src="items.ad_goods.goods_cover" width="340" height="400">
                     </router-link>
                 </div>
 
@@ -34,7 +34,7 @@
                         <li v-for="list in items.goods">
                              <router-link :to="'/app/home/productDetail/'+list.id" target = _blank>
                                 <p class="pic">
-                                 <img :src="list.goods_front_image" style="display: inline;">
+                                 <img :src="list.goods_cover" style="display: inline;">
                                  </p>
                                 <h3>{{list.name}}</h3>
                                 <p class="price">

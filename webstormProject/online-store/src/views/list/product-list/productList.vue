@@ -4,7 +4,7 @@
             <li v-for="item in listData" >
                 <router-link :to="'/app/home/productDetail/'+item.id" target="_blank" class="productitem">
                     <span class="productimg">
-                        <img width="150" height="150" :title="item.productname" :alt="item.productname" :src="item.goods_front_image" style="display: block;">
+                        <img width="150" height="150" :title="item.productname" :alt="item.productname" :src="item.goods_cover" style="display: block;">
                     </span>
                     <span class="nalaprice xszk">
                         <b>
@@ -12,7 +12,7 @@
                         </b>
                     </span>
                     <span class="productname">{{item.name}}</span>
-                    <span class="description">{{item.goods_brief}}</span>
+                    <span class="description">{{item.good_brief}}</span>
                     <!-- <span class="price">{{item.price}}</span> -->
                     <span class="salerow">销量：<span class="sales">{{item.sold_num}}</span>件 </span>
                 </router-link>

@@ -151,8 +151,10 @@ import register from '../views/register/register'
 
 //配置路由
 var router = new Router({
+  // mode: 'history',
   routes: [{
     path: '/app',
+    name:'app',
     component: app,
     children: [
       {
@@ -183,6 +185,7 @@ var router = new Router({
       },
       {
         path: 'home',
+        name:"home",
         components: {
           head: head,
           content: home,
@@ -291,6 +294,7 @@ var router = new Router({
       },
       {
         path: 'shoppingcart',
+        name:'shoppingcart',
         components: {
           head: shophead,
           content: home,

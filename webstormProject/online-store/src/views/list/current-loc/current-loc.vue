@@ -8,7 +8,21 @@
                 <!-- <a @click="changeMenu(item.id)">{{item.name}}</a> -->
                 <code v-if="index!==curLoc.length-1">&gt;</code>
             </template>
-            
+
+<!--            <el-breadcrumb separator="/">-->
+<!--              <div v-for="(item,index) in curLoc">-->
+<!--                <el-breadcrumb-item :to="{name: 'index'}" v-if="index===0">-->
+<!--                  {{item.name}}-->
+<!--                </el-breadcrumb-item>-->
+<!--                <el-breadcrumb-item :to="{name: 'list', params:{id: item.id}}" v-else>-->
+<!--                  {{item.name}}-->
+<!--                </el-breadcrumb-item>-->
+<!--                <code v-if="index!==curLoc.length-1">&gt;</code>-->
+<!--              </div>-->
+
+
+            </el-breadcrumb>
+
             <!-- <a href="http://sx.web51.youxueshop.com/category.php?id=2">生鲜食品</a>
             <code>&gt;</code>
             <a href="http://sx.web51.youxueshop.com/category.php?id=19">根茎类</a>
@@ -16,12 +30,12 @@
             新鲜水果甜蜜香脆单果约800克 -->
           </div>
       </div>
-    
+
     </div>
-  
+
 </template>
 <script>
-  
+
   export default {
     data () {
         return {
@@ -38,12 +52,12 @@
             //         id: 232,
             //         name: '精品肉类',
             //     }
-                
+
             // ]
         };
     },
     components: {
-        
+
     },
     props: {
         curLoc: {
@@ -54,16 +68,16 @@
         }
     },
     created () {
-        
+
     },
     watch: {
-        
+
     },
     computed: {
 
     },
     methods: {
-        
+
     }
 }
 </script>

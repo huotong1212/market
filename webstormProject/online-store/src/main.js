@@ -29,13 +29,19 @@ Vue.prototype.$http = Axios
 //引入需要渲染的视图组件
 import App from './App';
 
+// 全局引入elementUI
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
+Vue.use(ElementUI);
+
 //创建全局实例
 new Vue({
     el:'#app',
     router,
     store,
+    render: h => h(App),
     template:'<App/>',
     components:{App}
 })
-
 

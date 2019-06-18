@@ -7,7 +7,9 @@
                 <router-link :to="'/app/home/member/userinfo'">{{userInfo.name}}</router-link>
                 &nbsp;[
                 <a @click="loginOut">退出</a>
-                ]</li>
+                ]
+                 <el-tag type="success">{{vipRole}}</el-tag>
+                </li>
                 <li id="ECS_MEMBERZONE" v-else>
                 <router-link :to="'/app/login'">请登录</router-link>
                 <s>|</s>
@@ -47,7 +49,9 @@
         </div>
         <div class="intro">
             <ul>
-                <li class="no1"><a href="javascript:void(0);" target="_blank">
+                <li class="no1">
+
+                  <a href="javascript:void(0);" target="_blank">
                     <h4>正品保障</h4>
                     <p>100%正品低价</p>
                 </a></li>
@@ -102,12 +106,16 @@
                 <template v-for="(item,index) in allMenuLabel">
                   <li>
                     <div v-if="item.is_tab">
-                      <router-link :to="'/app/home/list/'+item.id" >{{item.name}}</router-link>
+<!--                      <el-button type="primary">-->
+                        <router-link :to="'/app/home/list/'+item.id" >{{item.name}}</router-link>
+<!--                      </el-button>-->
+
                     </div>
                   </li>
                 </template>
-
             </ul>
+
+
             <div class="hd_cart" id="ECS_CARTINFO"  @mouseover="overShopCar" @mouseout="outShopCar">
              <router-link class="tit" :to="'/app/shoppingcart/cart'" target = _blank>
 
@@ -116,7 +124,7 @@
                         <div class="list" v-show="showShopCar">
                             <div class="data">
                                <dl v-for="(item,index) in goods_list.goods_list">
-                                <dt><router-link :to="'/app/home/productDetail/'+item.goods.id" target = _blank><img :src="item.goods.goods_front_image"></router-link></dt>
+                                <dt><router-link :to="'/app/home/productDetail/'+item.goods.id" target = _blank><img :src="item.goods.goods_cover"></router-link></dt>
                                 <dd>
                                   <h4><router-link :to="'/app/home/productDetail/'+item.goods.id" target = _blank>{{item.goods.name}}</router-link></h4>
                                   <p><span class="red">{{item.goods.shop_price}}</span>&nbsp;<i>X</i>&nbsp;{{item.nums}}</p>
@@ -138,7 +146,7 @@
 <script>
 import { mapGetters } from 'vuex';
 import cookie from '../../static/js/cookie';
-import { getHotSearch, getCategory ,deleteShopCart } from  '../../api/api'
+import { getHotSearch, getCategory ,deleteShopCart,getPermission } from  '../../api/api'
 export default {
     data(){
         return {
@@ -149,6 +157,8 @@ export default {
             showChildrenMenu:-1,//菜单显示控制
             showShopCar:false,//购物车显示控制
             isShowVip:false,
+            activeName:'',
+            vipRole:'',
         }
     },
     computed: {
@@ -158,6 +168,9 @@ export default {
         })
     },
     methods:{
+        handleClick(tab, event) {
+          console.log(tab, event);
+        },
         loginOut(){
             // this.$http.get('/getMenu')
             //     .then((response)=> {
@@ -228,11 +241,25 @@ export default {
                 .catch(function (error) {
                   console.log(error);
                 });
+        },
+        getPermission(){
+          getPermission()
+                .then((response)=>{
+                  console.log('permission',response)
+                  this.vipRole = response.data.roles[0].name
+                  console.log('vipRole',this.vipRole)
+
+                })
+                .catch(function (error) {
+                  console.warn(error)
+          })
+
         }
     },
     created(){
         this.getMenu()//获取菜单
         this.getHotSearch()//获取热词
+        this.getPermission() //获取权限
         // 更新store数据
         this.$store.dispatch('setShopList');//获取购物车数据
     },
