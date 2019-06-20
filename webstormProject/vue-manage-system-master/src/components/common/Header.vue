@@ -23,7 +23,8 @@
                     <span class="btn-bell-badge" v-if="message"></span>
                 </div>
                 <!-- 用户头像 -->
-                <div class="user-avator"><img src="../../assets/img/img.jpg"></div>
+<!--                <div class="user-avator"><img src="../../assets/img/img.jpg"></div>-->
+                <div class="user-avator"><img :src="userImage"></div>
                 <!-- 用户名下拉菜单 -->
                 <el-dropdown class="user-name" trigger="click" @command="handleCommand">
                     <span class="el-dropdown-link">
@@ -45,26 +46,43 @@
 </template>
 <script>
     import bus from '../common/bus';
+    import cookie from "../static/cookie";
+    import {getUser} from "../api/api";
     export default {
         data() {
             return {
                 collapse: false,
                 fullscreen: false,
                 name: 'linxin',
-                message: 2
+                message: 2,
+                userImage:'',
             }
         },
         computed:{
             username(){
-                let username = localStorage.getItem('ms_username');
-                return username ? username : this.name;
+                let username = cookie.getCookie('username');
+                // let username = localStorage.getItem('ms_username');
+                // return username ? username : this.name;
+                return username
             }
         },
         methods:{
             // 用户名下拉菜单选择事件
             handleCommand(command) {
                 if(command == 'loginout'){
-                    localStorage.removeItem('ms_username')
+                    // localStorage.removeItem('ms_username')
+                    //删除本地存储的用户信息
+                    cookie.delCookie('username');
+                    cookie.delCookie('token')
+
+                    //删除store的用户信息
+                    const loginInfo = {
+                        username:'',
+                        token: '',
+                    }
+
+                    // 更新store数据
+                    this.$store.dispatch('setInfo', loginInfo);
                     this.$router.push('/login');
                 }
             },
@@ -99,12 +117,24 @@
                     }
                 }
                 this.fullscreen = !this.fullscreen;
-            }
+            },
+            getUserInfo(){
+                getUser().then((response)=> {
+                    console.log(response)
+                    this.userImage = response.data.portrait
+                }).catch(function (error) {
+                    console.log(error);
+                });
+            },
         },
         mounted(){
             if(document.body.clientWidth < 1500){
                 this.collapseChage();
             }
+            this.getUserInfo()
+        },
+        activated() {
+            this.getUserInfo()
         }
     }
 </script>

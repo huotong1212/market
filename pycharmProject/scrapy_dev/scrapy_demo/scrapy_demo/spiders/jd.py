@@ -4,6 +4,8 @@ import re
 
 import scrapy
 from scrapy import cmdline, Request, Selector
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 from scrapy_demo.items import GoodItem
 
@@ -13,6 +15,23 @@ class JdSpider(scrapy.Spider):
     allowed_domains = ['jd.com']
     # start_urls = ['http://jd.com/']
     # cookie_dic = None
+
+    def __init__(self):
+        print('spider init')
+        self.chrome_options = Options()
+        self.chrome_options.add_argument('--headless')
+        self.chrome_options.add_argument('--disable-gpu')
+        # 设置无头版本的Chrome
+        self.browser = webdriver.Chrome(chrome_options=self.chrome_options)
+        # Set the amount of time to wait for a page load to complete
+        # before throwing an error.
+        self.browser.set_page_load_timeout(30)
+
+    def close(spider, reason):
+        print('spider closed',reason)
+        spider.call_close()
+        spider.browser.close()
+
     def start_requests(self):
         start_urls = ['https://search.jd.com/Search?keyword=%E6%89%8B%E6%9C%BA&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&wq=%E6%89%8B%E6%9C%BA&cid2=653&cid3=655&page={}&s=1&click=0'
                           .format(str(i)) for i in range(1,150,2)]

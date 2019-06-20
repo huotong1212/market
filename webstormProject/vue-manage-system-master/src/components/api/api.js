@@ -19,11 +19,11 @@ export const getUser = () => {
 
 //用户注册
 export const register = params => {
-    return axios.post(`${localhost}/user/1`, params)
+    return axios.post(`${localhost}/user/`, params)
 }
 
 //修改用户信息
-export const updateUserInfo = params => { return axios.patch(`${localhost}/users/1/`, params) }
+export const updateUserInfo = params => { return axios.patch(`${localhost}/user/1/`, params) }
 
 //-----------------VerifyCode(验证码)---------------------
 

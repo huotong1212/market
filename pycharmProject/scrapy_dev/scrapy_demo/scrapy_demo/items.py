@@ -41,6 +41,8 @@ class CommentItem(Item):
     rating_id = Field()
     rating = Field()
     time = Field()
+    userImage_url = Field()  # 用户头像图片
+    userImage_path = Field() # 头像本地保存路径
 
 class SanshengItem(Item):
     price = Field()
@@ -53,6 +55,7 @@ class GoodItem(Item):
     price = Field()
     comment_count = Field()
     comments = Field()
+
 
 class GoodCommentItem(Item):
     userId = Field()

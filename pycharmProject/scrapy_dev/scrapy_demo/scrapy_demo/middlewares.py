@@ -5,9 +5,67 @@
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 import random
+import time
 
 from scrapy import signals
 from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
+from scrapy.http import HtmlResponse
+from selenium.common.exceptions import TimeoutException
+
+
+class ChromeSpiderMiddleware(object):
+    def process_request(self, request, spider):
+        '''
+        请求需要被下载时，经过所有下载器中间件的process_request调用
+        :param request:
+        :param spider:
+        :return:
+            None,继续后续中间件去下载；
+            Response对象，停止process_request的执行，开始执行process_response
+            Request对象，停止中间件的执行，将Request重新调度器
+            raise IgnoreRequest异常，停止process_request的执行，开始执行process_exception
+        '''
+        print('middleware------request')
+        # 在spider请求发送之前，启动浏览器，执行脚本，下拉页面
+        if spider.name == 'jd2':
+            try:
+                spider.browser.get(request.url)
+                spider.browser.execute_script('window.scrollTo(0, document.body.scrollHeight)')
+            except TimeoutException as e:
+                print('......超时')
+                spider.browser.execute_script('window.stop()')
+            time.sleep(2)
+            return HtmlResponse(url=spider.browser.current_url, body=spider.browser.page_source,
+                                encoding="utf-8", request=request)
+
+
+
+    def process_response(self, request, response, spider):
+        '''
+        spider处理完成，返回时调用
+        :param response:
+        :param result:
+        :param spider:
+        :return:
+            Response 对象：转交给其他中间件process_response
+            Request 对象：停止中间件，request会被重新调度下载
+            raise IgnoreRequest 异常：调用Request.errback
+        '''
+        print('middleware------response')
+        return response
+
+    def process_exception(self, request, exception, spider):
+        '''
+        当下载处理器(download handler)或 process_request() (下载中间件)抛出异常
+        :param response:
+        :param exception:
+        :param spider:
+        :return:
+            None：继续交给后续中间件处理异常；
+            Response对象：停止后续process_exception方法
+            Request对象：停止中间件，request将会被重新调用下载
+        '''
+        return None
 
 
 class ScrapyDemoSpiderMiddleware(object):

@@ -1,6 +1,9 @@
 //引入vue
 // import Vue from 'vue';
 import axios from 'axios';
+import store from "../../store";
+import cookie from "../static/cookie";
+
 
 //全局状态控制引入
 // import store from '../store/store';
@@ -11,13 +14,13 @@ import axios from 'axios';
 // http request 拦截器
 axios.interceptors.request.use(
   config => {
-    // if (store.state.userInfo.token) {  // 判断是否存在token，如果存在的话，则每个http header都加上token
-    //   config.headers.Authorization = `JWT ${store.state.userInfo.token}`;
-    // }
       console.log('进入了全局请求拦截器')
-      let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6Imh1b3RvbmciLCJleHAiOjE1NjE0NTc1MjEsImVtYWlsIjoiODI0MDExMTQyQHFxLmNvbSJ9.qe9cEMrTqQyWbpsakZdbe-bDUey9f5mNTqgf_37k748"
+      const token = cookie.getCookie('token');
+      if (token) {  // 判断是否存在token，如果存在的话，则每个http header都加上token
       config.headers.Authorization = `JWT ${token}`;
-      return config;
+    }
+
+    return config;
   },
   err => {
     return Promise.reject(err);

@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from rest_framework.validators import UniqueTogetherValidator
 
+from consumers.serializers import ConsumerDetailSerializer
 from .models import  UserFav,UserRemark,UserAddress
 from goods.serializer import GoodsSerializer
 
@@ -36,14 +37,23 @@ class UserRemarkSerializer(serializers.ModelSerializer):
     user = serializers.HiddenField(
         default=serializers.CurrentUserDefault()
     )
+    # test = serializers.SerializerMethodField()
     # read_only=True 这个值只返回给前端不让前端提交
     # write_only=True 这个值只会提交，不会返回给前端
     # format 设置日期格式
     add_time = serializers.DateTimeField(read_only=True, format='%Y-%m-%d %H:%M')
 
+    # def get_test(self, obj):
+    #     print('test',type(obj))
+    #     #         goods_serializer = GoodsSerializer(all_goods,many = True, context={'request': self.context['request']})
+    #     # print('obj.user',type(obj.user))
+    #     userSerializer = ConsumerDetailSerializer(obj.user,many=False,context={'request': self.context['request']})
+    #     return userSerializer.data
+
     class Meta:
         model = UserRemark
         fields = ("user", "message_type", "subject", "message", "file", "id" ,"add_time")
+        # fields = "__all__"
 
 class UserAdressSerializer(serializers.ModelSerializer):
     user = serializers.HiddenField(

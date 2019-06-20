@@ -13,11 +13,18 @@ class ShopCartDetailSerializer(serializers.ModelSerializer):
         fields = ("goods", "nums")
 
 class ShopCartSerializer(serializers.Serializer):
-    # 这里不用ModelSerializer的原因是这里需要使用user goods联合索引，
-    # 如果是ModelSerializer,那么View中继承的CreateMinx中create方法中的验证就会报错
-    #         serializer.is_valid(raise_exception=True)  报错
-    # 这样就不会再执行serializer.save()方法保存了，所有这里必须使用Serializer
-    # 总结，使用联合索引时CreateMinx中的create方法验证不通过，必须使用Serializer，重写create方法
+    # 这里不用ModelSerializer的原因是, 这里需要使用user, goods联合索引
+    #
+    # 我们当然可以使用联合索引来控制唯一性，但问题是，当我们重复添加商品时（只是希望他更新nums字段时（但是实际上是用update方法更新的）），
+    # 第二条就会报错，因为会验证失败，所以我们不能再此使用联合索引，而需要使用更加灵活的Serializer并重写create方法
+    #
+    # 如果是ModelSerializer, 那么重复添加同一个商品时View中继承的CreateMinx中create方法中的验证就会报错 == serializer.is_valid(
+    #     raise_exception=True) == 报错（因为是联合索引）
+    #
+    # 这样就不会再执行serializer.save()
+    # 方法保存了，所有这里必须使用Serializer，重写create方法，而不使用联合索引
+    #
+    # 总结，使用联合索引时，如果需要重复创建商品，但实际上只更新某个字段，CreateMinx中的create方法验证不通过，必须使用Serializer，重写create方法
     user = serializers.HiddenField(
         default=serializers.CurrentUserDefault()
     )
@@ -30,6 +37,7 @@ class ShopCartSerializer(serializers.Serializer):
 
     # 重写create方法，判断是否存在，存在加1，不存在添加数据
     def create(self, validated_data):
+
         # 拿到user,nums,good
         user = self.context['request'].user
         nums = validated_data['nums']

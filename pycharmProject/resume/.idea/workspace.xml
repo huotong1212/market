@@ -1,663 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/apps/myresume/views.py" line="27" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6dfcb6d2-df37-4d02-85a9-1c68870868cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../pymarket/apps/consumers/migrations/0004_auto_20190614_1302.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pymarket/apps/consumers/migrations/0005_auto_20190614_1306.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pymarket/apps/consumers/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pymarket/apps/utils/emailSenter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pymarket/apps/utils/spider.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pymarket/apps/utils/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/resume.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/myresume/adminx.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/myresume/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/myresume/migrations/0002_auto_20190615_1428.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/myresume/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/user/adminx.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/user/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/user/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/commands.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/UEditorSnapscreen.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/addCustomizeButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/addCustomizeCombox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/addCustomizeDialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/charts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/completeDemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/customPluginDemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/customToolbarDemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/customizeDialogPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/customizeToolbarUIDemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/editor_api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/filterRuleDemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/highlightDemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/jqueryCompleteDemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/jqueryValidation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/multiDemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/multiEditorWithOneInstance.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/renderInTable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/resetDemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/sectiondemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/server/getContent.ashx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/server/getContent.asp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/server/getContent.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/server/getContent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/setWidthHeightDemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/simpleDemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/sortableDemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/submitFormDemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/textareaDemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/_examples/uparsedemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/anchor/anchor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/attachment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/attachment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/attachment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/images/alignicon.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/images/alignicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/images/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/images/file-icons.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/images/file-icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/images/icons.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/images/icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/images/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/images/progress.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/images/success.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/attachment/images/success.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/background/background.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/background/background.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/background/background.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/background/images/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/background/images/success.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/charts/chart.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/charts/charts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/charts/charts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/charts/charts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/charts/images/charts0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/charts/images/charts1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/charts/images/charts2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/charts/images/charts3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/charts/images/charts4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/charts/images/charts5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/emotion/emotion.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/emotion/emotion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/emotion/emotion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/emotion/images/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/emotion/images/bface.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/emotion/images/cface.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/emotion/images/fface.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/emotion/images/jxface2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/emotion/images/tface.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/emotion/images/wface.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/emotion/images/yface.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/gmap/gmap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/help/help.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/help/help.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/help/help.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/image/image.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/image/image.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/image/image.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/image/images/alignicon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/image/images/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/image/images/icons.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/image/images/icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/image/images/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/image/images/progress.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/image/images/success.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/image/images/success.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/insertframe/insertframe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/internal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/link/link.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/map/map.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/map/show.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/music/music.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/music/music.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/music/music.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/preview/preview.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/images/addimg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/images/brush.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/images/delimg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/images/delimgH.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/images/empty.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/images/emptyH.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/images/eraser.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/images/redo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/images/redoH.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/images/scale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/images/scaleH.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/images/size.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/images/undo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/images/undoH.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/scrawl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/scrawl.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/scrawl/scrawl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/searchreplace/searchreplace.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/searchreplace/searchreplace.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/snapscreen/snapscreen.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/spechars/spechars.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/spechars/spechars.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/table/dragicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/table/edittable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/table/edittable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/table/edittable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/table/edittd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/table/edittip.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/template/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/template/images/bg.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/template/images/pre0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/template/images/pre1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/template/images/pre2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/template/images/pre3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/template/images/pre4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/template/template.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/template/template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/template/template.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/video/images/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/video/images/center_focus.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/video/images/file-icons.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/video/images/file-icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/video/images/icons.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/video/images/icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/video/images/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/video/images/left_focus.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/video/images/none_focus.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/video/images/progress.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/video/images/right_focus.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/video/images/success.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/video/images/success.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/video/video.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/video/video.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/video/video.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/webapp/webapp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/wordimage/imageUploader.swf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/wordimage/tangram.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/wordimage/wordimage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/dialogs/wordimage/wordimage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/images/addimage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/images/alldeletebtnhoverskin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/images/alldeletebtnupskin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/images/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/images/button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/images/copy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/images/deletedisable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/images/deleteenable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/images/listbackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/images/localimage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/images/music.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/images/rotateleftdisable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/images/rotateleftenable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/images/rotaterightdisable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/images/rotaterightenable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/en/images/upload.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/zh-cn/images/copy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/zh-cn/images/localimage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/zh-cn/images/music.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/zh-cn/images/upload.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/lang/zh-cn/zh-cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/php/Uploader.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/php/action_crawler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/php/action_list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/php/action_upload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/php/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/php/controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/css/ueditor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/css/ueditor.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/dialogbase.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/anchor.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/arrow_down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/arrow_up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/button-bg.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/cancelbutton.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/charts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/cursor_h.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/cursor_h.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/cursor_v.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/cursor_v.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/dialog-title-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/fileScan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/highlighted.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/icons-all.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/icons.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/loaderror.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/lock.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/neweditor-tab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/pagebreak.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/scale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/sortable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/spacer.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/sparator_v.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/table-cell-align.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/tangram-colorpicker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/toolbar_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/unhighlighted.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/upload.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/videologo.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/word.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/default/images/wordpaste.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/themes/iframe.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/SyntaxHighlighter/shCore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/codemirror/codemirror.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/codemirror/codemirror.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/adapters/mootools-adapter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/adapters/prototype-adapter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/adapters/standalone-framework.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/highcharts-more.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/highcharts-more.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/highcharts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/highcharts.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/annotations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/annotations.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/canvas-tools.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/canvas-tools.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/data.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/drilldown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/drilldown.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/exporting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/exporting.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/funnel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/funnel.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/heatmap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/heatmap.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/map.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/no-data-to-display.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/themes/dark-blue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/themes/dark-green.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/themes/gray.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/themes/grid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/highcharts/themes/skies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/jquery-1.10.2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/jquery-1.10.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/jquery-1.10.2.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/video-js/font/vjs.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/video-js/font/vjs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/video-js/font/vjs.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/video-js/font/vjs.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/video-js/video-js.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/video-js/video-js.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/video-js/video-js.swf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/video-js/video.dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/video-js/video.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/webuploader/Uploader.swf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/webuploader/webuploader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/webuploader/webuploader.custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/webuploader/webuploader.custom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/webuploader/webuploader.flashonly.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/webuploader/webuploader.flashonly.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/webuploader/webuploader.html5only.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/webuploader/webuploader.html5only.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/webuploader/webuploader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/webuploader/webuploader.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/webuploader/webuploader.withoutimage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/zeroclipboard/ZeroClipboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/ueditor.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/ueditor.all.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/ueditor.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/ueditor.parse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/ueditor.parse.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/templates/ueditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/templates/ueditor_old.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/test_try.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/widgets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/actions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/amazon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/angel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/aol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/appsfuel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/arcgis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/asana.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/atlassian.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/auth0.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/azuread.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/azuread_b2c.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/azuread_tenant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/battlenet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/beats.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/behance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/belgiumeid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/bitbucket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/box.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/bungie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/changetip.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/chatwork.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/classlink.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/clef.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/coding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/cognito.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/coinbase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/coursera.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/dailymotion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/deezer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/digitalocean.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/discord.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/disqus.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/docker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/douban.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/dribbble.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/drip.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/dropbox.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/echosign.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/edmodo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/elixir.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/email.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/eventbrite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/eveonline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/evernote.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/exacttarget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/facebook.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/fedora.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/fitbit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/five_hundred_px.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/flat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/flickr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/foursquare.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/gae.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/github.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/github_enterprise.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/gitlab.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/globus.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/goclio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/goclioeu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/google.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/google_openidconnect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/instagram.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/itembase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/jawbone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/justgiving.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/kakao.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/keycloak.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/khanacademy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/lastfm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/launchpad.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/legacy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/line.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/linkedin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/live.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/livejournal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/loginradius.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/lyft.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/mailchimp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/mailru.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/mapmyfitness.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/mediawiki.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/meetup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/mendeley.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/microsoft.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/mineid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/mixcloud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/monzo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/moves.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/nationbuilder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/naver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/ngpvan.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/nk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/oauth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/odnoklassniki.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/open_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/open_id_connect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/openshift.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/openstack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/openstackdev.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/openstreetmap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/orbi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/orcid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/patreon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/persona.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/phabricator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/pinterest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/pixelpin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/pocket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/podio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/professionali.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/pushbullet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/qiita.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/qq.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/quizlet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/rdio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/readability.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/reddit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/runkeeper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/salesforce.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/saml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/scistarter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/shimmering.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/shopify.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/sketchfab.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/skyrock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/slack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/soundcloud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/spotify.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/stackoverflow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/steam.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/stocktwits.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/strava.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/stripe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/suse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/taobao.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/telegram.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/thisismyjam.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/trello.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/tripit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/tumblr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/twilio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/twitch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/twitter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/uber.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/ubuntu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/udata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/universe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/untappd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/upwork.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/username.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/vend.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/vimeo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/vk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/weibo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/weixin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/withings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/wunderlist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/xing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/yahoo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/yammer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/yandex.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/zotero.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/pipeline/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/pipeline/debug.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/pipeline/disconnect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/pipeline/mail.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/pipeline/partial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/pipeline/social_auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/pipeline/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/pipeline/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/storage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/store.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/strategy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/actions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/actions/actions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/actions/test_associate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/actions/test_disconnect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/actions/test_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/data/saml_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/data/saml_response.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/legacy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/oauth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/open_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/open_id_connect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_amazon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_angel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_arcgis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_asana.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_atlassian.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_auth0.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_azuread.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_azuread_b2c.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_behance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_bitbucket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_box.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_broken.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_chatwork.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_clef.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_cognito.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_coinbase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_coursera.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_dailymotion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_deezer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_digitalocean.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_disqus.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_dribbble.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_drip.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_dropbox.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_dummy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_edmodo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_elixir.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_email.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_eventbrite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_evernote.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_facebook.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_fitbit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_five_hundred_px.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_flat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_flickr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_foursquare.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_github.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_github_enterprise.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_gitlab.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_globus.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_google.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_instagram.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_itembase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_kakao.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_keycloak.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_khanacademy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_linkedin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_live.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_livejournal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_lyft.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_mapmyfitness.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_mineid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_mixcloud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_nationbuilder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_naver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_ngpvan.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_orbi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_patreon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_phabricator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_pinterest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_podio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_qiita.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_quizlet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_readability.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_reddit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_saml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_scistarter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_sketchfab.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_skyrock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_slack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_soundcloud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_spotify.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_stackoverflow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_steam.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_stocktwits.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_strava.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_stripe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_taobao.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_thisismyjam.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_tripit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_tumblr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_twitch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_twitter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_uber.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_udata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_universe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_upwork.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_username.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_vk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_wunderlist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_xing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_yahoo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_yammer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_yandex.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_zotero.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/pipeline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/requirements-base.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/requirements-pypy.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/requirements-python2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/requirements-python3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/strategy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/test_exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/test_partial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/test_pipeline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/test_storage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/test_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/testkey.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scrapy_dev/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scrapy_dev/scrapy_demo/simplebook.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scrapy_dev/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../t1nkuy/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../t1nkuy/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../t1nkuy/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../t1nkuy/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/storage/head.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/myresume/migrations/0011_auto_20190619_2233.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/user/migrations/0003_auto_20190619_1006.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/user/migrations/0004_auto_20190619_2233.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/static/cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/utils/customValidate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/utils/filter_rules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/utils/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/store/moduleA/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/store/moduleA/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/store/moduleA/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/store/moduleA/mutation-types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/store/moduleA/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/store/moduleA/state.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pymarket/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pymarket/apps/consumers/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/consumers/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/apps/consumers/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/consumers/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pymarket/apps/consumers/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/consumers/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pymarket/apps/consumers/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/consumers/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/apps/consumers/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/consumers/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pymarket/apps/consumers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/consumers/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/apps/goods/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/goods/filters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pymarket/apps/goods/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/goods/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pymarket/apps/goods/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/goods/serializer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pymarket/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/goods/views.py" afterDir="false" />
@@ -665,6 +34,25 @@
       <change beforePath="$PROJECT_DIR$/../pymarket/apps/user_operation/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/user_operation/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pymarket/pymarket/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/pymarket/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pymarket/pymarket/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/pymarket/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/myresume/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/myresume/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/myresume/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/myresume/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/myresume/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/myresume/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/myresume/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/myresume/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/myresume/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/myresume/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/myresume/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/myresume/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/myresume/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/myresume/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/singals.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/singals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/ailiSmS.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/ailiSmS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/emailSenter.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/emailSenter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/permissions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resume/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/resume/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resume/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/resume/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scrapy_dev/scrapy_demo/scrapy_demo/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy_dev/scrapy_demo/scrapy_demo/items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scrapy_dev/scrapy_demo/scrapy_demo/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy_dev/scrapy_demo/scrapy_demo/middlewares.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scrapy_dev/scrapy_demo/scrapy_demo/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy_dev/scrapy_demo/scrapy_demo/pipelines.py" afterDir="false" />
@@ -682,23 +70,19 @@
       <change beforePath="$PROJECT_DIR$/../t1nkuy/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../t1nkuy/apps/goods/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../t1nkuy/apps/trade/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../t1nkuy/apps/trade/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../t1nkuy/apps/users/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/../t1nkuy/apps/users/signals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/.babelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/proxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/proxy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/src/components/common/current-loc/current-loc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/src/components/common/current-loc/current-loc.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/cart/cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/cart/cart.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/head/head.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/head/head.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/index/new.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/index/new.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/index/series-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/index/series-list.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/list/current-loc/current-loc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/list/current-loc/current-loc.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/list/product-list/productList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/list/product-list/productList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/login/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/login/login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/productDetail/hotSales.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/productDetail/hotSales.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/productDetail/productDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/src/views/productDetail/productDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/axios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/axios/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/common/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/common/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/common/Tags.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/common/Tags.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/page/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/page/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/page/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/page/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/MyResume.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/MyResume.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/RetrieveResume.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/RetrieveResume.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/Skills.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/Skills.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/user/userProfile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/user/userProfile.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -706,32 +90,70 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/resume$tests.coverage" NAME="tests Coverage Results" MODIFIED="1560923303896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/user" />
+    <SUITE FILE_PATH="coverage/resume$settings.coverage" NAME="settings Coverage Results" MODIFIED="1560652515078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/resume" />
+    <SUITE FILE_PATH="coverage/resume$urls.coverage" NAME="urls Coverage Results" MODIFIED="1560586813292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/resume" />
+    <SUITE FILE_PATH="coverage/resume$ailiSmS.coverage" NAME="ailiSmS Coverage Results" MODIFIED="1560678999919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
+    <SUITE FILE_PATH="coverage/resume$tests__1_.coverage" NAME="tests (1) Coverage Results" MODIFIED="1560677227490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/myresume" />
+  </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="resume" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/myresume/views.py">
+        <entry file="file://$PROJECT_DIR$/resume/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="-3364">
+              <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/utils/permissions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/myresume/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
+              <folding>
+                <element signature="e#0#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/myresume/serializers.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="46" column="15" lean-forward="true" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/myresume/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="336">
+              <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
               <folding>
-                <element signature="e#1#30#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -752,6 +174,18 @@
       <find>ForeignK</find>
       <find>permissions</find>
       <find>import pymysql</find>
+      <find>Aut</find>
+      <find>authentication_B</find>
+      <find>get_ob</find>
+      <find># queryset = Expectation.objects.filter(resume_id__user=)</find>
+      <find>ManyToManyField</find>
+      <find>Base Serializer save......</find>
+      <find>is_valid.......</find>
+      <find>senderrs</find>
+      <find>验证码过期</find>
+      <find>get_user_model</find>
+      <find>User</find>
+      <find>get_user_model()</find>
     </findStrings>
     <replaceStrings>
       <replace>User</replace>
@@ -764,16 +198,28 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/myresume/models.py" />
-        <option value="$PROJECT_DIR$/apps/myresume/views.py" />
-        <option value="$PROJECT_DIR$/apps/user/models.py" />
-        <option value="$PROJECT_DIR$/resume/urls.py" />
-        <option value="$PROJECT_DIR$/resume/settings.py" />
-        <option value="$PROJECT_DIR$/apps/myresume/models.py" />
         <option value="$PROJECT_DIR$/apps/user/adminx.py" />
-        <option value="$PROJECT_DIR$/apps/myresume/adminx.py" />
         <option value="$PROJECT_DIR$/resume/__init__.py" />
+        <option value="$PROJECT_DIR$/apps/myresume/apps.py" />
+        <option value="$PROJECT_DIR$/apps/myresume/filters.py" />
+        <option value="$PROJECT_DIR$/apps/myresume/adminx.py" />
+        <option value="$PROJECT_DIR$/apps/user/singals.py" />
+        <option value="$PROJECT_DIR$/apps/user/apps.py" />
+        <option value="$PROJECT_DIR$/apps/myresume/tests.py" />
+        <option value="D:/python/Anaconda3/Lib/site-packages/rest_framework/serializers.py" />
+        <option value="$PROJECT_DIR$/apps/utils/ailiSmS.py" />
         <option value="D:/python/Anaconda3/Lib/site-packages/django/db/backends/mysql/operations.py" />
+        <option value="$PROJECT_DIR$/apps/utils/emailSenter.py" />
+        <option value="$PROJECT_DIR$/resume/settings.py" />
+        <option value="$PROJECT_DIR$/apps/user/tests.py" />
+        <option value="$PROJECT_DIR$/apps/user/views.py" />
+        <option value="$PROJECT_DIR$/resume/urls.py" />
+        <option value="$PROJECT_DIR$/apps/user/models.py" />
+        <option value="$PROJECT_DIR$/apps/user/serializers.py" />
         <option value="$PROJECT_DIR$/apps/myresume/serializers.py" />
+        <option value="$PROJECT_DIR$/apps/utils/permissions.py" />
+        <option value="$PROJECT_DIR$/apps/myresume/views.py" />
+        <option value="$PROJECT_DIR$/apps/myresume/models.py" />
       </list>
     </option>
   </component>
@@ -811,26 +257,23 @@
               <item name="resume" type="b2602c69:ProjectViewProjectNode" />
               <item name="resume" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="myresume" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="resume" type="b2602c69:ProjectViewProjectNode" />
               <item name="resume" type="462c0819:PsiDirectoryNode" />
               <item name="extra_apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
+              <item name="resume" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
+              <item name="resume" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="resume" type="b2602c69:ProjectViewProjectNode" />
@@ -856,8 +299,9 @@
       <recent name="D:\market\pycharmProject\resume\apps" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\market\pycharmProject\resume\apps\user" />
       <recent name="D:\market\pycharmProject\resume\apps\myresume" />
+      <recent name="D:\market\pycharmProject\resume\apps" />
+      <recent name="D:\market\pycharmProject\resume\apps\user" />
       <recent name="D:\market\pycharmProject\resume" />
     </key>
   </component>
@@ -873,7 +317,117 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django server.resume">
+    <configuration name="ailiSmS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="resume" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/ailiSmS.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="resume" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/resume" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/resume/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="resume" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/myresume" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/myresume/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="resume" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/user" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/user/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="urls" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="resume" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/resume" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/resume/urls.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="resume" type="Python.DjangoServer" factoryName="Django server">
       <module name="resume" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -898,6 +452,15 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tests" />
+        <item itemvalue="Python.ailiSmS" />
+        <item itemvalue="Python.tests (1)" />
+        <item itemvalue="Python.settings" />
+        <item itemvalue="Python.urls" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -912,32 +475,53 @@
       <workItem from="1560426597981" duration="4897000" />
       <workItem from="1560479158069" duration="4536000" />
       <workItem from="1560510772343" duration="1008000" />
-      <workItem from="1560573572853" duration="5414000" />
+      <workItem from="1560573572853" duration="19538000" />
+      <workItem from="1560645418122" duration="25467000" />
+      <workItem from="1560749771492" duration="10207000" />
+      <workItem from="1560822219430" duration="21009000" />
+      <workItem from="1560908387243" duration="18506000" />
     </task>
+    <task id="LOCAL-00001" summary="commit resume">
+      <created>1560581366716</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560581366716</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15855000" />
+    <option name="totallyTimeSpent" value="105168000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15198386" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.15870881" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.50141644" side_tool="true" weight="0.15467384" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43909347" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49831876" weight="0.33286119" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="manage.py@resume" order="10" weight="0.41359773" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="manage.py@resume" order="10" weight="0.36402267" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5016812" side_tool="true" weight="0.33144477" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.23229462" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -947,134 +531,422 @@
       <window_info anchor="right" id="SciView" order="4" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.15870881" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.50141644" side_tool="true" weight="0.15467384" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43909347" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49831876" weight="0.33286119" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="manage.py@resume" order="10" weight="0.36402267" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5016812" side_tool="true" weight="0.33144477" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.23229462" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="aiXcoder" order="3" side_tool="true" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit resume" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit resume" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/xadmin/static/xadmin/js/xadmin.plugin.editable.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/contrib/auth/models.py">
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/coreapi/auth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-530">
-          <caret line="288" column="6" selection-start-line="288" selection-start-column="6" selection-end-line="288" selection-end-column="6" />
+        <state relative-caret-position="48">
+          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework-stubs/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/myresume/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+          <folding>
+            <element signature="e#217#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework_jwt/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework_jwt/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework_jwt/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/apps/registry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/datetime.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="155" column="23" lean-forward="true" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/aliyunsdkcore/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="432" selection-start-line="432" selection-end-line="432" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/smtplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1450">
+          <caret line="889" column="23" selection-start-line="889" selection-start-column="15" selection-end-line="889" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/utils/yunpian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-331" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/utils/ailiSmS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding>
+            <element signature="e#36#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/db/backends/mysql/operations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2467">
+          <caret line="145" column="28" selection-start-line="145" selection-start-column="28" selection-end-line="145" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/utils/emailSenter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="182" column="41" lean-forward="true" selection-start-line="182" selection-start-column="41" selection-end-line="182" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/myresume/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/1244044897/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="180" column="4" selection-start-line="180" selection-start-column="4" selection-end-line="180" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/db/models/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="143" selection-start-line="143" selection-end-line="143" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/db/models/options.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="344" selection-start-line="344" selection-end-line="344" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/viewsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/core/handlers/exception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/contrib/sessions/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/utils/deprecation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/permissions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="134" column="6" selection-start-line="134" selection-start-column="6" selection-end-line="134" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5768">
+          <caret line="220" selection-start-line="220" selection-end-line="220" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/generics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/datetime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="769" column="9" selection-start-line="769" selection-end-line="769" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/utils/test.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="236" selection-start-line="236" selection-end-line="236" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="494" selection-start-line="494" selection-end-line="494" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/dateutil/relativedelta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/exceptions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/pathlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="528" selection-start-line="528" selection-end-line="528" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/db/models/sql/compiler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/routers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-623">
+          <caret line="128" column="6" selection-start-line="128" selection-start-column="6" selection-end-line="128" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/contrib/auth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="169" selection-start-line="169" selection-end-line="169" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resume/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="74">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
           <folding>
             <element signature="e#630#643#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/myresume/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/apps/user/singals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/apps/user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3060">
+          <caret line="124" column="17" selection-start-line="124" selection-start-column="6" selection-end-line="124" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resume/settings.py">
+    <entry file="file://$PROJECT_DIR$/apps/myresume/filters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/user/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="51" column="28" lean-forward="true" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/xadmin/sites.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user/adminx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="25" />
+        <state relative-caret-position="140">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="8" />
           <folding>
-            <element signature="e#217#230#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/myresume/adminx.py">
+    <entry file="file://$PROJECT_DIR$/apps/user/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="65" column="57" lean-forward="true" selection-start-line="65" selection-start-column="57" selection-end-line="65" selection-end-column="57" />
-          <folding>
-            <element signature="e#217#230#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/db/backends/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/db/backends/mysql/operations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="145" column="28" selection-start-line="145" selection-start-column="28" selection-end-line="145" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/pymysql/err.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/myresume/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <element signature="e#1#30#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="84">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/myresume/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="140">
+          <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/myresume/serializers.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="46" column="15" lean-forward="true" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/myresume/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3364">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/utils/permissions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

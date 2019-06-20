@@ -15,7 +15,7 @@ class GoodsFilter(django_filters.rest_framework.FilterSet):
     pricemax = django_filters.NumberFilter(name='shop_price', lookup_expr='lte')
     top_category = django_filters.NumberFilter(method='top_category_filter')
 
-
+    # 返回对应级别商品类目下所有的商品
     def top_category_filter(self, queryset, name, value):
         return queryset.filter(Q(category_id=value)|Q(category__parent_category_id=value)|Q(category__parent_category__parent_category_id=value))
 

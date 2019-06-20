@@ -12,44 +12,34 @@
             <el-card class="box-card box-card-left" shadow="hover">
                 <div slot="header" class="clearfix">
                     <span class="text">基本信息</span>
-                    <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+                    <!--                    <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>-->
                 </div>
 
                 <!--UserResume表单-->
                 <div class="form-box align-center">
-                    <el-form ref="form" :model="form" label-width="80px">
+                    <el-form ref="form" :model="userResume" label-width="80px">
                         <el-form-item label="姓名">
-                            <el-input v-model="form.name"></el-input>
+                            <el-input v-model="userResume.username"></el-input>
                         </el-form-item>
-<!--                        <el-form-item label="选择器">-->
-<!--                            <el-select v-model="form.region" placeholder="请选择">-->
-<!--                                <el-option key="male" label="男" value="bbk"></el-option>-->
-<!--                                <el-option key="xtc" label="小天才" value="xtc"></el-option>-->
-<!--                            </el-select>-->
-<!--                        </el-form-item>-->
-
                         <el-form-item label="性别">
-                            <el-radio-group v-model="form.resource">
+                            <el-radio-group v-model="userResume.gender">
                                 <el-radio label="male">男</el-radio>
                                 <el-radio label="female">女</el-radio>
                             </el-radio-group>
                         </el-form-item>
                         <el-form-item label="出身日期">
                             <el-col :span="11">
-                                <el-date-picker type="date" placeholder="选择日期" v-model="form.date1" style="width: 100%;"></el-date-picker>
+                                <el-date-picker value-format="yyyy-MM-dd" type="date" placeholder="选择日期"
+                                                v-model="userResume.birthday" style="width: 100%;"></el-date-picker>
                             </el-col>
-<!--                            <el-col class="line" :span="2">-</el-col>-->
-<!--                            <el-col :span="11">-->
-<!--                                <el-time-picker placeholder="选择时间" v-model="form.date2" style="width: 100%;"></el-time-picker>-->
-<!--                            </el-col>-->
                         </el-form-item>
 
                         <el-form-item label="邮箱">
-                            <el-input v-model="form.name"></el-input>
+                            <el-input v-model="userResume.email"></el-input>
                         </el-form-item>
 
                         <el-form-item label="手机号">
-                            <el-input v-model="form.name"></el-input>
+                            <el-input v-model="userResume.mobile"></el-input>
                         </el-form-item>
                     </el-form>
                 </div>
@@ -71,9 +61,9 @@
                         <el-form-item label="城市">
                             <el-input v-model="form.name"></el-input>
                         </el-form-item>
-<!--                        <el-form-item label="到岗时间">-->
-<!--                            <el-input v-model="form.name"></el-input>-->
-<!--                        </el-form-item>-->
+                        <!--                        <el-form-item label="到岗时间">-->
+                        <!--                            <el-input v-model="form.name"></el-input>-->
+                        <!--                        </el-form-item>-->
                         <el-form-item label="到岗时间">
                             <el-select v-model="form.region" placeholder="请选择">
                                 <el-option key="1" label="一个月内到岗" value="一个月内到岗"></el-option>
@@ -84,13 +74,15 @@
 
                         <el-form-item label="薪资范围">
                             <el-col :span="10"> 最低（K）：
-                                <el-input-number v-model="form.date" controls-position="right" @change="handleChange" :min="1" :max="10">
+                                <el-input-number v-model="form.date" controls-position="right" @change="handleChange"
+                                                 :min="1" :max="10">
 
                                 </el-input-number>
                             </el-col>
                             <el-col class="line" :span="1">-</el-col>
                             <el-col :span="11"> 最高（K）：
-                                <el-input-number v-model="form.date" controls-position="right" @change="handleChange" :min="1" :max="10">
+                                <el-input-number v-model="form.date" controls-position="right" @change="handleChange"
+                                                 :min="1" :max="10">
                                 </el-input-number>
 
                             </el-col>
@@ -200,11 +192,13 @@
                     </el-form-item>
                     <el-form-item label="日期时间">
                         <el-col :span="11">
-                            <el-date-picker type="date" placeholder="选择日期" v-model="form.date1" style="width: 100%;"></el-date-picker>
+                            <el-date-picker type="date" placeholder="选择日期" v-model="form.date1"
+                                            style="width: 100%;"></el-date-picker>
                         </el-col>
                         <el-col class="line" :span="2">-</el-col>
                         <el-col :span="11">
-                            <el-time-picker placeholder="选择时间" v-model="form.date2" style="width: 100%;"></el-time-picker>
+                            <el-time-picker placeholder="选择时间" v-model="form.date2"
+                                            style="width: 100%;"></el-time-picker>
                         </el-col>
                     </el-form-item>
                     <el-form-item label="城市级联">
@@ -247,14 +241,17 @@
     import ProjectExperience from "./ProjectExperience";
     import Skills from "./Skills";
     import SelfAppraise from "./SelfAppraise";
+    import customValidate from "../utils/customValidate";
+    import cookie from "../static/cookie";
 
     export default {
         name: 'createResume',
-        data: function(){
+        data: function () {
             return {
+                resumeId: '',
                 editVisible: false,
                 textarea: '',
-                options:[
+                options: [
                     {
                         value: 'guangdong',
                         label: '广东省',
@@ -320,9 +317,37 @@
                 userResume: {
                     name: '',
                     language: '',
-                    // address: ''
+                    username: '',
+                    mobile: '',
+                    email: '',
+                    gender: '',
+                    birthday: '',
+                },
+                userResumeRules: {
+                    username: [
+                        {required: true, message: '请输入姓名', trigger: 'blur'},
+                        {min: 2, max: 8, message: '长度在 2 到 8 个字符'}
+                    ],
+                    mobile: [
+                        {required: true, message: '请输入手机号码', trigger: 'blur'},
+                        {validator: customValidate.isMobile, trigger: 'blur'}
+                    ],
+                    email: [
+                        {required: true, message: '请输入邮箱地址', trigger: 'blur'},
+                        {validator: customValidate.isEmail, trigger: 'blur'}
+                    ],
+                    gender: [
+                        {required: true, message: '请输入验证码', trigger: 'blur'},
+                    ],
+                    birthday: [
+                        {required: true, message: '请输入出生年月', trigger: 'blur'},
+                    ],
                 },
                 activeNames: ['1'],
+                // userResume:{
+                //
+                //
+                // }
             }
         },
         methods: {
@@ -332,14 +357,14 @@
             // 保存编辑
             saveEdit() {
                 this.editVisible = false;
-                this.$message.success(`修改第 ${this.idx+1} 行成功`);
-                if(this.tableData[this.idx].id === this.id){
+                this.$message.success(`修改第 ${this.idx + 1} 行成功`);
+                if (this.tableData[this.idx].id === this.id) {
                     this.$set(this.tableData, this.idx, this.form);
-                }else{
-                    for(let i = 0; i < this.tableData.length; i++){
-                        if(this.tableData[i].id === this.id){
+                } else {
+                    for (let i = 0; i < this.tableData.length; i++) {
+                        if (this.tableData[i].id === this.id) {
                             this.$set(this.tableData, i, this.form);
-                            return ;
+                            return;
                         }
                     }
                 }
@@ -351,20 +376,31 @@
             handleChange(val) {
                 console.log(this.activeNames)
                 console.log(val);
+            },
+            getResumeInfo() {
+                // this.resumeId = this.$store.state.a.resumeId;
+                this.resumeId = cookie.getCookie('resumeId');
+                console.log('-------getResumeId', this.resumeId)
             }
         },
-        components:{
-            'Education':Education,
-            'WorkExperience':WorkExperience,
+        components: {
+            'Education': Education,
+            'WorkExperience': WorkExperience,
             'ProjectExperience': ProjectExperience,
-            'Skills':Skills,
-            'SelfAppraise':SelfAppraise,
+            'Skills': Skills,
+            'SelfAppraise': SelfAppraise,
+        },
+        created() {
+            this.getResumeInfo()
+        },
+        activated() {
+            this.getResumeInfo()
         }
     }
 </script>
 <style scoped>
     .tform {
-        font-family: "16px Medium","Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+        font-family: "16px Medium", "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
         font-size: 16px;
     }
 

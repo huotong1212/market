@@ -14,7 +14,7 @@
 import xadmin
 from xadmin import views
 
-from .models import UserResume,SkillCategory,Expection,Education,WorkExperience,ProjectExperience,Skills,SelfAppraise
+from .models import UserResume,SkillCategory,Expectation,Education,WorkExperience,ProjectExperience,Skills,SelfAppraise
 
 
 class BaseSetting(object):
@@ -55,7 +55,7 @@ class SelfAppraiseAdmin(object):
 
 xadmin.site.register(UserResume,UserResumeAdmin)
 xadmin.site.register(SkillCategory,SkillCategoryAdmin)
-xadmin.site.register(Expection,ExpectionAdmin)
+xadmin.site.register(Expectation,ExpectionAdmin)
 xadmin.site.register(Education,EducationAdmin)
 xadmin.site.register(WorkExperience,WorkExperienceAdmin)
 xadmin.site.register(ProjectExperience,ProjectExperienceAdmin)

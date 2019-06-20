@@ -62,7 +62,8 @@ DEFAULT_REQUEST_HEADERS = {
 DOWNLOADER_MIDDLEWARES = {
    # 'scrapy_demo.middlewares.ScrapyDemoDownloaderMiddleware': 543,
    # 'scrapy.downloadermiddleware.useragent.UserAgentMiddleware': None,
-   'scrapy_demo.middlewares.MyUserAgentMiddleware': 400,
+   # 'scrapy_demo.middlewares.MyUserAgentMiddleware': 400,
+   # 'scrapy_demo.middlewares.ChromeSpiderMiddleware': 450,
 }
 
 # Enable or disable extensions
@@ -73,10 +74,17 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
+# ITEM_PIPELINES = {
+#    # 'scrapy_demo.pipelines.ScrapyDemoPipeline': 300,
+#    'scrapy_demo.pipelines.MongoPipeline':200,
+# }
+
+# 同时启用图片和文件管道
 ITEM_PIPELINES = {
-   # 'scrapy_demo.pipelines.ScrapyDemoPipeline': 300,
-   'scrapy_demo.pipelines.MongoPipeline':200,
-}
+                  # 'scrapy_demo.pipelines.UserImagePipeline': 300,
+                  # 'scrapy.pipelines.files.FilesPipeline': 2,
+                  'scrapy_demo.pipelines.MongoPipeline': 200,
+                 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -100,6 +108,23 @@ AUTOTHROTTLE_DEBUG = False
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 DEPTH_LIMIT = 0
+
+# FILES_STORE = 'D:\spider\\files'  # 文件存储路径
+IMAGES_STORE = 'D:\spider\images' # 图片存储路径
+
+# 避免下载最近90天已经下载过的文件内容
+# FILES_EXPIRES = 90
+# 避免下载最近90天已经下载过的图像内容
+# IMAGES_EXPIRES = 30
+
+# 设置图片缩略图
+# IMAGES_THUMBS = {
+#     'small': (50, 50),
+#     'big': (250, 250),
+# }
+# 图片过滤器，最小高度和宽度，低于此尺寸不下载
+# IMAGES_MIN_HEIGHT = 110
+# IMAGES_MIN_WIDTH = 110
 
 MONGO_URI = 'mongodb://localhost:27017'
 MONGO_DB = "webpack"

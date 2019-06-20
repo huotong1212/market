@@ -10,6 +10,7 @@ import 'element-ui/lib/theme-chalk/index.css'; // 默认主题
 import './assets/css/icon.css';
 import './components/common/directives';
 import "babel-polyfill";
+import store from './store'
 
 Vue.config.productionTip = false
 Vue.use(VueI18n);
@@ -19,6 +20,8 @@ Vue.use(ElementUI, {
 
 // 全局引入拦截器
 import './components/axios/';
+import {isEmpty} from "element-ui/src/utils/util";
+import cookie from "./components/static/cookie";
 Vue.prototype.$axios = axios;
 
 const i18n = new VueI18n({
@@ -28,8 +31,13 @@ const i18n = new VueI18n({
 
 //使用钩子函数对路由进行权限跳转
 router.beforeEach((to, from, next) => {
-    const role = localStorage.getItem('ms_username');
-    if (!role ) {
+    // console.log(store);
+    // console.log(store.state.a.userInfo);
+    const role = cookie.getCookie('username');
+    //debugger
+    console.log('router',role)
+    // 如果为空，登录或注册
+    if (isEmpty(role) ) {
         if (['/login','/register','/retrieve','/setPassword'].find((path)=>path == to.path)){
             next();
         }else{
@@ -53,6 +61,7 @@ router.beforeEach((to, from, next) => {
 
 new Vue({
     router,
+    store,
     i18n,
     render: h => h(App)
 }).$mount('#app')

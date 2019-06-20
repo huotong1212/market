@@ -66,6 +66,7 @@ class IndexCategorySerializer(serializers.ModelSerializer):
     ad_goods = serializers.SerializerMethodField()
 
     def get_ad_goods(self, obj):
+        print('get_ad_goods',obj.id)
         goods_json = {}
         ad_goods = IndexAd.objects.filter(category_id=obj.id, )
         if ad_goods:

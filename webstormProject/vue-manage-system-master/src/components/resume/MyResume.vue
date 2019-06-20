@@ -69,15 +69,12 @@
 
         <!-- 创建简历弹出框 -->
         <el-dialog title="创建简历" :visible.sync="createVisible" width="30%">
-            <el-form ref="form" :model="form" label-width="80px">
-                <!--                    <el-form-item label="日期">-->
-                <!--                        <el-date-picker type="date" placeholder="选择日期" v-model="form.date" value-format="yyyy-MM-dd" style="width: 100%;"></el-date-picker>-->
-                <!--                    </el-form-item>-->
-                <el-form-item label="简历名称" placeholder="请输入简历名称">
-                    <el-input v-model="userResume.name"></el-input>
+            <el-form ref="Resume" :rules="ResumeRules" :model="Resume" status-icon label-width="80px">
+                <el-form-item label="简历名称"  prop="name">
+                    <el-input v-model="Resume.name" placeholder="请输入简历名称"></el-input>
                 </el-form-item>
                 <el-form-item label="语言">
-                    <el-select v-model="userResume.language" placeholder="请选择语言类型">
+                    <el-select v-model="Resume.language" placeholder="请选择语言类型" prop="language">
                         <el-option label="中文" value="0"></el-option>
                         <el-option label="英语" value="1"></el-option>
                         <el-option label="日语" value="2"></el-option>
@@ -86,16 +83,20 @@
 
             </el-form>
             <span slot="footer" class="dialog-footer">
-                <el-button @click="editVisible = false">取 消</el-button>
-                <el-button type="primary" @click="createUserResume">确 定</el-button>
+                <el-button @click="createVisible = false">取 消</el-button>
+                <el-button type="primary" @click="createUserResume('Resume')">确 定</el-button>
             </span>
         </el-dialog>
     </div>
 </template>
 
 <script>
+    import customValidate from "../utils/customValidate";
+    import {createUserResume, getUserResume} from "../api/api";
+    import cookie from "../static/cookie";
+
     export default {
-        name: 'basetable',
+        name: 'MyResume',
         data() {
             return {
                 url: './vuetable.json',
@@ -116,11 +117,19 @@
                 },
                 idx: -1,
                 id: -1,
-                userResume: {
+                Resume: {
                     name: '',
                     language: '',
-                    // address: ''
                 },
+                ResumeRules: {
+                    name: [
+                        {required: true, message: '请输入简历名称', trigger: 'blur'},
+                        {max: 10, message: '长度在 30 个字符内'}
+                    ],
+                    language: [
+                        {required: true, message: '请选择语言', trigger: 'blur'},
+                    ],
+                }
             }
         },
         created() {
@@ -220,11 +229,38 @@
                 }
             },
             // 创建简历
-            createUserResume() {
-                console.log(this.$router) //vuerouter对象
-                console.log(this.$route) //创建的routes路由
-                this.createVisible = false;
-                this.$router.push({ path: '../resume', params: { userId: '123' }})
+            createUserResume(formName) {
+                this.$refs[formName].validate((valid) => {
+                    console.log('valid',valid)
+                    if (valid) {
+                        console.log('Resume',this.Resume)
+                        // this.$refs[formName].resetFields();//将form表单重置
+                        createUserResume(
+                            this.Resume
+                        ).then((response) => {
+                            console.log('createResume',response);
+                            //本地存储用户信息
+                            cookie.setCookie('resumeId', response.data.id, 7);
+
+                            //存储在store
+                            // 更新store数据
+                            this.$store.dispatch('setResumeId', response.data.id);
+                            //跳转到创建页面
+                            console.log(this.$router) //vuerouter对象
+                            console.log(this.$route) //创建的routes路由
+                            this.createVisible = false;
+                            this.$router.push({ path: '../resume', params: { userId: '123' }})
+                        }).catch(function (error) {
+                            console.log(error);
+                        });
+                    } else {
+                        console.log('error submit!!');
+                        return false;
+                    }
+                });
+
+
+
             },
             // 确定删除
             deleteRow() {

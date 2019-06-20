@@ -1,16 +1,15 @@
-
 import re
 from datetime import datetime, timedelta
 
 from rest_framework.validators import UniqueValidator
 
-from consumers.models import VerifyCode
+from consumers.models import VerifyCode, Role, Authority
 from pymarket import settings
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
-
 User = get_user_model()
+
 
 class SMSSerializer(serializers.Serializer):
     '''
@@ -30,20 +29,22 @@ class SMSSerializer(serializers.Serializer):
             raise serializers.ValidationError("用户已经存在")
 
         # 验证手机号是否合法
-        if not re.match(settings.REGEX_MOBILE,mobile):
+        if not re.match(settings.REGEX_MOBILE, mobile):
             raise serializers.ValidationError('手机号码非法')
 
         # 验证验证码发送频率
-        one_minute_ago = datetime.now() - timedelta(hours=0,minutes=1,seconds =0)
-        if VerifyCode.objects.filter(add_time__gt=one_minute_ago,mobile=mobile).count():
+        one_minute_ago = datetime.now() - timedelta(hours=0, minutes=1, seconds=0)
+        if VerifyCode.objects.filter(add_time__gt=one_minute_ago, mobile=mobile).count():
             raise serializers.ValidationError('请超过60s后再次发送')
 
         return mobile
+
 
 class ConsumerDetailSerializer(serializers.ModelSerializer):
     '''
     负责返回用户详情页的信息
     '''
+
     class Meta:
         model = User
         fields = ("name", "birthday", "mobile", "gender", "email")
@@ -53,7 +54,7 @@ class ConsumerRegSerializer(serializers.ModelSerializer):
     '''
     负责用户注册时的初始化验证操作
     '''
-    code = serializers.CharField(required=True, write_only=True, max_length=4, min_length=4,label="验证码",
+    code = serializers.CharField(required=True, write_only=True, max_length=4, min_length=4, label="验证码",
                                  error_messages={
                                      "blank": "请输入验证码",
                                      "required": "请输入验证码",
@@ -65,7 +66,7 @@ class ConsumerRegSerializer(serializers.ModelSerializer):
                                      validators=[UniqueValidator(queryset=User.objects.all(), message="用户已经存在")])
 
     password = serializers.CharField(
-        style={'input_type': 'password'},help_text="密码", label="密码", write_only=True,
+        style={'input_type': 'password'}, help_text="密码", label="密码", write_only=True,
     )
 
     # def create(self, validated_data):
@@ -107,11 +108,34 @@ class ConsumerRegSerializer(serializers.ModelSerializer):
         fields = ("username", "code", "mobile", "password")
 
 
+class AuthoritySerializer(serializers.ModelSerializer):
+    '''
+    序列化用户权限数据
+    '''
+
+    class Meta:
+        model = Authority
+        fields = ("name", "desc")
 
 
+class RoleSerializer(serializers.ModelSerializer):
+    '''
+    序列化角色数据
+    '''
+    authority = AuthoritySerializer(many=True)
+
+    class Meta:
+        model = Role
+        fields = ("name", "desc", "authority")
 
 
+class PermissionSerializer(serializers.ModelSerializer):
+    '''
+    负责返回用户序列化后的用户角色信息和其对应的权限数据
+    '''
 
+    roles = RoleSerializer(many=True)
 
-
-
+    class Meta:
+        model = User
+        fields = ("username", "roles")

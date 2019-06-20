@@ -15,11 +15,11 @@
 
                 <!--Skills-->
                 <div class="e-rate" v-for="skill of item">
-                    <el-input disabled="true"  placeholder="请输入内容" v-model="skill.skill_desc" style="width: 70%">
+                    <el-input :disabled="true"  placeholder="请输入内容" v-model="skill.skill_desc" style="width: 70%">
                         <template slot="prepend">{{skill.skill_tag}}</template>
                     </el-input>
                     &emsp;&emsp;&emsp;
-                    <el-rate disabled="true" class="e-rate" v-model="skill.skill_level" show-text :max=4 :texts="texts">
+                    <el-rate :disabled="true" class="e-rate" v-model="skill.skill_level" show-text :max=4 :texts="texts">
                     </el-rate>
                     &ensp;&ensp;&ensp;&ensp;
                     <el-button type="text" icon="el-icon-edit" >编辑</el-button>

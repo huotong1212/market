@@ -13,7 +13,7 @@ class GoodsFilter(filters.FilterSet):
     # contains 模糊查询（like） i忽略大小写
     name = filters.CharFilter(field_name="name", lookup_expr='icontains')
     #
-    top_category = filters.NumberFilter(method='top_category_filter')
+    top_category = filters.NumberFilter(field_name="top_category",method='top_category_filter')
 
     def top_category_filter(self,queryset,name,value):
         # category是外键 category_id找到对应的外键表的id(其实category_id是在数据库中保存的外键名)

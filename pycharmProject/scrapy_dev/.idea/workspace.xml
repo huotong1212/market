@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a0e548f3-2a25-4194-9d50-7957c3152528" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../pymarket/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/apps/consumers/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/apps/goods/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/apps/goods/migrations/0002_auto_20190519_2030.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/apps/trade/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/apps/user_operation/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/db_tools/create_xadmin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/db_tools/data/category_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/db_tools/data/product_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/db_tools/import_category_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/db_tools/import_goodcategory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/db_tools/import_goods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/db_tools/import_goods_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/15_P_1448947257324.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/2_20170719161405_249.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/2_20170719161405_249_VXtw0x7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/2_20170719161405_249_vK49DiO.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/2_20170719161435_381.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/2_P_1448945810202.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/2_P_1448945810202_lGp49nw.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/2_P_1448945810202_tFI76bj.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/9_P_1448944791617.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/banner/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/banner/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/banner/banner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/brands/lyfs-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/brands/lyfs-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/brands/scsg-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/brands/scsg-2_G6LV34f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/brands/scsg-2_s2g3L7M.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/brands/scsg-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/brands/sxsp-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/brands/sxsp-1_HPZZvbI.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/brands/sxsp-1_KDntI6h.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/brands/sxsp-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/brands/sxsp-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/brands/sxsp-3_jG6lwp4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/brands/sxsp-3_p6QnMEd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/10_P_1448944572085.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/11_P_1448944388277.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/12_P_1448947547989.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/13_P_1448947460386.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/14_P_1448947354031.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/15_P_1448947257324.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/16_P_1448947194687.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/17_P_1448947102246.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/18_P_1448947011435.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/19_P_1448946951581.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/1_P_1449024889889.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/20_P_1448946850602.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/21_P_1448946793276.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/22_P_1448946729629.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/23_P_1448948070348.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/24_P_1448948023823.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/25_P_1448947875346.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/26_P_1448947825754.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/27_P_1448947771805.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/28_P_1448947699948.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/29_P_1448947631994.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/2_20170719161405_249.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/2_20170719161414_628.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/2_20170719161435_381.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/2_P_1448945810202.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/30_P_1448948663450.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/31_P_1448948598947.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/32_P_1448948525620.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/33_P_1448948479966.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/34_P_1448948399009.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/35_P_1448948333610.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/36_P_1448948234405.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/37_P_1448949284365.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/38_P_1448949220255.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/39_P_1448949115481.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/3_P_1448945490837.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/40_P_1448949038702.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/41_P_1448948980358.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/42_P_1448948895193.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/43_P_1448948762645.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/44_P_1448948850187.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/45_P_1448946661303.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/46_P_1448946598711.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/47_P_1448946213263.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/48_P_1448943988970.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/49_P_1448162819889.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/4_P_1448945381985.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/50_P_1448946543091.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/51_P_1448946466595.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/53_P_1495068879687.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/5_P_1448945270390.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/6_P_1448945167279.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/7_P_1448945104883.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/8_P_1448945032810.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/9_P_1448944791617.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/goods/images/生鲜_20170719161424_153.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/media/message/images/3_P_1448945490837.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pymarket/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy_demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../t1nkuy/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../t1nkuy/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../t1nkuy/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../t1nkuy/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/apps/goods/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/goods/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/apps/trade/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/trade/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/apps/user_operation/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/user_operation/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/pymarket/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/pymarket/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/pymarket/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/pymarket/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../t1nkuy/.idea/MxShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../t1nkuy/.idea/MxShop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../t1nkuy/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../t1nkuy/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../t1nkuy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../t1nkuy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../t1nkuy/MxShop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../t1nkuy/MxShop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/online-store/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/online-store/server.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/scrapy_dev$lianjia.coverage" NAME="lianjia Coverage Results" MODIFIED="1558864104134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapy_demo/scrapy_demo/spiders" />
+    <SUITE FILE_PATH="coverage/scrapy_dev$test.coverage" NAME="test Coverage Results" MODIFIED="1558863921995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scrapy_demo/scrapy_demo/spiders/lianjia.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy_demo/scrapy_demo/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy_demo/scrapy_demo/middlewares.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="109" column="25" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
+              <folding>
+                <element signature="e#168#181#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy_demo/scrapy_demo/pipelines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="61" column="30" lean-forward="true" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy_demo/scrapy_demo/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-640">
+              <caret line="77" column="29" lean-forward="true" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>start_r</find>
+      <find>totalPage</find>
+      <find>https</find>
+      <find>pageurl</find>
+      <find>石头城</find>
+      <find>.. 石头城</find>
+      <find>.. 新河一村</find>
+      <find>新河一村</find>
+      <find>cj</find>
+      <find>pip</find>
+      <find>ScrapyDemoDownloaderMiddleware</find>
+      <find>scrapy_demo.settings</find>
+      <find>scrapy_demo.</find>
+      <find>DEFAULT_REQUEST_HEADERS</find>
+      <find>print</find>
+      <find>insert_one</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/scrapy_demo/scrapy_demo/items.py" />
+        <option value="$PROJECT_DIR$/scrapy_demo/scrapy_demo/middlewares.py" />
+        <option value="$PROJECT_DIR$/scrapy_demo/scrapy_demo/settings.py" />
+        <option value="$PROJECT_DIR$/scrapy_demo/scrapy_demo/spiders/lianjia.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/scrapy_demo/scrapy_demo/pipelines.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1295" />
+    <option name="height" value="710" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="scrapy_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapy_dev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapy_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapy_dev" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapy_demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapy_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapy_dev" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapy_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapy_demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scrapy_demo" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.lianjia">
+    <configuration name="lianjia" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="scrapy_dev" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapy_demo/scrapy_demo/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy_demo/scrapy_demo/spiders/lianjia.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="scrapy_dev" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.lianjia" />
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0e548f3-2a25-4194-9d50-7957c3152528" name="Default Changelist" comment="" />
+      <created>1558362077153</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558362077153</updated>
+      <workItem from="1558362078314" duration="478000" />
+      <workItem from="1558362597182" duration="2692000" />
+      <workItem from="1558443477210" duration="3351000" />
+      <workItem from="1558625490611" duration="2229000" />
+      <workItem from="1558709527052" duration="8795000" />
+      <workItem from="1558794821290" duration="820000" />
+      <workItem from="1558858903556" duration="5213000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="23578000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1508043" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.44192636" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lianjia/lianjia/settings.py" />
+    <entry file="file://$PROJECT_DIR$/scrapy_demo/scrapy_demo/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/scrapy/http/request/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/scrapy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/scrapy/spiders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1792">
+          <caret line="73" column="42" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_demo/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/scrapy/utils/project.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/scrapy/settings/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="285" column="33" lean-forward="true" selection-start-line="285" selection-start-column="33" selection-end-line="285" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_demo/scrapy_demo/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/scrapy/downloadermiddlewares/useragent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/pymongo/mongo_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3508">
+          <caret line="243" column="64" selection-start-line="243" selection-start-column="54" selection-end-line="243" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/scrapy/cmdline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_demo/scrapy_demo/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="109" column="25" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
+          <folding>
+            <element signature="e#168#181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_demo/scrapy_demo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-640">
+          <caret line="77" column="29" lean-forward="true" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_demo/scrapy_demo/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="61" column="30" lean-forward="true" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_demo/scrapy_demo/spiders/lianjia.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

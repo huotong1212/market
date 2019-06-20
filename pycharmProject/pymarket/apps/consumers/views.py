@@ -7,7 +7,9 @@ from django.shortcuts import render
 
 from rest_framework import permissions
 from rest_framework import authentication
+from rest_framework.decorators import detail_route
 from rest_framework.mixins import CreateModelMixin
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import serializers, viewsets, status, mixins
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
@@ -15,21 +17,25 @@ from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework_jwt.serializers import jwt_encode_handler, jwt_payload_handler
 
 from consumers.models import VerifyCode
-from consumers.serializers import SMSSerializer, ConsumerRegSerializer, ConsumerDetailSerializer
+from consumers.serializers import SMSSerializer, ConsumerRegSerializer, ConsumerDetailSerializer, PermissionSerializer
+from utils.permissions import IsOwnerOrReadOnly
 from utils.yunpian import YunPian
 from pymarket import settings
+
 # Create your views here.
 
 User = get_user_model()
+
 
 class CustomBackend(ModelBackend):
     """
     自定义用户验证，用于验证登录请求 loign
     """
+
     def authenticate(self, request, username=None, password=None, **kwargs):
-        print(username,password)
+        print(username, password)
         try:
-            user = User.objects.get(Q(username=username)|Q(mobile=username))
+            user = User.objects.get(Q(username=username) | Q(mobile=username))
             if user.check_password(password):
                 return user
         except Exception as e:
@@ -61,15 +67,15 @@ class SmsCodeViewSet(CreateModelMixin, viewsets.GenericViewSet):
         mobile = serializer.validated_data['mobile']
         code = self.generate_code()
 
-        sms_status = yun_pian.send_sms(code=code,mobile=mobile)
+        sms_status = yun_pian.send_sms(code=code, mobile=mobile)
 
         if sms_status['code'] != 0:
             return Response({
-                "mobile":sms_status["msg"]
-            },status=status.HTTP_400_BAD_REQUEST)
+                "mobile": sms_status["msg"]
+            }, status=status.HTTP_400_BAD_REQUEST)
         else:
             # 发送成功保存验证码
-            code_record = VerifyCode.objects.create(code=code,mobile = mobile)
+            code_record = VerifyCode.objects.create(code=code, mobile=mobile)
             return Response({
                 "mobile": mobile
             }, status=status.HTTP_201_CREATED)
@@ -77,11 +83,11 @@ class SmsCodeViewSet(CreateModelMixin, viewsets.GenericViewSet):
 
 class ConsumerViewset(CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     """
-    用户注册时候的验证
+    用户注册,更新，获取个人信息
     """
     serializer_class = ConsumerRegSerializer
     queryset = User.objects.all()
-    authentication_classes = (JSONWebTokenAuthentication, authentication.SessionAuthentication )
+    authentication_classes = (JSONWebTokenAuthentication, authentication.SessionAuthentication)
 
     def get_serializer_class(self):
         if self.action == "retrieve":
@@ -124,7 +130,7 @@ class ConsumerViewset(CreateModelMixin, mixins.UpdateModelMixin, mixins.Retrieve
         headers = self.get_success_headers(serializer.data)
         return Response(re_dict, status=status.HTTP_201_CREATED, headers=headers)
 
-    # 当创建和删除的时候都会用到该方法
+    # 当Update和Retrieve和Delete的时候都会用到该方法
     def get_object(self):
         return self.request.user
 
@@ -133,3 +139,14 @@ class ConsumerViewset(CreateModelMixin, mixins.UpdateModelMixin, mixins.Retrieve
         # 这里需要操作数据库，而密码需要加密，所以用到了信号量
         # 在每次post保存的时候，将密码加密
         return serializer.save()
+
+
+class PermissionViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
+    authentication_classes = (JSONWebTokenAuthentication, authentication.SessionAuthentication)
+    permission_classes = (IsAuthenticated,)
+    serializer_class = PermissionSerializer
+    queryset = User.objects.all()
+
+    # 当Update和Retrieve和Delete的时候都会用到该方法
+    def get_object(self):
+        return self.request.user

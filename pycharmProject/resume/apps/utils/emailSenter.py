@@ -164,8 +164,10 @@ class EmailManager:
             # server.sendmail(self.msg_from, self.msg_to, msg.as_string())
             print(1)
             print(set(self.msg_to + self.msg_cc))
-            server.sendmail(self.msg_from, set(self.msg_to + self.msg_cc), msg.as_string())
+            response = server.sendmail(self.msg_from, set(self.msg_to + self.msg_cc), msg.as_string())
+            print(response)
             server.quit()
+            return "success"
             print("Send succeed!!")
         except smtplib.SMTPException:
             print("Error:Can't send this email!!")
@@ -175,8 +177,8 @@ if __name__ == "__main__":
                  'password': 'vhqtyotzhhwvbcdc', # 发送者QQ邮箱授权码
                  'msg_to': ['1271564669@qq.com','401952124@qq.com','544782744@qq.com'], # 收件人
                  'msg_cc': ['401952124@qq.com','huotong177@163.com'], # 抄送人
-                 'msg_subject': 'Python Auto Send Email Test', # 标题
-                 'msg_content': 'Hi, boy! Just do it, python! I am Spider Man 你在干神马鸭？？？', # 正文
+                 'msg_subject': 'Python Auto Send Email', # 标题
+                 'msg_content': '', # 正文
                  'attach_file': r'.\spider.jfif', # 附件
                  'msg_date': time.ctime() # 时间戳
                  }

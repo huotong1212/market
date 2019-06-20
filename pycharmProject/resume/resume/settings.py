@@ -11,10 +11,13 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+sys.path.insert(0, BASE_DIR)
+sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
+sys.path.insert(0, os.path.join(BASE_DIR, 'extra_apps'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -26,8 +29,9 @@ SECRET_KEY = 'g5&xa3d9m$2qomuv1fc2k7x&%pqma^#2^l((+zz6m116t^v0en'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
 AUTH_USER_MODEL = 'user.User'
+
+
 
 # Application definition
 
@@ -38,8 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.myresume.apps.MyresumeConfig',
-    'apps.user.apps.UserConfig',
+    'myresume.apps.MyresumeConfig',
+    'user.apps.UserConfig',
     'xadmin',
     'rest_framework',
     'rest_framework.authtoken',
@@ -52,6 +56,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    # 服务端设置跨域
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -62,6 +68,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'resume.urls'
+CORS_ORIGIN_ALLOW_ALL = True
 
 TEMPLATES = [
     {
@@ -75,6 +82,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',  # 将media_url上传文件路径注册到模板中
+
             ],
         },
     },
@@ -121,6 +130,21 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+#手机号码正则表达式
+REGEX_MOBILE = "^1[3578]\d{9}$|^147\d{8}$|^176\d{8}$"
+
+#手机号码正则表达式
+REGEX_EMAIL = "^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$"
+
+# 阿里云SMS短信签名
+SIGNNAME = "AilyTin"
+
+# 阿里云SMS短信模版
+TEMPLATE_CODE = "SMS_166776391"
+
+# 阿里雲AccessKey
+ACCESS_KEYID = "LTAI74bAq7veiuX7"
+ACCESS_KEYID_SECRET = "rKUoo5Q0RVTcMkV6cFutvjXDQNYVtz"
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
@@ -133,8 +157,12 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    # 'consumers.views.CustomBackend',
+)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
@@ -147,3 +175,40 @@ STATICFILES_DIRS = (
 )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        # 'rest_framework.authentication.TokenAuthentication', 全局认证 drf自带的
+        # 全局认证，开源jwt,对用户POST的用户名密码进行验证，之后，解析拿到user
+        # 'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+    ),
+    # 限速设置
+    # 'DEFAULT_THROTTLE_CLASSES': (
+    #     'rest_framework.throttling.AnonRateThrottle',  # 未登陆用户
+    #     'rest_framework.throttling.UserRateThrottle'  # 登陆用户
+    # ),
+    # 'DEFAULT_THROTTLE_RATES': {
+    #     'anon': '3/minute',  # 每分钟可以请求两次
+    #     'user': '5/minute'  # 每分钟可以请求五次
+    # }
+}
+
+import datetime
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),
+    'JWT_AUTH_HEADER_PREFIX': 'JWT',
+}
+
+import time
+
+MAIL_CFGS = {'msg_from': '824011142@qq.com',  # 发送者的邮箱
+             'password': 'vhqtyotzhhwvbcdc',  # 发送者QQ邮箱授权码
+             'msg_to': [],  # 收件人
+             'msg_cc': [],  # 抄送人
+             'msg_subject': 'Python Auto Send Email Test',  # 标题
+             'msg_content': 'Hi, boy! Just do it, python! I am Spider Man 你在干神马鸭？？？',  # 正文
+             #'attach_file': r'.\spider.jfif',  # 附件
+             'msg_date': time.ctime()  # 时间戳
+             }

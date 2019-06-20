@@ -5,39 +5,43 @@
             <el-card class="box-card box-card-left" style="padding: 30px 30px;" shadow="hover">
                 <!--User信息-->
                 <div class="form-box align-center" style="margin: 0 auto ;width: 60%">
-                    <el-form ref="form" :model="form" label-width="80px">
-                        <el-form-item label="姓名">
-                            <el-input v-model="form.name"></el-input>
+                    <el-form ref="form" status-icon :rules="rules" :model="form" label-width="80px">
+                        <el-form-item label="名称" prop="username">
+                            <el-input v-model="form.username" placeholder="请输入名称"></el-input>
+                        </el-form-item>
+                        <el-form-item label="密码" prop="password">
+                            <el-input type="password" placeholder="请输入密码" v-model="form.password">
+                            </el-input>
                         </el-form-item>
 
-                        <el-form-item label="性别">
-                            <el-radio-group v-model="form.resource">
-                                <el-radio label="male">男</el-radio>
+                        <el-form-item label="性别" prop="gender">
+                            <el-radio-group v-model="form.gender">
+                                <el-radio label="male" >男</el-radio>
                                 <el-radio label="female">女</el-radio>
                             </el-radio-group>
                         </el-form-item>
-                        <el-form-item label="出身日期">
+                        <el-form-item label="出身日期" prop="birthday">
                             <el-col :span="11">
-                                <el-date-picker type="date" placeholder="选择日期" v-model="form.date1" style="width: 100%;"></el-date-picker>
+                                <el-date-picker type="date" value-format="yyyy-MM-dd" placeholder="选择日期" v-model="form.birthday" style="width: 100%;"></el-date-picker>
                             </el-col>
                         </el-form-item>
 
-                        <el-form-item label="手机号">
-                            <el-input v-model="form.name"></el-input>
+                        <el-form-item label="手机号" prop="mobile">
+                            <el-input v-model="form.mobile"></el-input>
                         </el-form-item>
 
-                        <el-form-item label="验证码" style="display: inline-block">
-                            <el-input v-model="form.desc" style="width: 40%"></el-input>
+                        <el-form-item label="验证码" prop="code" style="display: inline-block">
+                            <el-input v-model="form.code" style="width: 40%"></el-input>
                             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                             <el-button type="primary" @click="sendVerifyCode">发送验证码</el-button>
                         </el-form-item>
 
-                        <el-form-item label="邮箱">
-                            <el-input v-model="form.name"></el-input>
+                        <el-form-item label="邮箱" prop="email">
+                            <el-input v-model="form.email"></el-input>
                         </el-form-item>
 
                         <div class="login-btn">
-                            <el-button type="primary" style="width: 85%;float: right" @click="submitForm('ruleForm')">注册</el-button>
+                            <el-button type="primary" style="width: 85%;float: right" @click="submitForm('form')">注册并登录</el-button>
                         </div>
                     </el-form>
                 </div>
@@ -48,6 +52,10 @@
 </template>
 
 <script>
+    import customValidate from "../utils/customValidate";
+    import {getSMSCode,register} from "../api/api";
+    import cookie from "../static/cookie";
+
     export default {
         data: function(){
             return {
@@ -57,31 +65,70 @@
                 },
                 rules: {
                     username: [
-                        { required: true, message: '请输入用户名', trigger: 'blur' }
+                        { required: true, message: '请输入用户名', trigger: 'blur' },
+                        { min: 2, max: 8, message: '长度在 2 到 8 个字符'}
                     ],
                     password: [
-                        { required: true, message: '请输入密码', trigger: 'blur' }
-                    ]
+                        { required: true, message: '请输入密码', trigger: 'blur' },
+                        { min: 6, max: 20, message: '长度在 2 到 20 个字符'}
+                    ],
+                    mobile:[
+                        { required: true, message: '请输入手机号码', trigger: 'blur'},
+                        { validator: customValidate.isMobile, trigger: 'blur' }
+                    ],
+                    email: [
+                        { required: true, message: '请输入邮箱地址', trigger: 'blur' },
+                        { validator: customValidate.isEmail, trigger: 'blur' }
+                    ],
+                    code: [
+                        { required: true, message: '请输入验证码', trigger: 'blur' },
+                        { min: 4, max: 4, message: '长度为 4 个字符'}
+                    ],
+                    gender: [
+                        { required: true, message: '请输入验证码', trigger: 'blur' },
+                    ],
+                    birthday: [
+                        { required: true, message: '请输入出生年月', trigger: 'blur' },
+                    ],
                 },
                 form: {
-                    name: '',
-                    region: '',
-                    date1: '',
-                    date2: '',
-                    delivery: true,
-                    type: ['步步高'],
-                    resource: '小天才',
-                    desc: '',
-                    options: []
+                    username: '',
+                    password:'',
+                    mobile: '',
+                    email: '',
+                    gender: '',
+                    birthday: '',
+                    code:'',
                 },
             }
         },
         methods: {
             submitForm(formName) {
+                // const formData = new FormData();
+
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
-                        localStorage.setItem('ms_username',this.ruleForm.username);
-                        this.$router.push('/');
+                        console.log('formData',this.form)
+                        register(
+                            this.form
+                        ).then((response) => {
+                            console.log('register',response);
+                            //本地存储用户信息
+                            cookie.setCookie('username', response.data.name, 7);
+                            cookie.setCookie('token',response.data.token,7)
+
+                            //存储在store
+                            const loginInfo = {
+                                username: response.data.name,
+                                token: response.data.token
+                            }
+                            // 更新store数据
+                            this.$store.dispatch('setInfo', loginInfo);
+                            //跳转到首页页面
+                            this.$router.push('/');
+                        }).catch(function (error) {
+                            console.log(error);
+                        });
                     } else {
                         console.log('error submit!!');
                         return false;
@@ -89,7 +136,17 @@
                 });
             },
             sendVerifyCode(){
+                this.$refs.form.validateField('mobile',(errorMessage => {
+                    console.log(errorMessage)
+                    getSMSCode({
+                        mobile:this.form.mobile
+                    }).then((response)=>{
+                        console.log('SMSCode',response)
+                    }).catch(function(error){
 
+                    })
+
+                }))
             }
         }
     }

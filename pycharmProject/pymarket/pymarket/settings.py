@@ -41,11 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'DjangoUeditor',
-    'consumers.apps.ConsumersConfig',
-    'goods',
-    'trade',
-    'user_operation.apps.UserOperationConfig',
     'xadmin',
     'rest_framework',
     'rest_framework.authtoken',
@@ -54,6 +49,11 @@ INSTALLED_APPS = [
     'crispy_forms',
     'django_filters',
     'social_django',
+    'DjangoUeditor',
+    'consumers.apps.ConsumersConfig',
+    'goods',
+    'trade',
+    'user_operation.apps.UserOperationConfig',
 ]
 
 MIDDLEWARE = [

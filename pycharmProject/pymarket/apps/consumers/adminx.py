@@ -13,6 +13,8 @@
 """
 import xadmin
 from xadmin import views
+
+from consumers.models import Role, Authority
 from .models import VerifyCode
 
 
@@ -30,7 +32,14 @@ class GlobalSettings(object):
 class VerifyCodeAdmin(object):
     list_display = ['code', 'mobile', "add_time"]
 
+class RoleAdmin(object):
+    list_display = ['name', 'user','desc', "add_time"]
 
+class AuthorityAdmin(object):
+    list_display = ['name', 'role','desc', "add_time"]
+
+xadmin.site.register(Role, RoleAdmin)
+xadmin.site.register(Authority, AuthorityAdmin)
 xadmin.site.register(VerifyCode, VerifyCodeAdmin)
 xadmin.site.register(views.BaseAdminView, BaseSetting)
 xadmin.site.register(views.CommAdminView, GlobalSettings)

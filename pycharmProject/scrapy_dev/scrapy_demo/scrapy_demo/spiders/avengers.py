@@ -64,6 +64,10 @@ class MoviesSpider(scrapy.Spider):
             if len(substance):
                 item['content'] = substance[0]
 
+            substance = comment.xpath('.//div[@class="avatar"]//img/@src').extract()
+            if len(substance):
+                item['userImage_url'] = substance[0]
+
             item_list.append(item)
         return item_list
 

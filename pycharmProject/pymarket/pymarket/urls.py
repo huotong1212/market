@@ -18,7 +18,7 @@ from django.conf.urls import url,include
 import xadmin
 from django.contrib import admin
 from django.urls import path
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView,View
 from django.views.static import serve
 from rest_framework.documentation import include_docs_urls
 from rest_framework.authtoken import views
@@ -30,7 +30,7 @@ from rest_framework_jwt.views import obtain_jwt_token
 from goods.views import GoodsListViewSet, GoodsCategoryViewSet, BannerViewset, HotSearchsViewset, IndexCategoryViewset
 from pymarket.settings import MEDIA_ROOT
 from rest_framework.routers import DefaultRouter
-from consumers.views import SmsCodeViewSet, ConsumerViewset
+from consumers.views import SmsCodeViewSet, ConsumerViewset, PermissionViewset
 
 # Create a router and register our viewsets with it.
 from trade.views import ShopCartViewset, OrderViewset
@@ -66,6 +66,9 @@ router.register(r'hotsearchs', HotSearchsViewset, base_name="hotsearchs")
 #首页商品系列数据
 router.register(r'indexgoods', IndexCategoryViewset, base_name="indexgoods")
 
+#用户权限
+router.register(r'perm', PermissionViewset, base_name ="perm")
+
 
 router.register(r'codes', SmsCodeViewSet, base_name ="codes")
 router.register(r'users', ConsumerViewset, base_name="users")
@@ -88,6 +91,7 @@ urlpatterns = [
     # 引入restframework自动生成的文档
     url(r'docs/',include_docs_urls(title="我的Django")),
 
+    # 这个url是为了可以弹出rest_framework提供的登录页面，方便测试的时候操作
     url(r'^api-auth/', include('rest_framework.urls')),
 
     # 该url用于在用户POST提交用户名密码之后返回对应的token

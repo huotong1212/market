@@ -47,3 +47,37 @@ class VerifyCode(models.Model):
 
     def __str__(self):  # 相当于java中的tostring
         return self.code
+
+
+class Role(models.Model):
+    """
+    用户角色表
+    """
+    name = models.CharField(max_length=20, verbose_name="角色名称")
+    user = models.ManyToManyField("ConsumerProfile",related_name = "roles",blank=True,null=True)
+    desc = models.CharField(max_length=200,verbose_name="角色描述",blank=True,null=True)
+    add_time = models.DateTimeField(default=datetime.now, verbose_name="添加时间")
+
+    class Meta:
+        verbose_name = "用户角色"  # admin中显示的表名称
+        verbose_name_plural = verbose_name  # admin中显示的表的复数名称
+
+    def __str__(self):  # 相当于java中的tostring
+        return self.name
+
+
+class Authority(models.Model):
+    """
+    用户权限
+    """
+    name = models.CharField(max_length=20, verbose_name="权限名称")
+    role = models.ManyToManyField("Role",related_name = "authority",blank=True,null=True)
+    desc = models.CharField(max_length=200,verbose_name="权限描述",blank=True,null=True)
+    add_time = models.DateTimeField(default=datetime.now, verbose_name="添加时间")
+
+    class Meta:
+        verbose_name = "用户权限"  # admin中显示的表名称
+        verbose_name_plural = verbose_name  # admin中显示的表的复数名称
+
+    def __str__(self):  # 相当于java中的tostring
+        return self.name

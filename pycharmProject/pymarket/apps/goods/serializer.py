@@ -90,6 +90,8 @@ class IndexCategorySerializer(serializers.ModelSerializer):
     ad_goods = serializers.SerializerMethodField()
 
     def get_ad_goods(self, obj):
+        print(obj)
+        print(type(obj))
         print('get_ad_goods', obj.id)
         goods_json = {}
         # 这里传过来的只有'蔬菜水果','酒水饮料','粮油副食','生鲜食品'
