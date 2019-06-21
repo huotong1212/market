@@ -1,4 +1,4 @@
-from datetime import timedelta
+from datetime import timedelta,date
 
 from dateutil.parser import parse
 from dateutil.relativedelta import relativedelta
@@ -12,6 +12,7 @@ import datetime
 # result = re.match(reg,'824011142@qq.com')
 #
 # print(result)
+print(date.today(),type(date.today()))
 datatime = parse('2000-1-1')
 
 date = datetime.date.fromisoformat('2010-06-11') #字符串转data

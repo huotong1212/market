@@ -7,6 +7,7 @@ from rest_framework import mixins, viewsets, authentication, status, permissions
 from rest_framework.mixins import CreateModelMixin
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+from rest_framework_extensions.cache.mixins import CacheResponseMixin
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework_jwt.serializers import jwt_payload_handler, jwt_encode_handler
 
@@ -95,8 +96,6 @@ class EmailCodeViewSet(CreateModelMixin, viewsets.GenericViewSet):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)  # 如果验证不通过，直接抛异常
 
-        print(serializer.data)
-        print(self.request.user)
         email = self.request.user.email
         code = self.generate_code()
         mail_cfgs = settings.MAIL_CFGS
@@ -122,7 +121,7 @@ class EmailCodeViewSet(CreateModelMixin, viewsets.GenericViewSet):
 
 
 
-class UserViewSet(CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
+class UserViewSet(CacheResponseMixin,CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     """
     用户注册,更新，获取个人信息
     """

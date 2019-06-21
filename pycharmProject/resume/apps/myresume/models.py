@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, date
 
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import AbstractUser
@@ -10,9 +10,10 @@ from resume.settings import MEDIA_ROOT
 
 User = get_user_model()
 
+
 # 让上传的文件路径动态地与user的名字有关
 def upload_to(instance, filename):
-    return '/'.join([MEDIA_ROOT,'userProfile',instance.username, filename])
+    return '/'.join([MEDIA_ROOT, 'userProfile', instance.username, filename])
 
 
 class UserResume(models.Model):
@@ -28,7 +29,7 @@ class UserResume(models.Model):
     add_time = models.DateTimeField(default=datetime.now, verbose_name="添加时间")
     updatetime = models.DateTimeField(default=datetime.now, verbose_name="更新时间")
 
-    username = models.CharField(null=True, blank=True,max_length=20, verbose_name="姓名", help_text="姓名")  # 姓名
+    username = models.CharField(null=True, blank=True, max_length=20, verbose_name="姓名", help_text="姓名")  # 姓名
     mobile = models.CharField(max_length=11, null=True, blank=True, verbose_name="手机号")
     email = models.CharField(max_length=50, null=True, blank=True, verbose_name="邮箱")
     # choice Admin中显示选择框的内容，用不变动的数据放在内存中从而避免跨表操作
@@ -36,7 +37,7 @@ class UserResume(models.Model):
                               verbose_name="性别")
     birthday = models.DateField(null=True, blank=True, verbose_name="出生年月")
     age = models.IntegerField(default=0, null=True, blank=True, verbose_name="年龄")
-    portrait = models.ImageField(blank=True, null=True, upload_to= upload_to, verbose_name='用户头像')
+    portrait = models.ImageField(blank=True, null=True, upload_to=upload_to, verbose_name='用户头像')
 
     class Meta:
         verbose_name = "用户简历"
@@ -44,7 +45,7 @@ class UserResume(models.Model):
         # unique_together = ('user', 'language')
 
     def __str__(self):
-        return self.user.username
+        return self.name
 
 
 class SkillCategory(models.Model):
@@ -88,12 +89,13 @@ class Expectation(models.Model):
 
     job = models.CharField(max_length=30, null=True, blank=True, verbose_name="职位")
     city = models.CharField(max_length=30, null=True, blank=True, verbose_name="城市")
-    salary_min = models.FloatField(default=0,null=True, blank=True, verbose_name="最低薪资")
+    province = models.CharField(max_length=30, null=True, blank=True, verbose_name="省")
+    salary_min = models.FloatField(default=0, null=True, blank=True, verbose_name="最低薪资")
     salary_max = models.FloatField(default=0, null=True, blank=True, verbose_name="最高薪资")
 
     duty_time = models.IntegerField(default=1, choices=DUTY_TIME, verbose_name="到岗时间",
-                 help_text=u"到岗时间: 1(一个月之内),2(两个月之内),3(一周之内)")
-    resume_id = models.ForeignKey(UserResume, verbose_name="简历ID", related_name="expectation", on_delete=models.CASCADE)
+                                    help_text=u"到岗时间: 1(一个月之内),2(两个月之内),3(一周之内)")
+    resume_id = models.OneToOneField(UserResume, verbose_name="简历ID", related_name="expectation", on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = "期望职业"  # admin中显示的表名称
@@ -107,8 +109,9 @@ class Education(models.Model):
     '''
     教育背景
     '''
-    enrollment_date = models.DateTimeField(default=datetime.now, verbose_name="入学日期")
-    graduate_date = models.DateTimeField(default=datetime.now, verbose_name="毕业日期")
+    enrollment_date = models.DateField(default=date.today, verbose_name="入学日期")
+    graduate_date = models.DateField(default=date.today, verbose_name="毕业日期")
+    dateP = models.CharField(max_length=20, null=True, blank=True, default='', verbose_name="日期区间")
 
     graduate_school = models.CharField(max_length=50, default="苏州科技大学", null=True, blank=True, verbose_name="毕业院校")
     subjects = models.CharField(max_length=200, default="", null=True, blank=True, verbose_name="主修课程")
@@ -128,9 +131,9 @@ class WorkExperience(models.Model):
     '''
     工作经验
     '''
-    start_time = models.DateTimeField(default=datetime.now, verbose_name="起始日期")
-    end_time = models.DateTimeField(default=datetime.now, verbose_name="结束日期")
-    company = models.CharField(max_length=30, null=True, blank=True, verbose_name="任职公司")
+    start_time = models.DateField(default=date.today, verbose_name="起始日期")
+    end_time = models.DateField(default=date.today, verbose_name="结束日期")
+    company = models.CharField(default="公司名称", max_length=30, null=True, blank=True, verbose_name="任职公司")
     profession = models.CharField(max_length=30, null=True, blank=True, verbose_name="岗位名称")
     department = models.CharField(max_length=30, null=True, blank=True, verbose_name="部门")
     duty = models.TextField(null=True, blank=True, verbose_name="岗位职责")
@@ -148,9 +151,9 @@ class ProjectExperience(models.Model):
     """
     项目经验
     """
-    start_time = models.DateTimeField(default=datetime.now, verbose_name="起始日期")
-    end_time = models.DateTimeField(default=datetime.now, verbose_name="结束日期")
-    project_name = models.CharField(max_length=30, null=True, blank=True, verbose_name="项目名称")
+    start_time = models.DateField(default=date.today, verbose_name="起始日期")
+    end_time = models.DateField(default=date.today, verbose_name="结束日期")
+    project_name = models.CharField(default='项目名称',max_length=30, null=True, blank=True, verbose_name="项目名称")
     project_skills = models.CharField(max_length=200, null=True, blank=True, verbose_name="项目技术")
     tasks = UEditorField(verbose_name=u"项目职责", imagePath="project/images/", width=1000, height=300,
                          filePath="project/files", default="")
@@ -174,12 +177,12 @@ class Skills(models.Model):
         (3, "精通"),
         (4, "大牛"),
     )
-    category = models.ForeignKey(SkillCategory, verbose_name="技能类别", related_name="category", on_delete=models.CASCADE)
+    category = models.ForeignKey(SkillCategory, verbose_name="技能类别", related_name="skills", on_delete=models.CASCADE)
     skill_tag = models.CharField(max_length=200, null=True, blank=True, verbose_name="技能标签")
     skill_desc = models.CharField(max_length=200, null=True, blank=True, verbose_name="技能描述")
     skill_level = models.IntegerField(default=1, choices=LEVEL_CHOICES, verbose_name="熟练程度",
                                       help_text=u"技能熟练度: 1(了解),2(熟练),3(精通),4(大牛)")
-    resume_id = models.ForeignKey(UserResume, verbose_name="简历ID", related_name="skill", on_delete=models.CASCADE)
+    resume_id = models.ForeignKey(UserResume, verbose_name="简历ID", related_name="skills", on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = "技能特长"  # admin中显示的表名称
@@ -193,5 +196,12 @@ class SelfAppraise(models.Model):
     """
     自我评价
     """
-    self_desc = models.TextField(max_length=200, null=True, blank=True, verbose_name="自我评价")
-    resume_id = models.ForeignKey(UserResume, verbose_name="简历ID", related_name="appraise", on_delete=models.CASCADE)
+    self_desc = models.TextField(max_length=300, null=True, blank=True, verbose_name="自我评价")
+    resume_id = models.OneToOneField(UserResume, verbose_name="简历ID", related_name="appraise", on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name = "自我评价"  # admin中显示的表名称
+        verbose_name_plural = verbose_name  # admin中显示的表的复数名称
+
+    def __str__(self):  # 相当于java中的tostring
+        return self.resume_id.name

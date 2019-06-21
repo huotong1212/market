@@ -44,6 +44,7 @@ class UserResumeSerializer(serializers.ModelSerializer):
     user = serializers.HiddenField(
         default=serializers.CurrentUserDefault()
     )
+
     class Meta:
         model = UserResume
         # validators = [
@@ -57,36 +58,87 @@ class UserResumeSerializer(serializers.ModelSerializer):
 
 
 class ExpectationSerializer(serializers.ModelSerializer):
+
+    def validate(self, attrs):
+        if attrs['resume_id'].user == self.context['request'].user:
+            return attrs
+        else:
+            raise serializers.ValidationError('不阔以操作他人的简历')
+
     class Meta:
         model = Expectation
         fields = "__all__"  # 包含所有字段
 
 
 class EducationSerializer(serializers.ModelSerializer):
+    # enrollment_date = serializers.DateField(allow_null=True,format="%Y-%m-%d")
+    # graduate_date = serializers.DateField(allow_null=True,format="%Y-%m-%d")
+
+    def validate(self, attrs):
+        if attrs['resume_id'].user == self.context['request'].user:
+            return attrs
+        else:
+            raise serializers.ValidationError('不阔以操作他人的简历')
+
     class Meta:
         model = Education
         fields = "__all__"  # 包含所有字段
 
 
 class WorkExperienceSerializer(serializers.ModelSerializer):
+
+    def validate(self, attrs):
+        if attrs['resume_id'].user == self.context['request'].user:
+            return attrs
+        else:
+            raise serializers.ValidationError('不阔以操作他人的简历')
+
     class Meta:
         model = WorkExperience
         fields = "__all__"  # 包含所有字段
 
 
 class ProjectExperienceSerializer(serializers.ModelSerializer):
+
+    def validate(self, attrs):
+        if attrs['resume_id'].user == self.context['request'].user:
+            return attrs
+        else:
+            raise serializers.ValidationError('不阔以操作他人的简历')
+
     class Meta:
         model = ProjectExperience
         fields = "__all__"  # 包含所有字段
 
 
 class SkillsSerializer(serializers.ModelSerializer):
+
+    def validate(self, attrs):
+        if attrs['resume_id'].user == self.context['request'].user:
+            return attrs
+        else:
+            raise serializers.ValidationError('不阔以操作他人的简历')
+
     class Meta:
         model = Skills
+        # validators = [
+        #     UniqueTogetherValidator(
+        #         queryset=Skills.objects.all(),
+        #         fields=('id', 'resume_id'),  如果这里写了id，那么前端就要传递id
+        #         message="每个简历只能对应一份自我评价"
+        #     )
+        # ]
         fields = "__all__"  # 包含所有字段
 
 
 class SelfAppraiseSerializer(serializers.ModelSerializer):
+
+    def validate(self, attrs):
+        if attrs['resume_id'].user == self.context['request'].user:
+            return attrs
+        else:
+            raise serializers.ValidationError('不阔以操作他人的简历')
+
     class Meta:
         model = SelfAppraise
         fields = "__all__"  # 包含所有字段

@@ -195,6 +195,11 @@ REST_FRAMEWORK = {
     # }
 }
 
+#缓存配置
+REST_FRAMEWORK_EXTENSIONS = {
+    'DEFAULT_CACHE_RESPONSE_TIMEOUT': 60   #5s过期，时间自己可以随便设定
+}
+
 import datetime
 JWT_AUTH = {
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),

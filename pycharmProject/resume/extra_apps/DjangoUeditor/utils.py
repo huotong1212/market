@@ -59,7 +59,7 @@ class FileSize():
             unit = "GB"
         else:
             unit = "TB"
-        print(unit)
+        #print(unit)
 
         if (self.size % FileSize.SIZE_UNIT[unit]) == 0:
             return "%s%s" % ((self.size / FileSize.SIZE_UNIT[unit]), unit)

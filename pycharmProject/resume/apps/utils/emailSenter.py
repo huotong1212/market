@@ -162,7 +162,6 @@ class EmailManager:
             msg = self.get_main_msg()
             # send mail
             # server.sendmail(self.msg_from, self.msg_to, msg.as_string())
-            print(1)
             print(set(self.msg_to + self.msg_cc))
             response = server.sendmail(self.msg_from, set(self.msg_to + self.msg_cc), msg.as_string())
             print(response)
