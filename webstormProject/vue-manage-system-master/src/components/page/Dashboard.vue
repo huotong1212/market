@@ -221,8 +221,8 @@
                 }, 300);
             },
             renderChart(){
-                this.$refs.bar.renderChart();
-                this.$refs.line.renderChart();
+                // this.$refs.bar.renderChart();
+                // this.$refs.line.renderChart();
             }
         }
     }

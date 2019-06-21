@@ -120,7 +120,6 @@
             },
             getUserInfo(){
                 getUser().then((response)=> {
-                    console.log(response)
                     this.userImage = response.data.portrait
                 }).catch(function (error) {
                     console.log(error);

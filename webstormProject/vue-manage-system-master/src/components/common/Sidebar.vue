@@ -71,10 +71,10 @@
                                 index: 'myResume',
                                 title: '查看简历'
                             },
-                            {
-                                index: 'resume',
-                                title: '创建简历'
-                            },
+                            // {
+                            //     index: 'resume',
+                            //     title: '创建简历'
+                            // },
                             // {
                             //     index: '3-2',
                             //     title: '三级菜单',
@@ -105,21 +105,21 @@
                     //     index: 'charts',
                     //     title: 'schart图表'
                     // },
-                    // {
-                    //     icon: 'el-icon-rank',
-                    //     index: '6',
-                    //     title: '拖拽组件',
-                    //     subs: [
-                    //         {
-                    //             index: 'drag',
-                    //             title: '拖拽列表',
-                    //         },
-                    //         {
-                    //             index: 'dialog',
-                    //             title: '拖拽弹框',
-                    //         }
-                    //     ]
-                    // },
+                    {
+                        icon: 'el-icon-rank',
+                        index: '6',
+                        title: '拖拽组件',
+                        subs: [
+                            {
+                                index: 'drag',
+                                title: '拖拽列表',
+                            },
+                            {
+                                index: 'dialog',
+                                title: '拖拽弹框',
+                            }
+                        ]
+                    },
                     {
                         icon: 'el-icon-lx-global',
                         index: 'i18n',

@@ -29,11 +29,11 @@ export default new Router({
                 //     component: resolve => require(['../components/page/BaseTable.vue'], resolve),
                 //     meta: { title: '基础表格' }
                 // },
-                // {
-                //     path: '/tabs',
-                //     component: resolve => require(['../components/page/Tabs.vue'], resolve),
-                //     meta: { title: 'tab选项卡' }
-                // },
+                {
+                    path: '/tabs',
+                    component: resolve => require(['../components/page/Tabs.vue'], resolve),
+                    meta: { title: 'tab选项卡' }
+                },
                 {
                     path: '/userProfile',
                     component: resolve => require(['../components/user/userProfile.vue'], resolve),
@@ -83,18 +83,18 @@ export default new Router({
                 //     component: resolve => require(['../components/page/BaseCharts.vue'], resolve),
                 //     meta: { title: 'schart图表' }
                 // },
-                // {
-                //     // 拖拽列表组件
-                //     path: '/drag',
-                //     component: resolve => require(['../components/page/DragList.vue'], resolve),
-                //     meta: { title: '拖拽列表' }
-                // },
-                // {
-                //     // 拖拽Dialog组件
-                //     path: '/dialog',
-                //     component: resolve => require(['../components/page/DragDialog.vue'], resolve),
-                //     meta: { title: '拖拽弹框' }
-                // },
+                {
+                    // 拖拽列表组件
+                    path: '/drag',
+                    component: resolve => require(['../components/page/DragList.vue'], resolve),
+                    meta: { title: '拖拽列表' }
+                },
+                {
+                    // 拖拽Dialog组件
+                    path: '/dialog',
+                    component: resolve => require(['../components/page/DragDialog.vue'], resolve),
+                    meta: { title: '拖拽弹框' }
+                },
                 {
                     // 国际化组件
                     path: '/i18n',

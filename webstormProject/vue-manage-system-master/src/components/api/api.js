@@ -58,7 +58,7 @@ export const updateUserResume = (resumeId,params) => {
 
 //删除简历(带参数的patch) [包括单个删除，或者批量删除]
 export const deleteUserResume = (resumeId,params) => {
-    return axios.delete(`${localhost}/userResume/${resumeId}/`, params)
+    return axios.delete(`${localhost}/userResume/${resumeId}/`, {data:params})
 }
 
 //-----------------SkillCategory(用户简历)---------------------
@@ -70,8 +70,8 @@ export const getSkillCategory = params => {
 //-----------------Expectation(期望职业)---------------------
 
 // 获取期望职业
-export const getExpectation = expectationId => {
-    return axios.get(`${localhost}/expectation/${expectationId}`)
+export const getExpectation = resumeId => {
+    return axios.get(`${localhost}/expectation/${resumeId}`)
 }
 
 //创建期望职业(带参数的post)
@@ -80,13 +80,13 @@ export const createExpectation = params => {
 }
 
 //更新期望职业(带参数的patch)
-export const updateExpectation = (expectationId,params) => {
-    return axios.patch(`${localhost}/userResume/${expectationId}/`, params)
+export const updateExpectation = (resumeId,params) => {
+    return axios.patch(`${localhost}/expectation/${resumeId}/`, params)
 }
 
 //删除期望职业(带参数的patch) [包括单个删除，或者批量删除]
-export const deleteExpectation = (expectationId,params) => {
-    return axios.delete(`${localhost}/userResume/${expectationId}/`, params)
+export const deleteExpectation = (resumeId,params) => {
+    return axios.delete(`${localhost}/expectation/${resumeId}/`, params)
 }
 
 //-----------------Education(教育背景)---------------------
@@ -107,8 +107,8 @@ export const createEducation = params => {
 }
 
 //更新教育背景(带参数的patch)
-export const updateEducation = (educationId,params) => {
-    return axios.patch(`${localhost}/education/${educationId}/`, params)
+export const updateEducation = (resumeId,params) => {
+    return axios.patch(`${localhost}/education/${resumeId}/`, params)
 }
 
 //删除教育背景(带参数的patch) [包括单个删除，或者批量删除]
@@ -134,8 +134,8 @@ export const createWorkExperience = params => {
 }
 
 //更新工作经验(带参数的patch)
-export const updateWorkExperience = (WorkExperienceId,params) => {
-    return axios.patch(`${localhost}/workExperience/${WorkExperienceId}/`, params)
+export const updateWorkExperience = (resumeId,params) => {
+    return axios.patch(`${localhost}/workExperience/${resumeId}/`, params)
 }
 
 //删除工作经验(带参数的patch) [包括单个删除，或者批量删除]
@@ -161,8 +161,8 @@ export const createProjectExperience = params => {
 }
 
 //更新项目经验(带参数的patch)
-export const updateProjectExperience = (ProjectExperienceId,params) => {
-    return axios.patch(`${localhost}/projectExperience/${ProjectExperienceId}/`, params)
+export const updateProjectExperience = (resumeId,params) => {
+    return axios.patch(`${localhost}/projectExperience/${resumeId}/`, params)
 }
 
 //删除项目经验(带参数的patch) [包括单个删除，或者批量删除]
@@ -194,14 +194,14 @@ export const updateSkills = (SkillsId,params) => {
 
 //删除技能特长(带参数的patch) [包括单个删除，或者批量删除]
 export const deleteSkills = (SkillsId,params) => {
-    return axios.delete(`${localhost}/skills/${SkillsId}/`, params)
+    return axios.delete(`${localhost}/skills/${SkillsId}/`, {data:params})
 }
 
 //-----------------SelfAppraise(自我评价)---------------------
 
 // 获取自我评价【单个】
-export const getSelfAppraise = SelfAppraiseId => {
-    return axios.get(`${localhost}/selfAppraise/${SelfAppraiseId}`)
+export const getSelfAppraise = resumeId => {
+    return axios.get(`${localhost}/selfAppraise/${resumeId}`)
 }
 
 // 获取自我评价【多个】
@@ -215,8 +215,8 @@ export const createSelfAppraise = params => {
 }
 
 //更新自我评价(带参数的patch)
-export const updateSelfAppraise = (SelfAppraiseId,params) => {
-    return axios.patch(`${localhost}/selfAppraise/${SelfAppraiseId}/`, params)
+export const updateSelfAppraise = (resumeId,params) => {
+    return axios.patch(`${localhost}/selfAppraise/${resumeId}/`, params)
 }
 
 //删除自我评价(带参数的patch) [包括单个删除，或者批量删除]

@@ -36,45 +36,6 @@
         data:function () {
             return{
                 activeNames: ['1'],
-                skills:[
-                        {
-                            "id": 1,
-                            "skill_tag": "Vue",
-                            "skill_desc": "熟悉Vue",
-                            "skill_level": 2,
-                            "category": 1,
-                            "resume_id": 1
-                        },
-                        {
-                            "id": 2,
-                            "skill_tag": "Angular",
-                            "skill_desc": "了解Angular",
-                            "skill_level": 1,
-                            "category": 1,
-                            "resume_id": 1
-                        },
-                        {
-                            "id": 3,
-                            "skill_tag": "Django",
-                            "skill_desc": "熟悉Django",
-                            "skill_level": 2,
-                            "category": 3,
-                            "resume_id": 1
-                        }
-                ],
-                tecnology:{
-                    1:'前端',
-                    2:'后端',
-                    3:'数据库',
-                    4:'爬虫',
-                },
-                level:{
-                    '1': '了解',
-                    '2': '熟练',
-                    '3': '精通',
-                    '4': '大牛',
-                },
-                texts:['了解', '熟练', '精通', '大牛', ]
             }
         },
         methods:{
