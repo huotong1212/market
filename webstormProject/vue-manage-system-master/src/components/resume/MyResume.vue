@@ -26,6 +26,9 @@
                 <el-table-column prop="language" label="语言" :formatter="languageFormat" sortable width="120">
                 </el-table-column>
                 <el-table-column prop="name" label="简历名称">
+                    <template slot-scope="scope">
+                        <el-link @click="showResume(scope.$index, scope.row)" :underline="false">{{scope.row.name}}<i class="el-icon-view el-icon--right"/></el-link>
+                    </template>
                 </el-table-column>
                 <el-table-column label="操作" width="180" align="center">
                     <template slot-scope="scope">
@@ -100,7 +103,14 @@
 
 <script>
     import customValidate from "../utils/customValidate";
-    import {createUserResume, deleteUserResume, getAllUserResume, getUserResume, updateUserResume} from "../api/api";
+    import {
+        createResumeCode,
+        createUserResume,
+        deleteUserResume,
+        getAllUserResume,
+        getUserResume,
+        updateUserResume
+    } from "../api/api";
     import cookie from "../static/cookie";
     import Vue from "vue";
 
@@ -201,6 +211,22 @@
             }
         },
         methods: {
+            showResume(index, row){
+                createResumeCode({
+                    resumeId:row.id
+                }).then((response)=>{
+                    console.log(response)
+                    let code = response.data.code
+                    let routeUrl = this.$router.resolve({
+                        path: "../showResume",
+                        query: {code:code}
+                    });
+                    window.open(routeUrl .href, '_blank');
+                }).catch(function (error) {
+
+                })
+            },
+
             createResume() {
                 this.Resume = {
                     name: '',

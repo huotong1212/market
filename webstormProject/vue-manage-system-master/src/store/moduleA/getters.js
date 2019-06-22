@@ -6,7 +6,6 @@ export default {
     return state.myProps
   },
   sites (state) {
-    console.log(state)
     return state.sites
   },
   item: (state) => (i) => {

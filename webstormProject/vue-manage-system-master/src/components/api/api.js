@@ -33,6 +33,11 @@ export const getSMSCode = phoneNum => { return axios.post(`${localhost}/sms/`, p
 //邮箱验证码，获取
 export const getEmailCode = email => { return axios.post(`${localhost}/email/`, email) }
 
+//邮箱验证码，验证
+export const checkEmailCode = params => { return axios.post(`${localhost}/checkPas/`, params) }
+
+//修改密码
+export const resetPassword = params => { return axios.patch(`${localhost}/resetPas/1/`, params) }
 
 //-----------------UserResume(用户简历)---------------------
 
@@ -223,3 +228,16 @@ export const updateSelfAppraise = (resumeId,params) => {
 export const deleteSelfAppraise = (SelfAppraiseId,params) => {
     return axios.delete(`${localhost}/selfAppraise/${SelfAppraiseId}/`, params)
 }
+
+//-----------------UserResumeInfo(用户简历的全部信息)---------------------
+
+// 创建ResumeCode
+export const createResumeCode = params => {
+    return axios.post(`${localhost}/secret/`, params)
+}
+
+// 获取要展示等等Resume
+export const getShowResume = (params) => {
+    return axios.get(`${localhost}/showResume/`,{params:params})
+}
+

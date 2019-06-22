@@ -19,9 +19,7 @@
                 <div style="display: inline">
                     <p class="error-text" v-show="error">{{error}}</p>
                     <el-button type="primary" align="left" @click="login('ruleForm')">登录</el-button>
-                    <el-button type="primary" @click="register()">注册</el-button>
-                    <el-button type="primary" @click="login()">测试</el-button>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <el-button type="primary" @click="register()">注册</el-button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                     <span class="login-tips"><router-link :to="{ name: 'retrieve' }">忘记密码？</router-link></span>
                 </div>
                 <p class="login-tips">Tips : 用户名和密码随便填。</p>
@@ -52,7 +50,10 @@
                 autoLogin: false,
                 error: false,
                 userNameError: '',
-                parseWordError: ''
+                parseWordError: '',
+                text:'获取验证码',
+                flag:false,
+                countdown : 60
             }
         },
         methods: {
@@ -115,32 +116,26 @@
                 console.log('register...')
                 // this.$router.push({path:'./register'})
                 console.log(this.$router)
-                this.$router.push({path: '../register', params: {userId: '123'}})
+                this.$router.push({path: '../register', params: {}})
             },
+
             test() {
-                // login({
-                //     username:'huotong',
-                //     password:'879662581',
-                // }).then((response)=> {
-                //     console.log(response)
-                // }).catch(function (error) {
-                //     console.log(error);
-                // });
-
-                // getUser().then((response)=> {
-                //     console.log(response)
-                // }).catch(function (error) {
-                //     console.log(error);
-                // });
-
-                getUserResume({
-                    ordering: '-language'
-                }).then((response) => {
-                    console.log(response)
-                }).catch(function (error) {
-                    console.log(error);
-                });
+            },
+            setTime() {
+                if (this.countdown == 0) {
+                    this.flag = false
+                    this.text="获取验证码";
+                    this.countdown = 60;
+                } else {
+                    this.flag = true
+                    this.text="重新发送(" + this.countdown + ")";
+                    this.countdown--;
+                    setTimeout(()=>{
+                        this.setTime()
+                    },1000)
+                }
             }
+
         },
         activated() {
             this.error = ''

@@ -120,6 +120,11 @@ export default new Router({
             ]
         },
         {
+            path: '/showResume',
+            name:'showResume',
+            component: resolve => require(['../components/show/ResumeBody.vue'], resolve)
+        },
+        {
             path: '/login',
             component: resolve => require(['../components/page/Login.vue'], resolve)
         },
@@ -136,7 +141,7 @@ export default new Router({
         {
             path: '/setPassword',
             name:'setPassword',
-            component: resolve => require(['../components/page/SetPassword.vue'], resolve)
+            component: resolve => require(['../components/page/ResetPassword.vue'], resolve)
         },
         {
             path: '*',

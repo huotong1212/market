@@ -35,10 +35,10 @@ router.beforeEach((to, from, next) => {
     // console.log(store.state.a.userInfo);
     const role = cookie.getCookie('username');
     //debugger
-    console.log('router',role)
+    // console.log('router',role)
     // 如果为空，登录或注册
     if (isEmpty(role) ) {
-        if (['/login','/register','/retrieve','/setPassword'].find((path)=>path == to.path)){
+        if (['/login','/register','/retrieve','/setPassword','/showResume'].find((path)=>path == to.path)){
             next();
         }else{
             next('/login');

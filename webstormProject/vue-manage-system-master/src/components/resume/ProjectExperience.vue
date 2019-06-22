@@ -80,7 +80,9 @@
             },
             getAllProjectExperience() {
                 getAllProjectExperience(
-                    this.resumeId
+                    {
+                        resumeId:this.resumeId
+                    }
                 ).then((response) => {
                     //箭头函数中的this是这个vue对象
                     //console.log('getAllProjectExperience', response)

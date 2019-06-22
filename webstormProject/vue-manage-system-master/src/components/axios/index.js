@@ -15,11 +15,13 @@ import cookie from "../static/cookie";
 axios.interceptors.request.use(
   config => {
       // console.log('进入了全局请求拦截器')
-      const token = cookie.getCookie('token');
+      let token = cookie.getCookie('token');
+      if(!token){
+          token = store.state.a.userInfo.token
+      }
       if (token) {  // 判断是否存在token，如果存在的话，则每个http header都加上token
       config.headers.Authorization = `JWT ${token}`;
     }
-
     return config;
   },
   err => {

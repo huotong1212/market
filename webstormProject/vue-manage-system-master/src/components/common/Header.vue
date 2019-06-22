@@ -15,15 +15,16 @@
                 </div>
                 <!-- 消息中心 -->
                 <div class="btn-bell">
-                    <el-tooltip effect="dark" :content="message?`有${message}条未读消息`:`消息中心`" placement="bottom">
-                        <router-link to="/tabs">
+                    <!--<el-tooltip effect="dark" :content="message?`有${message}条未读消息`:`消息中心`" placement="bottom">-->
+                    <el-tooltip effect="dark" content="查看我的信息" placement="bottom">
+                        <router-link to="/userProfile">
                             <i class="el-icon-bell"></i>
                         </router-link>
                     </el-tooltip>
                     <span class="btn-bell-badge" v-if="message"></span>
                 </div>
                 <!-- 用户头像 -->
-<!--                <div class="user-avator"><img src="../../assets/img/img.jpg"></div>-->
+                <!--                <div class="user-avator"><img src="../../assets/img/img.jpg"></div>-->
                 <div class="user-avator"><img :src="userImage"></div>
                 <!-- 用户名下拉菜单 -->
                 <el-dropdown class="user-name" trigger="click" @command="handleCommand">
@@ -31,13 +32,13 @@
                         {{username}} <i class="el-icon-caret-bottom"></i>
                     </span>
                     <el-dropdown-menu slot="dropdown">
-<!--                        <a href="http://blog.gdfengshuo.com/about/" target="_blank">-->
-<!--                            <el-dropdown-item>关于作者</el-dropdown-item>-->
-<!--                        </a>-->
-<!--                        <a href="https://github.com/lin-xin/vue-manage-system" target="_blank">-->
-<!--                            <el-dropdown-item>项目仓库</el-dropdown-item>-->
-<!--                        </a>-->
-                        <el-dropdown-item divided  command="loginout">退出登录</el-dropdown-item>
+                        <!--                        <a href="http://blog.gdfengshuo.com/about/" target="_blank">-->
+                        <!--                            <el-dropdown-item>关于作者</el-dropdown-item>-->
+                        <!--                        </a>-->
+                        <!--                        <a href="https://github.com/lin-xin/vue-manage-system" target="_blank">-->
+                        <!--                            <el-dropdown-item>项目仓库</el-dropdown-item>-->
+                        <!--                        </a>-->
+                        <el-dropdown-item divided command="loginout">退出登录</el-dropdown-item>
                     </el-dropdown-menu>
                 </el-dropdown>
             </div>
@@ -48,6 +49,7 @@
     import bus from '../common/bus';
     import cookie from "../static/cookie";
     import {getUser} from "../api/api";
+
     export default {
         data() {
             return {
@@ -55,21 +57,21 @@
                 fullscreen: false,
                 name: 'linxin',
                 message: 2,
-                userImage:'',
+                userImage: '',
             }
         },
-        computed:{
-            username(){
+        computed: {
+            username() {
                 let username = cookie.getCookie('username');
                 // let username = localStorage.getItem('ms_username');
                 // return username ? username : this.name;
                 return username
             }
         },
-        methods:{
+        methods: {
             // 用户名下拉菜单选择事件
             handleCommand(command) {
-                if(command == 'loginout'){
+                if (command == 'loginout') {
                     // localStorage.removeItem('ms_username')
                     //删除本地存储的用户信息
                     cookie.delCookie('username');
@@ -77,7 +79,7 @@
 
                     //删除store的用户信息
                     const loginInfo = {
-                        username:'',
+                        username: '',
                         token: '',
                     }
 
@@ -87,12 +89,12 @@
                 }
             },
             // 侧边栏折叠
-            collapseChage(){
+            collapseChage() {
                 this.collapse = !this.collapse;
                 bus.$emit('collapse', this.collapse);
             },
             // 全屏事件
-            handleFullScreen(){
+            handleFullScreen() {
                 let element = document.documentElement;
                 if (this.fullscreen) {
                     if (document.exitFullscreen) {
@@ -118,16 +120,16 @@
                 }
                 this.fullscreen = !this.fullscreen;
             },
-            getUserInfo(){
-                getUser().then((response)=> {
+            getUserInfo() {
+                getUser().then((response) => {
                     this.userImage = response.data.portrait
                 }).catch(function (error) {
                     console.log(error);
                 });
             },
         },
-        mounted(){
-            if(document.body.clientWidth < 1500){
+        mounted() {
+            if (document.body.clientWidth < 1500) {
                 this.collapseChage();
             }
             this.getUserInfo()
@@ -146,32 +148,38 @@
         font-size: 22px;
         color: #fff;
     }
-    .collapse-btn{
+
+    .collapse-btn {
         float: left;
         padding: 0 21px;
         cursor: pointer;
         line-height: 70px;
     }
-    .header .logo{
+
+    .header .logo {
         float: left;
-        width:250px;
+        width: 250px;
         line-height: 70px;
     }
-    .header-right{
+
+    .header-right {
         float: right;
         padding-right: 50px;
     }
-    .header-user-con{
+
+    .header-user-con {
         display: flex;
         height: 70px;
         align-items: center;
     }
-    .btn-fullscreen{
+
+    .btn-fullscreen {
         transform: rotate(45deg);
         margin-right: 5px;
         font-size: 24px;
     }
-    .btn-bell, .btn-fullscreen{
+
+    .btn-bell, .btn-fullscreen {
         position: relative;
         width: 30px;
         height: 30px;
@@ -179,7 +187,8 @@
         border-radius: 15px;
         cursor: pointer;
     }
-    .btn-bell-badge{
+
+    .btn-bell-badge {
         position: absolute;
         right: 0;
         top: -2px;
@@ -189,26 +198,32 @@
         background: #f56c6c;
         color: #fff;
     }
-    .btn-bell .el-icon-bell{
+
+    .btn-bell .el-icon-bell {
         color: #fff;
     }
-    .user-name{
+
+    .user-name {
         margin-left: 10px;
     }
-    .user-avator{
+
+    .user-avator {
         margin-left: 20px;
     }
-    .user-avator img{
+
+    .user-avator img {
         display: block;
-        width:40px;
-        height:40px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
     }
-    .el-dropdown-link{
+
+    .el-dropdown-link {
         color: #fff;
         cursor: pointer;
     }
-    .el-dropdown-menu__item{
+
+    .el-dropdown-menu__item {
         text-align: center;
     }
 </style>

@@ -31,9 +31,10 @@
                         </el-form-item>
 
                         <el-form-item label="验证码" prop="code" style="display: inline-block">
-                            <el-input v-model="form.code" style="width: 40%"></el-input>
+                            <el-input v-model="form.code" style="width: 35%"></el-input>
                             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                            <el-button type="primary" @click="sendVerifyCode">发送验证码</el-button>
+                            <el-button type="primary" :disabled="flag" @click="sendVerifyCode">{{text}}</el-button>
+<!--                            <el-button type="primary" :disabled="flag" @click="setTime">{{text}}</el-button>-->
                         </el-form-item>
 
                         <el-form-item label="邮箱" prop="email">
@@ -100,6 +101,9 @@
                     birthday: '',
                     code:'',
                 },
+                text:'获取验证码',
+                flag:false,
+                countdown : 60
             }
         },
         methods: {
@@ -137,7 +141,11 @@
             },
             sendVerifyCode(){
                 this.$refs.form.validateField('mobile',(errorMessage => {
-                    console.log(errorMessage)
+                    console.log('error',errorMessage)
+                    if(errorMessage){
+                        return
+                    }
+                    this.setTime()
                     getSMSCode({
                         mobile:this.form.mobile
                     }).then((response)=>{
@@ -147,6 +155,20 @@
                     })
 
                 }))
+            },
+            setTime() {
+                if (this.countdown === 0) {
+                    this.flag = false
+                    this.text="获取验证码";
+                    this.countdown = 60;
+                } else {
+                    this.flag = true
+                    this.text="重新发送(" + this.countdown + ")";
+                    this.countdown--;
+                    setTimeout(()=>{
+                        this.setTime()
+                    },1000)
+                }
             }
         }
     }

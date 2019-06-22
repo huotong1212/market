@@ -95,7 +95,9 @@
             },
             getAllEducation(){
                 getAllEducation(
-                    this.resumeId
+                    {
+                        resumeId:this.resumeId
+                    }
                 ).then((response) => {
                     //箭头函数中的this是这个vue对象
                     this.education = response.data
