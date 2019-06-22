@@ -32,3 +32,4 @@ class IsResumeOwnerOrReadOnly(permissions.BasePermission):
         # obj就是数据库中查出来的那个对象
         # 如果不匹配，直接返回false
         return obj.user == request.user
+

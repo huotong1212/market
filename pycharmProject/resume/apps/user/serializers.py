@@ -13,8 +13,7 @@ class UserDetailSerializer(serializers.ModelSerializer):
     '''
     负责返回用户详情页的信息
     '''
-    # mobile = serializers.CharField(read_only=True)
-    # email = serializers.CharField(read_only=True)
+
     class Meta:
         model = User
         fields = ("username", "birthday", "mobile", "gender", "email", "portrait")
@@ -176,6 +175,34 @@ class EmailSerializer(serializers.ModelSerializer):
     #
     #     return email
 
+class EmailSerializer(serializers.Serializer):
+    '''
+    负责用户通过邮箱找回密码的验证操作
+    '''
+    email = serializers.CharField(max_length=20)
+
+    def validate_email(self, email):
+        '''
+        验证邮箱
+        :param mobile:
+        :return:
+        '''
+
+        # 邮箱是否注册
+        if not User.objects.filter(email=email).count():
+            raise serializers.ValidationError("邮箱不正确，不存在该用户")
+
+        # 验证邮箱是否合法
+        if not re.match(settings.REGEX_EMAIL, email):
+            raise serializers.ValidationError('邮箱非法')
+
+        # 验证验证码发送频率
+        one_minute_ago = datetime.now() - timedelta(hours=0, minutes=1, seconds=0)
+        if VerifyCode.objects.filter(add_time__gt=one_minute_ago, email=email).count():
+            raise serializers.ValidationError('请超过60s后再次发送')
+
+        return email
+
 
 class AuthoritySerializer(serializers.ModelSerializer):
     '''
@@ -208,3 +235,76 @@ class PermissionSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ("username", "roles")
+
+class CheckPasswordSerializer(serializers.Serializer):
+    '''
+    负责验证用户重设密码的code和email
+    '''
+    code = serializers.CharField(required=True, write_only=True, max_length=4, min_length=4, label="验证码",
+                                 error_messages={
+                                     "blank": "请输入验证码",
+                                     "required": "请输入验证码",
+                                     "max_length": "验证码格式错误",
+                                     "min_length": "验证码格式错误"
+                                 },
+                                 help_text="验证码")
+
+    email = serializers.CharField(required=True, max_length=20, label="邮箱",
+                                  error_messages={
+                                      "blank": "请输入邮箱",
+                                      "required": "请输入邮箱",
+                                      "max_length": "邮箱格式错误",
+                                  },
+                                  help_text="邮箱")
+
+    def validate_email(self, email):
+        '''
+        验证邮箱
+        :param mobile:
+        :return:
+        '''
+
+        # 邮箱是否注册
+        if not User.objects.filter(email=email).count():
+            raise serializers.ValidationError("邮箱不正确，不存在该用户")
+
+        # 验证邮箱是否合法
+        if not re.match(settings.REGEX_EMAIL, email):
+            raise serializers.ValidationError('邮箱非法')
+
+        return email
+
+    def validate_code(self, code):
+        # initial_data 初始化的时候前端传过来的数据
+        # 找出该邮箱的最新一条验证码
+        verify_records = VerifyCode.objects.filter(email=self.initial_data["email"]).order_by("-add_time")
+        if verify_records:
+            last_record = verify_records[0]
+
+            five_minutes_ago = datetime.now() - timedelta(hours=0, minutes=5, seconds=0)
+
+            if five_minutes_ago > last_record.add_time:
+                raise serializers.ValidationError("验证码过期")
+
+            if last_record.code != code:
+                raise serializers.ValidationError("验证码错误")
+
+        else:
+            raise serializers.ValidationError("验证码错误")
+
+class ResetPasswordSerializer(serializers.ModelSerializer):
+    '''
+    负责用户重设密码的验证操作
+    '''
+
+    user = serializers.HiddenField(
+        default=serializers.CurrentUserDefault()
+    )
+    password = serializers.CharField(
+        style={'input_type': 'password'}, help_text="密码", label="密码", write_only=True,
+    )
+
+    class Meta:
+        model = User
+        fields = ('password', 'user')
+

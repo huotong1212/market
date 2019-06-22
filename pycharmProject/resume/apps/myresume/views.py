@@ -1,13 +1,17 @@
 from django_filters.rest_framework import DjangoFilterBackend
+
 from rest_framework import filters, status
 
 from rest_framework.authentication import SessionAuthentication
 
 # Create your views here.
+from rest_framework.generics import GenericAPIView
 from rest_framework.mixins import ListModelMixin, RetrieveModelMixin
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+
+from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet, GenericViewSet
 from rest_framework_extensions.cache.mixins import CacheResponseMixin
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
@@ -16,7 +20,10 @@ from myresume.filters import ResumeFilter
 from myresume.models import UserResume, SkillCategory, Expectation, Education, WorkExperience, ProjectExperience, \
     Skills, SelfAppraise
 from myresume.serializers import UserResumeSerializer, SkillCategorySerializer, ExpectationSerializer, \
-    EducationSerializer, WorkExperienceSerializer, ProjectExperienceSerializer, SkillsSerializer, SelfAppraiseSerializer
+    EducationSerializer, WorkExperienceSerializer, ProjectExperienceSerializer, SkillsSerializer, \
+    SelfAppraiseSerializer, UserResumeShowSerializer
+
+from utils.Des import DesCode
 from utils.permissions import IsOwnerOrReadOnly, IsResumeOwnerOrReadOnly
 
 
@@ -125,7 +132,8 @@ class EducationViewSet(CacheResponseMixin, ModelViewSet):
     def get_queryset(self):
         try:
             if self.action == 'list':
-                resumeId = self.request.data['resumeId']
+                query_params = self.request.query_params
+                resumeId = query_params['resumeId']
                 return Education.objects.filter(resume_id=resumeId)
             else:
                 return Education.objects.filter(resume_id__user=self.request.user)
@@ -139,9 +147,6 @@ class WorkExperienceViewSet(CacheResponseMixin, ModelViewSet):
 
     permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
     authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
-
-    # def get_queryset(self):
-    #     return WorkExperience.objects.filter(resume_id__user=self.request.user)
 
     def update(self, request, *args, **kwargs):
         partial = kwargs.pop('partial', False)
@@ -163,7 +168,8 @@ class WorkExperienceViewSet(CacheResponseMixin, ModelViewSet):
     def get_queryset(self):
         try:
             if self.action == 'list':
-                resumeId = self.request.data['resumeId']
+                query_params = self.request.query_params
+                resumeId = query_params['resumeId']
                 return WorkExperience.objects.filter(resume_id=resumeId)
             else:
                 return WorkExperience.objects.filter(resume_id__user=self.request.user)
@@ -177,9 +183,6 @@ class ProjectExperienceViewSet(CacheResponseMixin, ModelViewSet):
 
     permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
     authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
-
-    # def get_queryset(self):
-    #     return ProjectExperience.objects.filter(resume_id__user=self.request.user)
 
     def update(self, request, *args, **kwargs):
         partial = kwargs.pop('partial', False)
@@ -201,7 +204,8 @@ class ProjectExperienceViewSet(CacheResponseMixin, ModelViewSet):
     def get_queryset(self):
         try:
             if self.action == 'list':
-                resumeId = self.request.data['resumeId']
+                query_params = self.request.query_params
+                resumeId = query_params['resumeId']
                 return ProjectExperience.objects.filter(resume_id=resumeId)
             else:
                 return ProjectExperience.objects.filter(resume_id__user=self.request.user)
@@ -212,22 +216,17 @@ class ProjectExperienceViewSet(CacheResponseMixin, ModelViewSet):
 class SkillsViewSet(CacheResponseMixin, ModelViewSet):
     serializer_class = SkillsSerializer
 
-    # permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
-    # permission_classes = (IsAuthenticated, )
     authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
-
-    # def get_queryset(self):
-    #     return Skills.objects.filter(resume_id__user=self.request.user)
 
     def get_queryset(self):
         try:
             if self.action == 'list':
-                resumeId = self.request.data['resumeId']
+                query_params = self.request.query_params
+                resumeId = query_params['resumeId']
                 return Skills.objects.filter(resume_id=resumeId)
             else:
                 return Skills.objects.filter(resume_id__user=self.request.user)
         except Exception as e:
-
             return Skills.objects.filter(resume_id__user=self.request.user)
 
     def destroy(self, request, *args, **kwargs):
@@ -250,3 +249,49 @@ class SelfAppraiseViewSet(ModelViewSet):
 
     def get_queryset(self):
         return SelfAppraise.objects.filter(resume_id__user=self.request.user)
+
+
+class UserResumeShowView(GenericAPIView):
+    serializer_class = UserResumeShowSerializer
+
+    def get(self, request, *args, **kwargs):
+        query_params = request.query_params
+        code = query_params['code']
+
+        des = DesCode()
+        str_x = code.encode('utf-8')  # 接受前端，encode专为字节方便解密
+        str_x = des.des_descrypt(str_x).decode('utf-8')
+
+        codelist = str_x.split(';')
+        id, username, resumeId = int(codelist[0]), codelist[1], int(codelist[2])
+
+        instance = UserResume.objects.filter(id=resumeId)[0]
+
+        serializer = self.get_serializer(instance)
+        print(222, request.user)
+        return Response(serializer.data)
+
+
+class GenerateSecret(APIView):
+    authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
+
+    def post(self, request, format=None):
+        username = request.user.username
+        id = request.user.id
+        resume_id = request.data['resumeId']
+
+        secret = ';'.join([str(id), str(username), str(resume_id)])
+        print(secret)
+        des = DesCode()
+
+        str_en = des.des_encrypt(secret.encode('utf-8'))  # 加密
+        code = str_en.decode('utf-8')  # 转成utf-8返回给前端
+        print(code)
+
+        # return redirect("/showResume/", code = code)
+        # print('/showResume/?code={}'.format(code))
+        # return HttpResponseRedirect('/showResume/?code={}'.format(code))
+        # return redirect(resolve_url('/showResume/', code = code))
+        # return redirect(reverse('/showResume/', kwargs={'code':code}))
+        # return HttpResponseRedirect(reverse('showResume', kwargs={'code':code}))
+        return Response({'code': code}, status=status.HTTP_200_OK)

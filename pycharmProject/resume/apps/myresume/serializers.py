@@ -1,9 +1,7 @@
 from rest_framework import serializers
-from rest_framework.validators import UniqueTogetherValidator
 
 from myresume.models import SkillCategory, UserResume, Expectation, Education, Skills, ProjectExperience, SelfAppraise, \
     WorkExperience
-from user.serializers import UserDetailSerializer
 
 
 class SkillCategorySerializer3(serializers.ModelSerializer):
@@ -141,4 +139,17 @@ class SelfAppraiseSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = SelfAppraise
+        fields = "__all__"  # 包含所有字段
+
+
+class UserResumeShowSerializer(serializers.ModelSerializer):
+    expectation = ExpectationSerializer(many=False)
+    education = EducationSerializer(many=True)
+    work = WorkExperienceSerializer(many=True)
+    project = ProjectExperienceSerializer(many=True)
+    skills = SkillsSerializer(many=True)
+    appraise = SelfAppraiseSerializer(many=False)
+
+    class Meta:
+        model = UserResume
         fields = "__all__"  # 包含所有字段

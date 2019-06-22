@@ -23,9 +23,11 @@ from rest_framework.routers import DefaultRouter
 from rest_framework_jwt.views import obtain_jwt_token
 
 from myresume.views import UserResumeViewSet, SkillCategoryViewSet, ExpectationViewSet, EducationViewSet, \
-    WorkExperienceViewSet, ProjectExperienceViewSet, SkillsViewSet, SelfAppraiseViewSet
+    WorkExperienceViewSet, ProjectExperienceViewSet, SkillsViewSet, SelfAppraiseViewSet, GenerateSecret, \
+    UserResumeShowView
 from resume.settings import MEDIA_ROOT
-from user.views import PermissionViewSet, UserViewSet, SmsCodeViewSet, EmailCodeViewSet
+from user.views import PermissionViewSet, UserViewSet, SmsCodeViewSet, EmailCodeViewSet, ResetPasswordViewSet, \
+    CheckEmailCodeView
 
 router = DefaultRouter()
 
@@ -65,9 +67,17 @@ router.register(r'sms', SmsCodeViewSet, base_name="sms")
 # 邮箱验证码
 router.register(r'email', EmailCodeViewSet, base_name="email")
 
+# 邮箱验证码
+router.register(r'resetPas', ResetPasswordViewSet, base_name="resetPas")
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),
+
+    url(r'checkPas/$', CheckEmailCodeView.as_view(), name="checkPas"),
+    url(r'secret/$', GenerateSecret.as_view(), name="secret"),
+    url(r'showResume/$', UserResumeShowView.as_view(), name="showResume"),
 
     # url(r'userResume/',UserResumeViewSet.as_view()),
     # 引入restframework自动生成的文档

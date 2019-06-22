@@ -18,7 +18,7 @@ from user.models import Role, Authority
 from .models import VerifyCode
 
 class VerifyCodeAdmin(object):
-    list_display = ['code', 'mobile', "add_time"]
+    list_display = ['code', 'mobile','email', "add_time"]
 
 class RoleAdmin(object):
     list_display = ['name', 'user','desc', "add_time"]

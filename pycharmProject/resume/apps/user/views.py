@@ -4,7 +4,9 @@ from django.shortcuts import render
 
 # Create your views here.
 from rest_framework import mixins, viewsets, authentication, status, permissions
-from rest_framework.mixins import CreateModelMixin
+from rest_framework.authentication import SessionAuthentication
+from rest_framework.generics import GenericAPIView, ListAPIView
+from rest_framework.mixins import CreateModelMixin, UpdateModelMixin
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_extensions.cache.mixins import CacheResponseMixin
@@ -14,7 +16,7 @@ from rest_framework_jwt.serializers import jwt_payload_handler, jwt_encode_handl
 from resume import settings
 from user.models import User, VerifyCode, Role
 from user.serializers import PermissionSerializer, SMSSerializer, UserDetailSerializer, UserRegSerializer, \
-    EmailSerializer
+    EmailSerializer, ResetPasswordSerializer, CheckPasswordSerializer
 from utils.ailiSmS import AliSms
 from utils.emailSenter import EmailManager
 from utils.yunpian import YunPian
@@ -58,8 +60,8 @@ class SmsCodeViewSet(CreateModelMixin, viewsets.GenericViewSet):
         code = self.generate_code()
 
         # sms_status = yun_pian.send_sms(code=code, mobile=mobile)
-        print("验证码是："+code)
-        sms_status = alisms.sendSMS(mobile,code)
+        print("验证码是：" + code)
+        sms_status = alisms.sendSMS(mobile, code)
 
         if sms_status['Code'] != "OK":
             return Response({
@@ -72,14 +74,15 @@ class SmsCodeViewSet(CreateModelMixin, viewsets.GenericViewSet):
                 "mobile": mobile
             }, status=status.HTTP_201_CREATED)
 
+
 class EmailCodeViewSet(CreateModelMixin, viewsets.GenericViewSet):
     """
-       Create a model instance. 验证码
+       Create a model instance. 邮箱验证码
     """
     serializer_class = EmailSerializer
 
-    authentication_classes = (JSONWebTokenAuthentication, authentication.SessionAuthentication)
-    permission_classes = (IsAuthenticated,)
+    # authentication_classes = (JSONWebTokenAuthentication, authentication.SessionAuthentication)
+    # permission_classes = (IsAuthenticated,)
 
     def generate_code(self):
         '''
@@ -96,7 +99,7 @@ class EmailCodeViewSet(CreateModelMixin, viewsets.GenericViewSet):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)  # 如果验证不通过，直接抛异常
 
-        email = self.request.user.email
+        email = serializer.validated_data['email']
         code = self.generate_code()
         mail_cfgs = settings.MAIL_CFGS
 
@@ -106,7 +109,7 @@ class EmailCodeViewSet(CreateModelMixin, viewsets.GenericViewSet):
         manager = EmailManager(**mail_cfgs)
         email_status = manager.send()
 
-        print("验证码是："+code)
+        print("验证码是：" + code)
 
         if email_status != "success":
             return Response({
@@ -116,12 +119,31 @@ class EmailCodeViewSet(CreateModelMixin, viewsets.GenericViewSet):
             # 发送成功保存验证码
             code_record = VerifyCode.objects.create(code=code, email=email)
             return Response({
-                "email": email
+                'email': email
             }, status=status.HTTP_201_CREATED)
 
 
+class CheckEmailCodeView(GenericAPIView):
+    serializer_class = CheckPasswordSerializer
 
-class UserViewSet(CacheResponseMixin,CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        email = serializer.validated_data['email']
+        user = User.objects.filter(email=email)[0]
+        re_dict = serializer.data
+
+        # 将token返回给前端
+        payload = jwt_payload_handler(user)
+        re_dict["token"] = jwt_encode_handler(payload)
+        re_dict["name"] = user.name if user.name else user.username
+
+        return Response(re_dict, status=status.HTTP_200_OK)
+
+
+class UserViewSet(CacheResponseMixin, CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveModelMixin,
+                  viewsets.GenericViewSet):
     """
     用户注册,更新，获取个人信息
     """
@@ -129,7 +151,7 @@ class UserViewSet(CacheResponseMixin,CreateModelMixin, mixins.UpdateModelMixin, 
     authentication_classes = (JSONWebTokenAuthentication, authentication.SessionAuthentication)
 
     def get_serializer_class(self):
-        if self.action in ["retrieve","update"]:
+        if self.action in ["retrieve", "update"]:
             return UserDetailSerializer
         elif self.action == "create":
             return UserRegSerializer
@@ -182,3 +204,31 @@ class UserViewSet(CacheResponseMixin,CreateModelMixin, mixins.UpdateModelMixin, 
         # 在每次post保存的时候，将密码加密
         # print(serializer.validated_data)
         return serializer.save()
+
+
+class ResetPasswordViewSet(UpdateModelMixin, viewsets.GenericViewSet):
+    serializer_class = ResetPasswordSerializer
+
+    permission_classes = (IsAuthenticated,)
+    authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
+
+    def get_object(self):
+        return self.request.user
+
+    def update(self, request, *args, **kwargs):
+        partial = kwargs.pop('partial', False)
+        instance = self.get_object()
+        serializer = self.get_serializer(instance, data=request.data, partial=partial)
+        serializer.is_valid(raise_exception=True)
+        # self.perform_update(serializer)
+
+        # 保存新密码
+        password = serializer.validated_data['password']
+        instance.set_password(password)
+        instance.save()
+
+        return Response({
+            'code': 'success'
+        }, status=status.HTTP_201_CREATED,)
+
+
