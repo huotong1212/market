@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cc6f2766-6047-46d1-bd32-5df3a444019a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/page/DragList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/page/DragList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/page/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/page/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/page/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/page/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/page/ResetPassword.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/page/ResetPassword.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/page/RetrievePassword.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/page/RetrievePassword.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/resume/Education.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/resume/Education.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/resume/MyResume.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/resume/MyResume.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/resume/ProjectExperience.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/resume/ProjectExperience.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/resume/RetrieveResume.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/resume/RetrieveResume.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/resume/Skills.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/resume/Skills.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/resume/WorkExperience.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/resume/WorkExperience.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/show/ResumeBody.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/show/ResumeBody.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/show/ResumeFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/show/ResumeFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/show/ResumeHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/show/ResumeHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/user/userProfile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/components/user/userProfile.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/store/moduleA/mutation-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/store/moduleA/mutation-types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/store/moduleA/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/store/moduleA/mutations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/store/moduleA/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/../webstormProject/vue-manage-system-master/src/store/moduleA/state.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="640" />
+    <option name="height" value="345" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pycharmProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharmProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc6f2766-6047-46d1-bd32-5df3a444019a" name="Default Changelist" comment="" />
+      <created>1561638654173</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561638654173</updated>
+      <workItem from="1561638655731" duration="305000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit all">
+      <created>1561638878629</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561638878629</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="305000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24949563" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Remote Host" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="aiXcoder" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit all" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit all" />
+  </component>
+</project>
