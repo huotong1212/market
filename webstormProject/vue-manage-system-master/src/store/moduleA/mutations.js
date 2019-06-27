@@ -27,8 +27,12 @@ export default {
     Vue.set(state.userInfo, 'token', payload.token)
   },
   [types.SET_RESUME_ID] (state, id) {
-    // console.log('----state',state)
     state.resumeId = id
-    // console.log('-----mutations',state.resumeId);
+  },
+  setResumeName (state, name) {
+    state.resumeName = name
+  },
+  setLang (state, lang) {
+    state.lang = lang
   },
 }

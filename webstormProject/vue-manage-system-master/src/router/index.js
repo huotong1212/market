@@ -4,6 +4,7 @@ import Router from 'vue-router';
 Vue.use(Router);
 
 export default new Router({
+    // mode: 'history',
     routes: [
         {
             path: '/',
@@ -142,6 +143,11 @@ export default new Router({
             path: '/setPassword',
             name:'setPassword',
             component: resolve => require(['../components/page/ResetPassword.vue'], resolve)
+        },
+        {
+            path: '/bestResume',
+            name:'bestResume',
+            component: resolve => require(['../components/show/left-right-rtl.vue'], resolve)
         },
         {
             path: '*',

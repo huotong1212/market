@@ -215,7 +215,6 @@
                 createResumeCode({
                     resumeId:row.id
                 }).then((response)=>{
-                    console.log(response)
                     let code = response.data.code
                     let routeUrl = this.$router.resolve({
                         path: "../showResume",
@@ -242,7 +241,6 @@
                 this.getData();
             },
             handleSortChange(payload) {
-                console.log('handleSortChange', payload)
                 switch (payload.prop) {
                     case 'add_time':
                         if(payload.prop==='ascending'){
@@ -275,7 +273,6 @@
                 // })
 
                 getAllUserResume(this.params).then((response) => {
-                    console.log('getAllUserResume', response.data)
                     this.tableData = response.data.results
                     this.count = response.data.count
                 }).catch(function (error) {
@@ -300,7 +297,6 @@
                 return row.tag === value;
             },
             handleEdit(index, row) {
-                console.log(index, row)
                 this.idx = index;
                 this.id = row.id;
                 this.Resume = {
@@ -329,7 +325,6 @@
                 this.id = row.id;
             },
             delAll() {
-                console.log(this.selectedId)
                 deleteUserResume(
                     1,
                     {
@@ -337,7 +332,6 @@
                         selectedId: this.selectedId
                     }
                 ).then((response) => {
-                    console.log('handleDelete', response)
                     this.clearTable()
                     this.getData()
                     // this.tableData.splice(index,1) //['a','c','d'] 删除起始下标为1，长度为1的一个值，len设置的1，如果为0，则数组不变
@@ -381,12 +375,9 @@
             },
 
             crOrUpUserResume(formName) {
-                console.log(this.createOrUpdate)
                 if (this.createOrUpdate) {
-                    console.log('------create')
                     this.createUserResume(formName)
                 } else {
-                    console.log('------update')
                     this.updateUserResume(formName)
                 }
             },
@@ -395,16 +386,13 @@
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
                         let resume = this.tableData.find(item => item.id === this.Resume.id)
-                        console.log('before', resume)
                         updateUserResume(
                             this.Resume.id,
                             this.Resume
                         ).then((response) => {
-                            console.log(response)
 
                             Vue.set(resume, 'language', response.data.language)
                             Vue.set(resume, 'name', response.data.name)
-                            console.log('after', resume)
 
                             this.createVisible = false
                         }).catch(function (error) {
@@ -420,9 +408,7 @@
             // 创建简历
             createUserResume(formName) {
                 this.$refs[formName].validate((valid) => {
-                    console.log('valid', valid)
                     if (valid) {
-                        console.log('Resume', this.Resume)
                         // this.$refs[formName].resetFields();//将form表单重置
                         createUserResume(
                             this.Resume
@@ -456,7 +442,6 @@
                     this.id,
                     {}
                 ).then((response) => {
-                    console.log('handleDelete', response)
                     this.tableData.splice(this.idx, 1) //['a','c','d'] 删除起始下标为1，长度为1的一个值，len设置的1，如果为0，则数组不变
                     this.$message.success('删除成功');
                     this.delVisible = false;

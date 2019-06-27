@@ -14,4 +14,6 @@ export default {
     token:'',
   },
   resumeId:'',
+  resumeName:'',
+  lang:'cn',
 }

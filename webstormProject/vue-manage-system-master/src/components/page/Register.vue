@@ -112,11 +112,9 @@
 
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
-                        console.log('formData',this.form)
                         register(
                             this.form
                         ).then((response) => {
-                            console.log('register',response);
                             //本地存储用户信息
                             cookie.setCookie('username', response.data.name, 7);
                             cookie.setCookie('token',response.data.token,7)
@@ -141,7 +139,6 @@
             },
             sendVerifyCode(){
                 this.$refs.form.validateField('mobile',(errorMessage => {
-                    console.log('error',errorMessage)
                     if(errorMessage){
                         return
                     }
@@ -149,7 +146,6 @@
                     getSMSCode({
                         mobile:this.form.mobile
                     }).then((response)=>{
-                        console.log('SMSCode',response)
                     }).catch(function(error){
 
                     })

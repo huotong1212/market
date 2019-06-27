@@ -99,7 +99,6 @@
                     experienceId,
                     {}
                 ).then((response) => {
-                    console.log('deleteWorkExperience', response)
                     this.workExperience.splice(index, 1) //['a','c','d'] 删除起始下标为1，长度为1的一个值，len设置的1，如果为0，则数组不变
                 }).catch(function (error) {
 
@@ -110,7 +109,6 @@
                         resume_id:this.resumeId
                     }
                 ).then((response)=>{
-                    console.log('create-WorkExperience',response)
                     this.workExperience.push(response.data)
                 }).catch(function (error) {
                     // console.log(error)
@@ -123,7 +121,6 @@
                     updateWorkExperience(this.resumeId,
                         this.workExperience
                     ).then((response)=>{
-                        console.log('save-WorkExperience',response)
                     }).catch(function (error) {
                         // console.log(error)
                     })
@@ -139,7 +136,6 @@
                     Vue.set(this.workExperience[index], 'error', false)
                     this.error = false
                 }
-                console.log(index,this.workExperience[index])
             }
         },
         mounted() {

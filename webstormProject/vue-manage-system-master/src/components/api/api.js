@@ -2,7 +2,8 @@ import axios from 'axios';
 
 
 let host = 'http://shop.projectsedu.com';
-let localhost = 'http://127.0.0.1:8000';
+// let localhost = 'http://127.0.0.1:8000';
+let localhost = 'http://123.206.128.236:8000';
 
 
 //-----------------User(用户)---------------------
@@ -241,3 +242,7 @@ export const getShowResume = (params) => {
     return axios.get(`${localhost}/showResume/`,{params:params})
 }
 
+// 获取其他语言View
+export const getAnother = (params) => {
+    return axios.get(`${localhost}/another/`,{params:params})
+}

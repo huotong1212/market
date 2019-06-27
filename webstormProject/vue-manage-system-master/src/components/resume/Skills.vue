@@ -115,6 +115,7 @@
                     1: '前端',
                     3: '后端',
                     4: '数据库',
+                    5: '语言',
                 },
                 level: {
                     '1': '了解',
@@ -166,7 +167,7 @@
                         resumeId: this.resumeId
                     }
                 ).then((response) => {
-                    console.log('deleteSkills', response)
+                    //console.log('deleteSkills', response)
                     this.clearSkills(categoryId)
                 }).catch(function (error) {
 
@@ -206,7 +207,7 @@
                         createSkills(
                             this.form
                         ).then((response) => {
-                            console.log('createSkills', response)
+                            //console.log('createSkills', response)
                             this.skills.push(response.data)
                             this.createVisible = false
                         }).catch(function (error) {
@@ -224,7 +225,7 @@
                 updateSkills(this.form.id,
                     this.form
                 ).then((response) => {
-                    console.log('updateSkills', response)
+                    //console.log('updateSkills', response)
                     skill = response.data
                     this.createVisible = false
                 }).catch(function (error) {

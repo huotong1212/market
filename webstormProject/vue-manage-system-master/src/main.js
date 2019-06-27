@@ -22,6 +22,8 @@ Vue.use(ElementUI, {
 import './components/axios/';
 import {isEmpty} from "element-ui/src/utils/util";
 import cookie from "./components/static/cookie";
+import jquery from  "./assets/js/jquery"
+
 Vue.prototype.$axios = axios;
 
 const i18n = new VueI18n({
@@ -38,7 +40,7 @@ router.beforeEach((to, from, next) => {
     // console.log('router',role)
     // 如果为空，登录或注册
     if (isEmpty(role) ) {
-        if (['/login','/register','/retrieve','/setPassword','/showResume'].find((path)=>path == to.path)){
+        if (['/login','/register','/retrieve','/setPassword','/showResume','/bestResume'].find((path)=>path == to.path)){
             next();
         }else{
             next('/login');

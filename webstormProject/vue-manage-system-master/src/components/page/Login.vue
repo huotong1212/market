@@ -67,7 +67,7 @@
                             username: this.ruleForm.username, //当前页码
                             password: this.ruleForm.password
                         }).then((response) => {
-                            console.log(response);
+                            //console.log(response);
                             //本地存储用户信息
                             cookie.setCookie('username', this.ruleForm.username, 7);
                             cookie.setCookie('token',response.data.token,7)
@@ -113,9 +113,8 @@
                 });
             },
             register() {
-                console.log('register...')
                 // this.$router.push({path:'./register'})
-                console.log(this.$router)
+                //console.log(this.$router)
                 this.$router.push({path: '../register', params: {}})
             },
 

@@ -72,7 +72,6 @@
             sendVerifyCode(){
                 this.errorMessage = false
                 this.$refs.ruleForm.validateField('email',(errorMessage => {
-                    console.log('error',errorMessage)
                     if(errorMessage){
                         return
                     }
@@ -80,7 +79,6 @@
                     getEmailCode({
                         email:this.ruleForm.email
                     }).then((response)=>{
-                        console.log('EMailCode',response)
                     }).catch((error)=>{
                         console.log('EMailCodeError',error)
                         if(error.email[0].includes("邮箱不正确，不存在该用户")){
@@ -111,7 +109,6 @@
                         checkEmailCode(
                             this.ruleForm
                         ).then((response)=>{
-                            console.log('checkEmailCode',response)
                             //存储在store
                             const loginInfo = {
                                 username: response.data.name,

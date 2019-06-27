@@ -62,9 +62,6 @@
                                 <el-button type="primary" style="width: 30%;float: right" @click="submitForm('form')">
                                     确定
                                 </el-button>
-<!--                                <el-button type="primary" style="width: 30%;float: right" @click="test">-->
-<!--                                    测试-->
-<!--                                </el-button>-->
                             </div>
                         </el-form>
                     </div>
@@ -229,7 +226,6 @@
         methods: {
             handleRead(index) {
                 const item = this.unread.splice(index, 1);
-                console.log(item);
                 this.read = item.concat(this.read);
             },
             handleDel(index) {
@@ -244,16 +240,19 @@
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
                         //调用
-                        let portrait = this.imgSrc?this.imgSrc:this.cropImg
-                        let file = this.dataURLtoFile(portrait, this.file.name);
-
-                        console.log('formData', this.form)
                         const formData = new FormData();
                         // 等同于使用map.entries()
                         for (let key in this.form) {
                             formData.append(key,this.form[key])
                         }
-                        formData.set('portrait',this.file);
+
+                        if(this.imgSrc===''){
+                            formData.delete('portrait');
+                        }else {
+                            let portrait = this.imgSrc?this.imgSrc:this.cropImg
+                            this.dataURLtoFile(portrait, this.file.name);
+                            formData.set('portrait',this.file);
+                        }
 
                         updateUserInfo(
                             // this.form
@@ -262,7 +261,6 @@
                             this.getUserInfo()
                             this.hint = '保存成功'
                             this.MessageVisible = true
-                            console.log(response)
                             cookie.setCookie('userImage',response.data.portrait)
                         }).catch(function (error) {
                             console.log(error);
@@ -276,19 +274,16 @@
             },
             test(){
                 // 等同于使用map.entries()
-                console.log(this.form)
                 let arr = Array.from(this.form)
                 this.form.username = '321321'
                 for (let key in this.form) {
                     // console.log("Key: %s, Value: %s", key, value);
-                    console.log(this.form[key])
                     // formData.append(key,value)
                 }
 
             },
             getUserInfo(){
                 getUser().then((response)=> {
-                    console.log(response)
                     this.form = response.data
                     this.cropImg = this.form.portrait
                 }).catch(function (error) {
@@ -305,7 +300,6 @@
             setImage(e) {
                 const file = e.target.files[0];
                 this.file = file
-                console.log('file',file)
                 if (!file.type.includes('image/')) {
                     return;
                 }
@@ -325,7 +319,7 @@
                 this.cropImg = this.defaultSrc;
             },
             imageuploaded(res) {
-                console.log(res)
+                // console.log(res)
             },
             handleError() {
                 this.$notify.error({

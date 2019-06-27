@@ -99,7 +99,6 @@
                     updateProjectExperience(this.resumeId,
                         this.projectExperience
                     ).then((response)=>{
-                        console.log('save-WorkExperience',response)
                     }).catch(function (error) {
                         // console.log(error)
                     })
@@ -113,7 +112,6 @@
                     projectId,
                     {}
                 ).then((response) => {
-                    console.log('deleteThisProject', response)
                     this.projectExperience.splice(index, 1) //['a','c','d'] 删除起始下标为1，长度为1的一个值，len设置的1，如果为0，则数组不变
                 }).catch(function (error) {
 
@@ -128,14 +126,12 @@
                     Vue.set(this.projectExperience[index], 'error', false)
                     this.error = false
                 }
-                console.log(index,this.projectExperience[index])
             },
             createProjectExperience(){
                 createProjectExperience({
                         resume_id:this.resumeId
                     }
                 ).then((response)=>{
-                    console.log('createProjectExperience',response)
                     this.projectExperience.push(response.data)
                 }).catch(function (error) {
                     // console.log(error)

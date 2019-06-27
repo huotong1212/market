@@ -36,10 +36,10 @@
                         <el-form-item label="毕业院校" prop="graduate_school">
                             <el-input maxlength="20" v-model="item.graduate_school"></el-input>
                         </el-form-item>
-                        <el-form-item label="课程描述" prop="subjects">
+                        <el-form-item label="专业" prop="subjects">
                             <el-input maxlength="100"  v-model="item.subjects"></el-input>
                         </el-form-item>
-                        <el-form-item label="突出表现" prop="emphasize">
+                        <el-form-item label="课程描述" prop="emphasize">
                             <el-input maxlength="100" type="textarea" rows="3" v-model="item.emphasize"></el-input>
                         </el-form-item>
                     </el-form>
@@ -110,7 +110,6 @@
                     educationId,
                     {}
                 ).then((response)=>{
-                    console.log('deleteEducation',response)
                     this.education.splice(index,1) //['a','c','d'] 删除起始下标为1，长度为1的一个值，len设置的1，如果为0，则数组不变
                 }).catch(function (error) {
 
@@ -121,7 +120,6 @@
                     resume_id:this.resumeId
                     }
                 ).then((response)=>{
-                    console.log('create-Education',response)
                     this.education.push(response.data)
                 }).catch(function (error) {
                     // console.log(error)
@@ -134,7 +132,6 @@
                     updateEducation(this.resumeId,
                             this.education
                         ).then((response)=>{
-                            console.log('save-Education',response)
                         }).catch(function (error) {
                             // console.log(error)
                         })
@@ -151,7 +148,6 @@
                     Vue.set(this.education[index], 'error', false)
                     this.error = false
                 }
-                console.log(index,this.education[index])
             }
         },
         // watch:{

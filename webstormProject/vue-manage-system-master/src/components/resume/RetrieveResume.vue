@@ -18,6 +18,28 @@
                 <!--UserResume表单-->
                 <div class="form-box align-center">
                     <el-form ref="userResume" status-icon :rules="userResumeRules" :model="userResume" label-width="80px">
+                        <el-form-item label="头像">
+                            <div style="width: 50%">
+                                <div class="crop-demo" style="display: inline-block">
+                                    <img :src="cropImg" class="pre-img">
+                                    <div class="crop-demo-btn" style="display: inline-block">选择图片
+                                        <input class="crop-input" type="file" name="image" accept="image/*"
+                                               @change="setImage"/>
+                                    </div>
+                                </div>
+
+                                <el-dialog title="裁剪图片" :visible.sync="dialogVisible" width="30%">
+                                    <vue-cropper ref='cropper' :src="imgSrc" :ready="cropImage" :zoom="cropImage"
+                                                 :cropmove="cropImage"
+                                                 style="width:100%;height:300px;"></vue-cropper>
+                                    <span slot="footer" class="dialog-footer">
+                                            <el-button @click="cancelCrop">取 消</el-button>
+                                            <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+                                        </span>
+                                </el-dialog>
+                            </div>
+                        </el-form-item>
+
                         <el-form-item label="姓名" prop="username">
                             <el-input v-model="userResume.username" ></el-input>
                         </el-form-item>
@@ -190,6 +212,7 @@
         getSelfAppraise, updateSelfAppraise
     } from "../api/api";
     import { provinceAndCityData,REGION_DATA,CodeToText } from 'element-china-area-data'
+    import VueCropper from 'vue-cropperjs';
 
 
     export default {
@@ -209,6 +232,7 @@
                     email: '',
                     gender: '',
                     birthday: '',
+                    portrait:'',
                 },
                 userResumeRules: {
                     username: [
@@ -256,6 +280,13 @@
                     2: '两个月内到岗',
                     3: '一周内到岗',
                 },
+                //defaultSrc: require('../../assets/img/img.jpg'),
+                defaultSrc: '',
+                fileList: [],
+                imgSrc: '',
+                cropImg: '',
+                dialogVisible: false,
+                file:'',
             }
         },
         methods: {
@@ -286,11 +317,8 @@
                     this.errorVisible = false
                     this.error = ''
                 }
-                console.log(this.activeNames)
-                console.log(val);
             },
             dealChange (value) {
-                console.log(value)
                 // code转汉字大对象
                 this.expectation.province = value[0]
                 this.expectation.city = value[1]
@@ -304,6 +332,7 @@
                     this.resumeId
                 ).then((response) => {
                     this.userResume = response.data
+                    this.cropImg = this.userResume.portrait
                 }).catch(function (error) {
                     console.log(error);
                 });
@@ -320,7 +349,6 @@
                     // this.selectedOptions.push(this.expectation.province)
                     // this.selectedOptions.push(this.expectation.city)
                     this.selectedOptions = [this.expectation.province,this.expectation.city]
-                    console.log('selectedOptions',this.selectedOptions)
                 }).catch(function (error) {
                     // 判断是否是新建  function中的this是这个函数作用域
                     if(error.detail.includes("Not found.")){
@@ -341,14 +369,11 @@
 
             updateExpectation(formName){
                 this.$refs[formName].validate((valid) => {
-                    console.log('valid',valid)
                     if(valid){
-                        console.log('Expectation',this.expectation)
                         updateExpectation(
                             this.resumeId,
                             this.expectation
                         ).then((response)=>{
-                            console.log('update-Response',response)
                         }).catch(function (error) {
                             console.log(error)
                         })
@@ -361,14 +386,11 @@
 
             createExpectation(formName){
                 this.$refs[formName].validate((valid) => {
-                    console.log('valid',valid)
                     if(valid){
-                        console.log('Expectation',this.expectation)
                         this.expectation.resume_id = this.resumeId
                         createExpectation(
                             this.expectation
                         ).then((response)=>{
-                            console.log('create-Response',response)
                             this.createFlag = false
                         }).catch(function (error) {
                             // console.log(error)
@@ -383,11 +405,24 @@
             updateUserResume(formName){
                 this.$refs[formName].validate((valid) => {
                     if(valid){
+                        //调用
+                        const formData = new FormData();
+                        // 等同于使用map.entries()
+                        for (let key in this.userResume) {
+                            formData.append(key,this.userResume[key])
+                        }
+
+                        if(this.imgSrc===''){
+                            formData.delete('portrait');
+                        }else {
+                            let portrait = this.imgSrc?this.imgSrc:this.cropImg
+                            this.dataURLtoFile(portrait, this.file.name);
+                            formData.set('portrait',this.file);
+                        }
                         updateUserResume(
                             this.resumeId,
-                            this.userResume
+                            formData
                         ).then((response)=>{
-                            console.log(response)
                         }).catch(function (error) {
                             console.log(error)
                         })
@@ -425,7 +460,6 @@
                 getSelfAppraise(
                     this.resumeId
                 ).then((response)=>{
-                    console.log('getSelfAppraise',response)
                     this.textarea = response.data.self_desc
                 }).catch(function (error) {
                 })
@@ -438,7 +472,6 @@
                         self_desc:this.textarea
                     }
                 ).then((response)=>{
-                    console.log('updateSelfAppraise',response)
                     this.textarea = response.data.self_desc
                 }).catch(function (error) {
 
@@ -473,6 +506,55 @@
                 });
             },
 
+            handleClose(done) {
+                this.$confirm('确认关闭？')
+                    .then(_ => {
+                        done();
+                    })
+                    .catch(_ => {});
+            },
+            setImage(e) {
+                const file = e.target.files[0];
+                this.file = file
+                if (!file.type.includes('image/')) {
+                    return;
+                }
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    this.dialogVisible = true;
+                    this.imgSrc = event.target.result;
+                    this.$refs.cropper && this.$refs.cropper.replace(event.target.result);
+                };
+                reader.readAsDataURL(file);
+            },
+            cropImage() {
+                this.cropImg = this.$refs.cropper.getCroppedCanvas().toDataURL();
+            },
+            cancelCrop() {
+                this.dialogVisible = false;
+                this.cropImg = this.defaultSrc;
+            },
+            imageuploaded(res) {
+            },
+            handleError() {
+                this.$notify.error({
+                    title: '上传失败',
+                    message: '图片上传接口上传失败，可更改为自己的服务器接口'
+                });
+            },
+            //将base64转换为文件
+            dataURLtoFile: function(dataurl, filename) {
+                var arr = dataurl.split(','),
+                    mime = arr[0].match(/:(.*?);/)[1],
+                    bstr = atob(arr[1]),
+                    n = bstr.length,
+                    u8arr = new Uint8Array(n);
+                while (n--) {
+                    u8arr[n] = bstr.charCodeAt(n);
+                }
+                return new File([u8arr], filename, { type: mime });
+            },
+
         },
         computed: {
             classification() {
@@ -485,6 +567,7 @@
             'ProjectExperience': ProjectExperience,
             'Skills': Skills,
             'SelfAppraise': SelfAppraise,
+            VueCropper
         },
         created() {
 
@@ -493,6 +576,7 @@
 
         },
         mounted() {
+            this.cropImg = this.defaultSrc;
             this.getResumeInfo()
             this.getExpectation()
             this.getSelfAppraise()
@@ -520,6 +604,58 @@
 
     .handle-create {
         float: right;
+    }
+    .message-title {
+        cursor: pointer;
+    }
+
+    .handle-row {
+        margin-top: 30px;
+    }
+
+    .content-title {
+        font-weight: 400;
+        line-height: 50px;
+        margin: 10px 0;
+        font-size: 22px;
+        color: #1f2f3d;
+    }
+
+    .pre-img {
+        width: 100px;
+        height: 100px;
+        background: #f8f8f8;
+        border: 1px solid #eee;
+        border-radius: 5px;
+    }
+
+    .crop-demo {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .crop-demo-btn {
+        position: relative;
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        margin-left: 30px;
+        background-color: #409eff;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .crop-input {
+        position: absolute;
+        width: 100px;
+        height: 40px;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        cursor: pointer;
     }
 
 </style>

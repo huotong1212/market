@@ -58,7 +58,7 @@
                         resetPassword({
                             password:this.ruleForm.first
                         }).then((response)=>{
-                            console.log('success')
+                            //console.log('success')
                             this.$message.success('密码修改成功');
                             setTimeout(()=>{
                                 this.$router.push('/');
