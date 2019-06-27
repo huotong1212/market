@@ -105,7 +105,8 @@ DATABASES = {
         'NAME': 'resume',
         'USER': 'huotong',
         'PASSWORD': '879662581',
-        'HOST': 'localhost',
+        'HOST': '123.206.128.236',
+        # 'HOST': 'localhost',
         'PORT': '3306',
         "OPTIONS": {"init_command": "SET default_storage_engine=INNODB;"}
     }
@@ -168,6 +169,7 @@ AUTHENTICATION_BACKENDS = (
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "/static/")
 
 MEDIA_URL = "/media/"
 STATICFILES_DIRS = (

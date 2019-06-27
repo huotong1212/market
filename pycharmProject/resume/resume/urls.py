@@ -13,6 +13,8 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.views.generic import TemplateView
+
 import xadmin
 from django.contrib import admin
 from django.urls import path
@@ -24,7 +26,7 @@ from rest_framework_jwt.views import obtain_jwt_token
 
 from myresume.views import UserResumeViewSet, SkillCategoryViewSet, ExpectationViewSet, EducationViewSet, \
     WorkExperienceViewSet, ProjectExperienceViewSet, SkillsViewSet, SelfAppraiseViewSet, GenerateSecret, \
-    UserResumeShowView
+    UserResumeShowView, UserResumeAnthorView
 from resume.settings import MEDIA_ROOT
 from user.views import PermissionViewSet, UserViewSet, SmsCodeViewSet, EmailCodeViewSet, ResetPasswordViewSet, \
     CheckEmailCodeView
@@ -78,8 +80,10 @@ urlpatterns = [
     url(r'checkPas/$', CheckEmailCodeView.as_view(), name="checkPas"),
     url(r'secret/$', GenerateSecret.as_view(), name="secret"),
     url(r'showResume/$', UserResumeShowView.as_view(), name="showResume"),
+    url(r'another/$', UserResumeAnthorView.as_view(), name="another"),
 
-    # url(r'userResume/',UserResumeViewSet.as_view()),
+    # url(r'userResume/',UserResume
+    # ViewSet.as_view()),
     # 引入restframework自动生成的文档
     url(r'docs/', include_docs_urls(title="我的简历")),
     url(r'^xadmin/', xadmin.site.urls),
@@ -92,4 +96,5 @@ urlpatterns = [
     # 这个url是为了可以弹出rest_framework提供的登录页面，方便测试的时候操作
     url(r'^api-auth/', include('rest_framework.urls')),
 
+    # url(r'^index/', TemplateView.as_view(template_name="index.html"), name="index"),
 ]

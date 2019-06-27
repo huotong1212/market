@@ -3,6 +3,8 @@ from datetime import datetime
 from django.db import models
 
 # Create your models here.
+from django_redis import get_redis_connection
+
 from DjangoUeditor.models import UEditorField
 
 

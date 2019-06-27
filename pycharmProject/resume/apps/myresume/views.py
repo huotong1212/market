@@ -61,6 +61,7 @@ class UserResumeViewSet(ModelViewSet):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         userResume = self.perform_create(serializer)
+
         Expectation.objects.create(resume_id=userResume)
         SelfAppraise.objects.create(resume_id=userResume)
 
@@ -213,7 +214,7 @@ class ProjectExperienceViewSet(CacheResponseMixin, ModelViewSet):
             return ProjectExperience.objects.filter(resume_id__user=self.request.user)
 
 
-class SkillsViewSet(CacheResponseMixin, ModelViewSet):
+class SkillsViewSet(ModelViewSet):
     serializer_class = SkillsSerializer
 
     authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
@@ -255,21 +256,50 @@ class UserResumeShowView(GenericAPIView):
     serializer_class = UserResumeShowSerializer
 
     def get(self, request, *args, **kwargs):
-        query_params = request.query_params
-        code = query_params['code']
+        try:
+            query_params = request.query_params
+            code = query_params['code']
 
-        des = DesCode()
-        str_x = code.encode('utf-8')  # 接受前端，encode专为字节方便解密
-        str_x = des.des_descrypt(str_x).decode('utf-8')
+            des = DesCode()
+            str_x = code.encode('utf-8')  # 接受前端，encode专为字节方便解密
+            str_x = des.des_descrypt(str_x).decode('utf-8')
 
-        codelist = str_x.split(';')
-        id, username, resumeId = int(codelist[0]), codelist[1], int(codelist[2])
+            codelist = str_x.split(';')
+            id, username, resumeId = int(codelist[0]), codelist[1], int(codelist[2])
 
-        instance = UserResume.objects.filter(id=resumeId)[0]
+            instance = UserResume.objects.filter(id=resumeId)[0]
 
-        serializer = self.get_serializer(instance)
-        print(222, request.user)
-        return Response(serializer.data)
+            serializer = self.get_serializer(instance)
+            print(222, request.user)
+            return Response(serializer.data)
+        except Exception as e:
+            return Response({'code': 'code不存在'}, status=status.HTTP_404_NOT_FOUND)
+
+class UserResumeAnthorView(GenericAPIView):
+    serializer_class = UserResumeShowSerializer
+
+    def get(self, request, *args, **kwargs):
+        try:
+            query_params = request.query_params
+
+            code = query_params['code']
+
+            des = DesCode()
+            str_x = code.encode('utf-8')  # 接受前端，encode专为字节方便解密
+            str_x = des.des_descrypt(str_x).decode('utf-8')
+
+            codelist = str_x.split(';')
+            id, username, resumeId = int(codelist[0]), codelist[1], int(codelist[2])
+
+            languge = query_params['language']
+
+            instance = UserResume.objects.filter(user_id=id,language=languge).order_by('updatetime')[0]
+
+            serializer = self.get_serializer(instance)
+            print(222, request.user)
+            return Response(serializer.data)
+        except Exception as e:
+            return Response({'resume': 'resume不存在'}, status=status.HTTP_404_NOT_FOUND)
 
 
 class GenerateSecret(APIView):

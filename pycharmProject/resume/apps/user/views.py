@@ -142,7 +142,7 @@ class CheckEmailCodeView(GenericAPIView):
         return Response(re_dict, status=status.HTTP_200_OK)
 
 
-class UserViewSet(CacheResponseMixin, CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveModelMixin,
+class UserViewSet(CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveModelMixin,
                   viewsets.GenericViewSet):
     """
     用户注册,更新，获取个人信息
