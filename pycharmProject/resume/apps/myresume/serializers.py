@@ -73,6 +73,8 @@ class EducationSerializer(serializers.ModelSerializer):
     # graduate_date = serializers.DateField(allow_null=True,format="%Y-%m-%d")
 
     def validate(self, attrs):
+        # 创建的时候不阔以绑定他人的简历
+        # 不阔以修改他人的简历可以使用perimission
         if attrs['resume_id'].user == self.context['request'].user:
             return attrs
         else:

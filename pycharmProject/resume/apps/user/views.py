@@ -151,10 +151,10 @@ class UserViewSet(CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveMode
     authentication_classes = (JSONWebTokenAuthentication, authentication.SessionAuthentication)
 
     def get_serializer_class(self):
-        if self.action in ["retrieve", "update"]:
-            return UserDetailSerializer
-        elif self.action == "create":
-            return UserRegSerializer
+        # if self.action in ["retrieve", "update"]:
+        #     return UserDetailSerializer
+        # elif self.action == "create":
+        #     return UserRegSerializer
 
         return UserDetailSerializer
 

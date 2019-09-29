@@ -12,6 +12,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "resume.settings")
 
 import django
 django.setup()
+from myresume.models import UserResume
 
 from user.models import User
 
@@ -26,6 +27,14 @@ from user.models import User
 # from django.contrib.auth.models import User
 # user = User.objects.create_user（username='',password='',email=''）
 
-user = User.objects.get(username='tong')
-user.set_password('123456')
-user.save()
+# user = User.objects.get(username='tong')
+# user.set_password('123456')
+# user.save()
+
+resume = UserResume.objects.get(id=12)
+
+print(resume,type(resume))
+print(resume.education.all(),type(resume.education))
+
+resume.education.update(resume_id_id=None)
+resume.save()

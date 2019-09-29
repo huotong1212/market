@@ -53,7 +53,33 @@ INSTALLED_APPS = [
     'django_filters',
     'social_django',
     'DjangoUeditor',
+    'rest_framework_swagger',
 ]
+
+# swagger 配置项
+SWAGGER_SETTINGS = {
+    # 基础样式
+    'SECURITY_DEFINITIONS': {
+        "basic":{
+            'type': 'basic'
+        }
+    },
+    # 如果需要登录才能够查看接口文档, 登录的链接使用restframework自带的.
+    'LOGIN_URL': 'rest_framework:login',
+    'LOGOUT_URL': 'rest_framework:logout',
+    # 'DOC_EXPANSION': None,
+    # 'SHOW_REQUEST_HEADERS':True,
+    # 'USE_SESSION_AUTH': True,
+    # 'DOC_EXPANSION': 'list',
+    # 接口文档中方法列表以首字母升序排列
+    'APIS_SORTER': 'alpha',
+    # 如果支持json提交, 则接口文档中包含json输入框
+    'JSON_EDITOR': True,
+    # 方法列表字母排序
+    'OPERATIONS_SORTER': 'alpha',
+    'VALIDATOR_URL': None,
+}
+
 
 MIDDLEWARE = [
     # 服务端设置跨域
@@ -61,7 +87,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -105,8 +131,8 @@ DATABASES = {
         'NAME': 'resume',
         'USER': 'huotong',
         'PASSWORD': '879662581',
-        'HOST': '123.206.128.236',
-        # 'HOST': 'localhost',
+        # 'HOST': '123.206.128.236',
+        'HOST': 'localhost',
         'PORT': '3306',
         "OPTIONS": {"init_command": "SET default_storage_engine=INNODB;"}
     }

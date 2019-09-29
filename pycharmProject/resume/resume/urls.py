@@ -23,6 +23,7 @@ from django.views.static import serve
 from rest_framework.documentation import include_docs_urls
 from rest_framework.routers import DefaultRouter
 from rest_framework_jwt.views import obtain_jwt_token
+from rest_framework_swagger.views import get_swagger_view
 
 from myresume.views import UserResumeViewSet, SkillCategoryViewSet, ExpectationViewSet, EducationViewSet, \
     WorkExperienceViewSet, ProjectExperienceViewSet, SkillsViewSet, SelfAppraiseViewSet, GenerateSecret, \
@@ -30,6 +31,10 @@ from myresume.views import UserResumeViewSet, SkillCategoryViewSet, ExpectationV
 from resume.settings import MEDIA_ROOT
 from user.views import PermissionViewSet, UserViewSet, SmsCodeViewSet, EmailCodeViewSet, ResetPasswordViewSet, \
     CheckEmailCodeView
+# 导入辅助函数get_schema_view
+from rest_framework.schemas import get_schema_view
+# 导入两个类
+from rest_framework_swagger.renderers import SwaggerUIRenderer, OpenAPIRenderer
 
 router = DefaultRouter()
 
@@ -72,6 +77,9 @@ router.register(r'email', EmailCodeViewSet, base_name="email")
 # 邮箱验证码
 router.register(r'resetPas', ResetPasswordViewSet, base_name="resetPas")
 
+# 利用辅助函数引入所导入的两个类
+schema_view = get_schema_view(title='API', renderer_classes=[SwaggerUIRenderer, OpenAPIRenderer])
+# schema_view = get_swagger_view(title='Pastebin API')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -85,7 +93,7 @@ urlpatterns = [
     # url(r'userResume/',UserResume
     # ViewSet.as_view()),
     # 引入restframework自动生成的文档
-    url(r'docs/', include_docs_urls(title="我的简历")),
+    # url(r'docs/', include_docs_urls(title="我的简历")),
     url(r'^xadmin/', xadmin.site.urls),
 
     url('^', include(router.urls)),
@@ -95,6 +103,8 @@ urlpatterns = [
 
     # 这个url是为了可以弹出rest_framework提供的登录页面，方便测试的时候操作
     url(r'^api-auth/', include('rest_framework.urls')),
+    url(r'^$', schema_view),
+    url(r'^swagger_docs/', schema_view, name="swagger_docs"),
 
     # url(r'^index/', TemplateView.as_view(template_name="index.html"), name="index"),
 ]

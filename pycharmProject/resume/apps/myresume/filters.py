@@ -2,7 +2,7 @@ from django.db.models import Q
 from rest_framework import generics
 from django_filters import rest_framework as filters
 
-from myresume.models import UserResume
+from myresume.models import UserResume, Skills
 
 
 class ResumeFilter(filters.FilterSet):
@@ -14,4 +14,12 @@ class ResumeFilter(filters.FilterSet):
 
     class Meta:
         model = UserResume
-        fields = ['name', 'language','add_time']
+        fields = ['name', 'language', 'add_time']
+
+
+class SkillsFilter(filters.FilterSet):
+    resume_id = filters.NumberFilter(field_name="resume_id", lookup_expr='exact')
+
+    class Meta:
+        model = Skills
+        fields = ['resume_id', ]

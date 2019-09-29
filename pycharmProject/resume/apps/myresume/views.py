@@ -1,4 +1,5 @@
 from django_filters.rest_framework import DjangoFilterBackend
+from django_redis import get_redis_connection
 
 from rest_framework import filters, status
 
@@ -13,10 +14,11 @@ from rest_framework.response import Response
 
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet, GenericViewSet
+from rest_framework_extensions.bulk_operations.mixins import ListUpdateModelMixin, ListDestroyModelMixin
 from rest_framework_extensions.cache.mixins import CacheResponseMixin
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
-from myresume.filters import ResumeFilter
+from myresume.filters import ResumeFilter, SkillsFilter
 from myresume.models import UserResume, SkillCategory, Expectation, Education, WorkExperience, ProjectExperience, \
     Skills, SelfAppraise
 from myresume.serializers import UserResumeSerializer, SkillCategorySerializer, ExpectationSerializer, \
@@ -26,6 +28,14 @@ from myresume.serializers import UserResumeSerializer, SkillCategorySerializer, 
 from utils.Des import DesCode
 from utils.permissions import IsOwnerOrReadOnly, IsResumeOwnerOrReadOnly
 
+from django_bulk_update.helper import bulk_update
+
+def setInstance(instance, data):
+    for key, value in data.items():
+        print(key, value)
+        if hasattr(instance, key):
+            setattr(instance, key, value)
+        return instance
 
 class UserResumePagination(PageNumberPagination):
     page_size = 8  # 默认每页显示的数据条数
@@ -36,7 +46,6 @@ class UserResumePagination(PageNumberPagination):
 
 class UserResumeViewSet(ModelViewSet):
     queryset = UserResume.objects.all()
-
     pagination_class = UserResumePagination
 
     # 精确过滤：根据字段过滤
@@ -112,18 +121,33 @@ class EducationViewSet(CacheResponseMixin, ModelViewSet):
     authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
 
     # lookup_field = 'resume_id_id'
-
+    # Education.objects.bulk_update()
     def update(self, request, *args, **kwargs):
         partial = kwargs.pop('partial', False)
         resumeId = kwargs.pop('pk')
         try:
+            # serializer = self.get_serializer(data=request.data, many=True)
+            # serializer.is_valid(raise_exception=True)
+            # data = serializer.validated_data
+            # serializer.save() 此操作会创建
+            instances = []
             for newInstance in request.data:
                 instance = Education.objects.get(id=int(newInstance['id']))
                 print(newInstance, type(newInstance))
                 serializer = self.get_serializer(instance, data=newInstance, partial=partial)
                 serializer.is_valid(raise_exception=True)
-                self.perform_update(serializer)
-                re_dict = {'message': 'success'}
+                data = serializer.validated_data
+                instances.append(setInstance(instance,serializer.validated_data))
+                # print(dir(instance))
+                # print(vars(instance))
+                # print(data)
+                # print(hasattr(instance,'id'))
+                # print('--------')
+                # self.perform_update(serializer)
+            print(11111)
+            # Education.objects.bulk_update(instances)
+            bulk_update(instances)  # updates only name column
+            re_dict = {'message': 'success'}
             return Response(re_dict, status=status.HTTP_201_CREATED)
         except Exception as e:
             print('error', e)
@@ -214,31 +238,44 @@ class ProjectExperienceViewSet(CacheResponseMixin, ModelViewSet):
             return ProjectExperience.objects.filter(resume_id__user=self.request.user)
 
 
-class SkillsViewSet(ModelViewSet):
+class SkillsViewSet(ListDestroyModelMixin,ListUpdateModelMixin,ModelViewSet):
+    # ListUpdateModelMixin批量操作可以成功，但是只能统一修改单一字段，并且必须要有操作权限
+    # queryset = Skills.objects.all()
     serializer_class = SkillsSerializer
-
     authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
+    # lookup_field = "resume_id_id"
+    filter_backends = (DjangoFilterBackend, filters.SearchFilter)
+    permission_classes = (IsAuthenticated, IsOwnerOrReadOnly,)
+
+    search_fields = ('=resume_id__id',)
+    filter_class = SkillsFilter
+
+    # def get_queryset(self):
+    # try:
+    #     if self.action == 'list':
+    #         query_params = self.request.query_params
+    #         resumeId = query_params['resumeId']
+    #         return Skills.objects.filter(resume_id=resumeId)
+    #     else:
+    #         return Skills.objects.filter(resume_id__user=self.request.user)
+    # except Exception as e:
+    #     return Skills.objects.filter(resume_id__user=self.request.user)
+    #        return Skills.objects.filter(resume_id__user=self.request.user)
 
     def get_queryset(self):
-        try:
-            if self.action == 'list':
-                query_params = self.request.query_params
-                resumeId = query_params['resumeId']
-                return Skills.objects.filter(resume_id=resumeId)
-            else:
-                return Skills.objects.filter(resume_id__user=self.request.user)
-        except Exception as e:
-            return Skills.objects.filter(resume_id__user=self.request.user)
+        # 当在queryset中的查询需要用到用户时，需要在permission_classes设置IsAuthenticated登录可见
+        # 否则在DRF登录时会报错 匿名用户无法转换为Int
+        return Skills.objects.filter(resume_id__user=self.request.user)
 
-    def destroy(self, request, *args, **kwargs):
-        # print(request.data)
-        data = request.data
-        if 'category' in data.keys():
-            Skills.objects.filter(resume_id=data.get('resumeId'), category=data.get('category')).delete()
-        else:
-            instance = self.get_object()
-            self.perform_destroy(instance)
-        return Response(status=status.HTTP_204_NO_CONTENT)
+    # def destroy(self, request, *args, **kwargs):
+    #     # print(request.data)
+    #     data = request.data
+    #     if 'category' in data.keys():
+    #         Skills.objects.filter(resume_id=data.get('resumeId'), category=data.get('category')).delete()
+    #     else:
+    #         instance = self.get_object()
+    #         self.perform_destroy(instance)
+    #     return Response(status=status.HTTP_204_NO_CONTENT)
 
 
 class SelfAppraiseViewSet(ModelViewSet):
@@ -270,10 +307,10 @@ class UserResumeShowView(GenericAPIView):
             instance = UserResume.objects.filter(id=resumeId)[0]
 
             serializer = self.get_serializer(instance)
-            print(222, request.user)
             return Response(serializer.data)
         except Exception as e:
             return Response({'code': 'code不存在'}, status=status.HTTP_404_NOT_FOUND)
+
 
 class UserResumeAnthorView(GenericAPIView):
     serializer_class = UserResumeShowSerializer
@@ -293,7 +330,7 @@ class UserResumeAnthorView(GenericAPIView):
 
             languge = query_params['language']
 
-            instance = UserResume.objects.filter(user_id=id,language=languge).order_by('updatetime')[0]
+            instance = UserResume.objects.filter(user_id=id, language=languge).order_by('updatetime')[0]
 
             serializer = self.get_serializer(instance)
             print(222, request.user)
@@ -318,10 +355,4 @@ class GenerateSecret(APIView):
         code = str_en.decode('utf-8')  # 转成utf-8返回给前端
         print(code)
 
-        # return redirect("/showResume/", code = code)
-        # print('/showResume/?code={}'.format(code))
-        # return HttpResponseRedirect('/showResume/?code={}'.format(code))
-        # return redirect(resolve_url('/showResume/', code = code))
-        # return redirect(reverse('/showResume/', kwargs={'code':code}))
-        # return HttpResponseRedirect(reverse('showResume', kwargs={'code':code}))
         return Response({'code': code}, status=status.HTTP_200_OK)

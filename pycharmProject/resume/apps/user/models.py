@@ -11,6 +11,7 @@ from resume.settings import MEDIA_ROOT
 
 # 让上传的文件路径动态地与user的名字有关
 def upload_to(instance, filename):
+    print('---------')
     return '/'.join([MEDIA_ROOT,'user',instance.username, filename])
 
 class User(AbstractUser):

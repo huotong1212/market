@@ -1,82 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/apps/myresume/views.py" line="46" />
+    <bookmark url="file://$PROJECT_DIR$/apps/myresume/views.py" line="55" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dfcb6d2-df37-4d02-85a9-1c68870868cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../pymarket/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/assets/img/qrcode.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/assets/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/show/CopyBody.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/show/left-right-rtl.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/show/options.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/ka.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/lt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/pt-br.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/pt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/th.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/lang/zh-tw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/resume/data.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/resume/id.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/terms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scrapy_dev/scrapy_demo/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pymarket/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pymarket/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/apps/consumers/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/consumers/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/apps/consumers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/consumers/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/apps/goods/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/goods/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/goods/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/apps/trade/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/trade/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/apps/user_operation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/apps/user_operation/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/db_tools/create_xadmin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/db_tools/create_xadmin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pymarket/pymarket/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pymarket/pymarket/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/resume.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/resume.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/myresume/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/myresume/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/myresume/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/myresume/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/myresume/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/myresume/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/myresume/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/myresume/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/user/tong/timg_1.jfif" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/assets/img/spider.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/user/tong/timg_1_AqF8Rs1.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/userset.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/userset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resume/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/resume/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resume/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/resume/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../t1nkuy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../t1nkuy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scrapy_dev/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy_dev/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scrapy_dev/scrapy_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy_dev/scrapy_demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scrapy_dev/scrapy_demo/scrapy_demo/spiders/lagou.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy_dev/scrapy_demo/scrapy_demo/spiders/lagou.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webstormProject/best-resume-ever" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/best-resume-ever" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/page/DragList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/page/DragList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/page/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/page/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/page/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/page/Register.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/page/ResetPassword.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/page/ResetPassword.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/page/RetrievePassword.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/page/RetrievePassword.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/Education.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/Education.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/MyResume.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/MyResume.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/ProjectExperience.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/ProjectExperience.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/RetrieveResume.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/RetrieveResume.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/Skills.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/Skills.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/WorkExperience.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/resume/WorkExperience.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/show/ResumeBody.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/show/ResumeBody.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/show/ResumeFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/show/ResumeFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/show/ResumeHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/show/ResumeHeader.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/user/userProfile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/components/user/userProfile.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/store/moduleA/mutation-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/store/moduleA/mutation-types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/store/moduleA/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/store/moduleA/mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/store/moduleA/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../webstormProject/vue-manage-system-master/src/store/moduleA/state.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +49,21 @@
     <SUITE FILE_PATH="coverage/resume$ailiSmS.coverage" NAME="ailiSmS Coverage Results" MODIFIED="1560678999919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
     <SUITE FILE_PATH="coverage/resume$views.coverage" NAME="views Coverage Results" MODIFIED="1561188017008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/user" />
     <SUITE FILE_PATH="coverage/resume$tests__1_.coverage" NAME="tests (1) Coverage Results" MODIFIED="1561200927982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/myresume" />
-    <SUITE FILE_PATH="coverage/resume$userset.coverage" NAME="userset Coverage Results" MODIFIED="1561204317029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
+    <SUITE FILE_PATH="coverage/resume$userset.coverage" NAME="userset Coverage Results" MODIFIED="1567738394688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -102,21 +74,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/myresume/views.py">
+        <entry file="file://$PROJECT_DIR$/resume/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/user/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-952">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="584">
+              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
               <folding>
-                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#305#314#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resume/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="100" selection-start-line="100" selection-end-line="100" />
+            <state relative-caret-position="439">
+              <caret line="101" column="39" lean-forward="true" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
               <folding>
                 <element signature="e#630#675#0" expanded="true" />
               </folding>
@@ -135,56 +98,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
+        <entry file="file://$PROJECT_DIR$/apps/myresume/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="164">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/db/backends/mysql/operations.py">
+        <entry file="file://$PROJECT_DIR$/apps/myresume/filters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="145" column="28" selection-start-line="145" selection-start-column="28" selection-end-line="145" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resume/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-870">
-              <caret line="173" column="21" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/user/singals.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/user/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="162" selection-start-line="162" selection-end-line="162" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-                <element signature="e#1165#1478#0" />
-                <element signature="e#1550#2802#0" />
-                <element signature="e#2876#4234#0" />
-                <element signature="e#4283#4870#0" />
-              </folding>
+            <state relative-caret-position="96">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -200,32 +126,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>UserProfile</find>
-      <find>ForeignK</find>
-      <find>permissions</find>
-      <find>import pymysql</find>
-      <find>Aut</find>
-      <find>authentication_B</find>
-      <find>get_ob</find>
-      <find># queryset = Expectation.objects.filter(resume_id__user=)</find>
-      <find>ManyToManyField</find>
-      <find>Base Serializer save......</find>
-      <find>is_valid.......</find>
-      <find>senderrs</find>
-      <find>验证码过期</find>
-      <find>get_user_model</find>
-      <find>User</find>
-      <find>get_user_model()</find>
-      <find>context</find>
-      <find>AUTH_USER_MODEL</find>
-      <find>ExpectationViewSet</find>
-      <find>'resumeId'</find>
       <find>print</find>
       <find>Debug</find>
       <find>password</find>
       <find>Hidd</find>
       <find>skills</find>
       <find>Static_Roo</find>
+      <find>UpdateCacheMiddleware</find>
+      <find>DEB</find>
+      <find>SkillsViewSet</find>
+      <find>create</find>
+      <find>WorkExperienceViewSet</find>
+      <find>ProjectExperienceViewSet</find>
+      <find>format</find>
+      <find>permission_classes</find>
+      <find>HiddenField</find>
+      <find>education</find>
+      <find>ModelSerializer create.........</find>
+      <find>ManyToManyField</find>
+      <find>AdminEmailHand</find>
+      <find>EmailBackend</find>
+      <find>instance</find>
+      <find>bulk</find>
+      <find>bulk_update</find>
+      <find>ManytoM</find>
+      <find>Manyto</find>
+      <find>PrimaryKeyRelatedField</find>
+      <find>auto</find>
+      <find>primary_key</find>
+      <find>AutoField</find>
+      <find>AUTH_USER_MODEL</find>
     </findStrings>
     <replaceStrings>
       <replace>User</replace>
@@ -240,30 +170,31 @@
         <option value="$PROJECT_DIR$/myresume/models.py" />
         <option value="$PROJECT_DIR$/resume/__init__.py" />
         <option value="$PROJECT_DIR$/apps/myresume/apps.py" />
-        <option value="$PROJECT_DIR$/apps/myresume/filters.py" />
         <option value="$PROJECT_DIR$/apps/myresume/adminx.py" />
         <option value="$PROJECT_DIR$/apps/user/apps.py" />
-        <option value="D:/python/Anaconda3/Lib/site-packages/rest_framework/serializers.py" />
         <option value="$PROJECT_DIR$/apps/utils/ailiSmS.py" />
         <option value="$PROJECT_DIR$/apps/user/tests.py" />
-        <option value="$PROJECT_DIR$/apps/myresume/models.py" />
         <option value="$PROJECT_DIR$/apps/utils/emailSenter.py" />
         <option value="$PROJECT_DIR$/extra_apps/DjangoUeditor/utils.py" />
         <option value="$PROJECT_DIR$/apps/utils/permissions.py" />
         <option value="$PROJECT_DIR$/apps/user/adminx.py" />
         <option value="$PROJECT_DIR$/apps/user/singals.py" />
-        <option value="$PROJECT_DIR$/apps/user/serializers.py" />
         <option value="$PROJECT_DIR$/apps/myresume/tests.py" />
-        <option value="$PROJECT_DIR$/apps/utils/userset.py" />
         <option value="$PROJECT_DIR$/apps/utils/DesCode.py" />
         <option value="$PROJECT_DIR$/apps/utils/Des.py" />
-        <option value="$PROJECT_DIR$/apps/myresume/serializers.py" />
-        <option value="$PROJECT_DIR$/apps/user/views.py" />
-        <option value="$PROJECT_DIR$/apps/myresume/views.py" />
         <option value="$PROJECT_DIR$/static/resume.txt" />
         <option value="$PROJECT_DIR$/apps/user/models.py" />
         <option value="D:/python/Anaconda3/Lib/site-packages/django/db/backends/mysql/operations.py" />
+        <option value="$PROJECT_DIR$/apps/myresume/filters.py" />
+        <option value="$PROJECT_DIR$/apps/myresume/models.py" />
+        <option value="D:/python/Anaconda3/Lib/site-packages/rest_framework/serializers.py" />
+        <option value="$PROJECT_DIR$/apps/user/views.py" />
+        <option value="$PROJECT_DIR$/apps/user/serializers.py" />
+        <option value="$PROJECT_DIR$/apps/myresume/serializers.py" />
+        <option value="$PROJECT_DIR$/apps/myresume/views.py" />
+        <option value="$PROJECT_DIR$/apps/utils/userset.py" />
         <option value="$PROJECT_DIR$/resume/settings.py" />
+        <option value="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/django/db/backends/mysql/operations.py" />
         <option value="$PROJECT_DIR$/resume/urls.py" />
       </list>
     </option>
@@ -271,8 +202,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
-    <option name="width" value="640" />
-    <option name="height" value="345" />
+    <option name="width" value="515" />
+    <option name="height" value="280" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -298,27 +229,18 @@
               <item name="resume" type="b2602c69:ProjectViewProjectNode" />
               <item name="resume" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="myresume" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
+              <item name="resume" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="resume" type="b2602c69:ProjectViewProjectNode" />
               <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="extra_apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
               <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -334,21 +256,21 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/untitled1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\market\pycharmProject\resume\extra_apps" />
-      <recent name="D:\market\pycharmProject\resume\apps" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\market\pycharmProject\resume\media" />
       <recent name="D:\market\pycharmProject\resume" />
       <recent name="D:\market\pycharmProject\resume\apps\utils" />
       <recent name="D:\market\pycharmProject\resume\apps\myresume" />
+      <recent name="D:\market\pycharmProject\resume\apps" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\market\pycharmProject\resume\extra_apps" />
       <recent name="D:\market\pycharmProject\resume\apps" />
     </key>
   </component>
@@ -483,7 +405,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="resume.settings" />
       </envs>
-      <option name="SDK_HOME" value="D:\python\Anaconda3\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\Lenovo\AppData\Local\Programs\Python\Python37\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -524,23 +446,14 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Django server.resume" />
       <item itemvalue="Django server.localResume" />
+      <item itemvalue="Django server.resume" />
       <item itemvalue="Python.ailiSmS" />
       <item itemvalue="Python.tests" />
       <item itemvalue="Python.tests (1)" />
       <item itemvalue="Python.userset" />
       <item itemvalue="Python.views" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.userset" />
-        <item itemvalue="Python.tests (1)" />
-        <item itemvalue="Python.views" />
-        <item itemvalue="Python.tests" />
-        <item itemvalue="Python.ailiSmS" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -566,6 +479,54 @@
       <workItem from="1561188285161" duration="18336000" />
       <workItem from="1561252817531" duration="11608000" />
       <workItem from="1561343651024" duration="25075000" />
+      <workItem from="1561684216886" duration="1933000" />
+      <workItem from="1561719828156" duration="1279000" />
+      <workItem from="1562001872327" duration="1207000" />
+      <workItem from="1562339597195" duration="2725000" />
+      <workItem from="1562739153810" duration="1187000" />
+      <workItem from="1562851590288" duration="1431000" />
+      <workItem from="1563871344994" duration="1236000" />
+      <workItem from="1563932017815" duration="4556000" />
+      <workItem from="1563943430600" duration="4951000" />
+      <workItem from="1564020727820" duration="1363000" />
+      <workItem from="1564037859421" duration="2100000" />
+      <workItem from="1564138506268" duration="718000" />
+      <workItem from="1564389021726" duration="4255000" />
+      <workItem from="1564399756492" duration="1376000" />
+      <workItem from="1564458420582" duration="19878000" />
+      <workItem from="1564537061504" duration="1158000" />
+      <workItem from="1564542089157" duration="2080000" />
+      <workItem from="1565329233347" duration="2107000" />
+      <workItem from="1565331438377" duration="3230000" />
+      <workItem from="1566268977076" duration="634000" />
+      <workItem from="1566541663961" duration="576000" />
+      <workItem from="1566900005792" duration="891000" />
+      <workItem from="1567411280943" duration="780000" />
+      <workItem from="1567416715103" duration="1254000" />
+      <workItem from="1567474129889" duration="2563000" />
+      <workItem from="1567484955780" duration="1083000" />
+      <workItem from="1567493203174" duration="7086000" />
+      <workItem from="1567560593495" duration="4159000" />
+      <workItem from="1567648242837" duration="608000" />
+      <workItem from="1567661799833" duration="1505000" />
+      <workItem from="1567679480367" duration="2428000" />
+      <workItem from="1567733883170" duration="5000" />
+      <workItem from="1567733910108" duration="5183000" />
+      <workItem from="1567844238972" duration="4572000" />
+      <workItem from="1567924412872" duration="833000" />
+      <workItem from="1568026529447" duration="1699000" />
+      <workItem from="1568079781295" duration="2702000" />
+      <workItem from="1568182330701" duration="258000" />
+      <workItem from="1568182925562" duration="2025000" />
+      <workItem from="1568194575295" duration="1030000" />
+      <workItem from="1568450690035" duration="809000" />
+      <workItem from="1568466124819" duration="1383000" />
+      <workItem from="1568611888029" duration="788000" />
+      <workItem from="1568893806978" duration="14000" />
+      <workItem from="1569067932110" duration="291000" />
+      <workItem from="1569070792653" duration="156000" />
+      <workItem from="1569740967870" duration="2015000" />
+      <workItem from="1569742985498" duration="2238000" />
     </task>
     <task id="LOCAL-00001" summary="commit resume">
       <created>1560581366716</created>
@@ -592,7 +553,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214845000" />
+    <option name="totallyTimeSpent" value="323183000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -604,33 +565,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.17484869" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.50141644" side_tool="true" weight="0.15467384" />
-      <window_info anchor="bottom" id="File Transfer" weight="0.3286119" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49599084" visible="true" weight="0.16129032" />
+      <window_info id="Structure" order="1" sideWeight="0.5029821" side_tool="true" weight="0.11758418" />
+      <window_info id="Favorites" order="2" sideWeight="0.5040092" side_tool="true" weight="0.14439656" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.43342775" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49630126" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38373426" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49599144" weight="0.44788086" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32646048" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32760596" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="manage.py@resume" order="10" weight="0.3512748" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5036987" side_tool="true" weight="0.60764873" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3838527" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
-      <window_info anchor="right" id="Remote Host" weight="0.32952252" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50400853" side_tool="true" weight="0.20389462" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.38258877" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32646048" />
+      <window_info anchor="bottom" id="File Transfer" internal_type="SLIDING" order="14" type="SLIDING" weight="0.2505423" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="aiXcoder" order="3" side_tool="true" />
-      <window_info anchor="right" id="SciView" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="aiXcoder" order="3" side_tool="true" weight="0.3297414" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.3297414" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32977018" />
+      <window_info anchor="right" id="Remote Host" order="6" weight="0.3292026" />
+      <window_info anchor="right" id="Json Parser" order="7" weight="0.3297414" />
+      <window_info anchor="right" id="Key Promoter X" order="8" weight="0.3297414" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.15870881" />
@@ -661,6 +625,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit resume" />
     <MESSAGE value="commit 完成创建简历和查看简历列表的功能" />
@@ -668,15 +642,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit 添加找回密码的功能" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Python.DjangoServer">
         <watch expression="request.parser_context['view']" />
@@ -687,326 +652,272 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/exceptions.py">
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/pymysql/cursors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="147" selection-start-line="147" selection-end-line="147" />
+        <state relative-caret-position="101">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/pathlib.py">
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/pymysql/connections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="528" selection-start-line="528" selection-end-line="528" />
+        <state relative-caret-position="137">
+          <caret line="490" selection-start-line="490" selection-end-line="490" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/db/models/sql/compiler.py">
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/db/backends/mysql/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="73">
+          <caret line="246" selection-start-line="246" selection-end-line="246" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/myresume/filters.py">
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/db/backends/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="109">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/utils/datastructures.py">
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/db/backends/base/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="73">
+          <caret line="234" selection-start-line="234" selection-end-line="234" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework-stubs/status.pyi">
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework-stubs/mixins.pyi">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-560">
-          <caret line="10" column="17" selection-start-line="10" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="84">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/contrib/auth/__init__.py">
+    <entry file="file://$PROJECT_DIR$/apps/user/migrations/0002_auto_20190616_1103.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="170" column="9" lean-forward="true" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="9" />
+        <state relative-caret-position="364">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/request.py">
+    <entry file="file://D:/python/Anaconda3/pkgs/django-2.2-py37_0/Lib/site-packages/django/utils/log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5488">
-          <caret line="210" selection-start-line="210" selection-end-line="210" />
+        <state relative-caret-position="3220">
+          <caret line="124" column="22" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/fields.py">
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/core/mail/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="452" column="41" selection-start-line="452" selection-start-column="33" selection-end-line="452" selection-end-column="41" />
+        <state relative-caret-position="2324">
+          <caret line="94" column="32" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/DjangoUeditor/utils.py">
+    <entry file="file://D:/python/Anaconda3/pkgs/django-2.2-py37_0/Lib/site-packages/django/core/mail/backends/locmem.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1708">
-          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/core/handlers/exception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/response.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/conf/urls/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/generics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user/adminx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        <state relative-caret-position="728">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/routers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3136">
-          <caret line="132" column="13" selection-start-line="132" selection-start-column="8" selection-end-line="132" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2464">
-          <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/views/generic/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/functools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1484">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/db/models/query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="277" selection-start-line="277" selection-end-line="277" />
+        <state relative-caret-position="28">
+          <caret line="151" column="13" selection-start-line="151" selection-start-column="8" selection-end-line="151" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="235" selection-start-line="235" selection-end-line="235" />
+        <state relative-caret-position="504">
+          <caret line="111" column="32" selection-start-line="111" selection-start-column="24" selection-end-line="111" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/ntpath.py">
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/pagination.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="530" selection-start-line="530" selection-end-line="530" />
+        <state relative-caret-position="2044">
+          <caret line="155" column="6" selection-start-line="155" selection-start-column="6" selection-end-line="155" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/utils/permissions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/utils/test.py">
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django_bulk_update/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user/serializers.py">
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django_bulk_update/helper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-292">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#664#3804#0" />
-            <element signature="e#3856#4601#0" />
-            <element signature="e#7403#9367#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/shortcuts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/utils/userset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#1#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="5160">
+          <caret line="221" selection-start-line="221" selection-end-line="221" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/myresume/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="70" column="32" lean-forward="true" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+        <state>
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/myresume/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3024">
-          <caret line="111" column="6" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/myresume/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/viewsets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5796">
-          <caret line="218" column="33" selection-start-line="218" selection-start-column="33" selection-end-line="218" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/mixins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/utils/ailiSmS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-          <folding>
-            <element signature="e#36#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/utils/emailSenter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4564">
-          <caret line="163" column="74" selection-start-line="163" selection-start-column="74" selection-end-line="163" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/utils/Des.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/apps/user/adminx.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/views/base.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+    <entry file="file://$PROJECT_DIR$/apps/user/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="1738" selection-start-line="1738" selection-end-line="1738" />
+        <state relative-caret-position="600">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/resume.txt">
+    <entry file="file://$PROJECT_DIR$/apps/user/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="168">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user/singals.py">
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/relations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="5352">
+          <caret line="244" column="6" selection-start-line="244" selection-start-column="6" selection-end-line="244" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resume/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/index.html">
+    <entry file="file://$PROJECT_DIR$/apps/utils/Des.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/apps/utils/ailiSmS.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/utils/emailSenter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/utils/permissions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/views/generic/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1741">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/viewsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="200" column="6" selection-start-line="200" selection-start-column="6" selection-end-line="200" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/generics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2112">
+          <caret line="105" column="15" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/myresume/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/myresume/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/utils/userset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/myresume/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/myresume/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/user/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="162" selection-start-line="162" selection-end-line="162" />
+        <state relative-caret-position="-1416">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
             <element signature="e#1165#1478#0" />
@@ -1017,48 +928,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user/models.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/rest_framework_jwt/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-952">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state>
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/urls/resolvers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="563" selection-start-line="563" selection-end-line="563" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/utils/functional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/apps/registry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="204" selection-start-line="204" selection-end-line="204" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/contrib/auth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/db/models/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Anaconda3/Lib/site-packages/rest_framework_jwt/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/myresume/filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/myresume/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Anaconda3/Lib/site-packages/django/db/backends/mysql/operations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="145" column="28" selection-start-line="145" selection-start-column="28" selection-end-line="145" selection-end-column="28" />
+        <state relative-caret-position="164">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resume/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-870">
-          <caret line="173" column="21" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
+        <state relative-caret-position="584">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="e#305#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/django/db/backends/mysql/operations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="145" column="28" selection-start-line="145" selection-start-column="28" selection-end-line="145" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resume/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        <state relative-caret-position="439">
+          <caret line="101" column="39" lean-forward="true" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
           <folding>
             <element signature="e#630#675#0" expanded="true" />
           </folding>

@@ -5,6 +5,8 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 # Create your models here.
+from django_bulk_update.manager import BulkUpdateManager
+
 from DjangoUeditor.models import UEditorField
 from resume.settings import MEDIA_ROOT
 
@@ -118,6 +120,8 @@ class Education(models.Model):
     emphasize = models.CharField(max_length=200, default="", null=True, blank=True, verbose_name="突出内容")
 
     resume_id = models.ForeignKey(UserResume, verbose_name="简历ID", related_name="education", on_delete=models.CASCADE)
+
+    objects = BulkUpdateManager()
 
     class Meta:
         verbose_name = "教育背景"  # admin中显示的表名称
